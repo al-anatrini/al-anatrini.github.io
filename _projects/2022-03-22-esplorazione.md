@@ -1,5 +1,5 @@
 ---
-title: 'Esplorazione di una certa quantità'
+title: 'Esplorazione di una certa quantità d'acqua'
 subtitle: 'for ensemble (2017)'
 date: 2022-03-22 15:50:00
 description: ''
