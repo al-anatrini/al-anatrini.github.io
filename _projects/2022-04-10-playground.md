@@ -1,0 +1,41 @@
+---
+title: 'Playground'
+subtitle: 'Studies for 3d-models exploration and rendering'
+date: 2022-04-10 11:00:00
+description: ''
+featured_image: '/images/works/playground/cover.jpg'
+---
+
+
+
+## Short description
+
+Forbite fantascienze is a commission of Acadèmie ManiFeste 2015 held at IRCAM during June/July 2015. The piece it is the result of a tight collaboration with the Ensemble Intercontemporain's soloist Paul Riveaux, which the piece is dedicated to.
+The live electronics has been developed during the Acadèmie and it consists of an 8 channels Max patch.
+
+
+| Première            | Date           | Tools           | Playback format    | Duration   |
+|---------------------|----------------|-----------------|--------------------|------------|
+| Centquatre, Paris   | 27 June 2015   | Max, Sibelius   | audio 6 channels   | 8 min.     |
+
+
+
+## Images
+
+Here are two snippets of the max patch used during the performance.
+On the first snippet on the left you can see the matrix used to dinamically route the signal of the contrabassoon's microphone to the different effects modules visible on the right side. The piece is divided into cues corresponding to different routing settings. The cues are recalled via the number box aboce the "EVENT" subpatch. On the second snippet on the right the control panel of the patch.
+
+<div class="gallery" data-columns="2">
+	<img src="{{site.baseurl}}/images/works/forbite/snippet-1.jpg">
+	<img src="{{site.baseurl}}/images/works/forbite/snippet-2.jpg">
+</div>
+
+
+
+## Recording
+
+Recording of the live performance at Centquatre.
+
+<iframe src="https://player.vimeo.com/video/690710850" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+---
