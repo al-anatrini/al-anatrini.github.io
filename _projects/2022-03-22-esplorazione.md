@@ -1,7 +1,7 @@
 ---
-title: 'Esplorazione di una certa quantità d'acqua'
+title: 'Esplorazione di una certa quantità dacqua'
 subtitle: 'for ensemble (2017)'
-date: 2022-03-22 15:50:00
+date: 2022-03-22 11:00:00
 description: ''
 featured_image: '/images/works/esplorazione/cover.jpg'
 ---
