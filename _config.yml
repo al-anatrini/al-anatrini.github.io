@@ -1,7 +1,7 @@
 site: "alessandro anatrini"
 
 url: 
-baseurl: /home
+baseurl:
 
 collections:
   pages:
