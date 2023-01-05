@@ -14,9 +14,9 @@ Site specific piece for 144 amateur musicians arranged in 12 ensembles. The piec
 The piece has been composed by transcribing and orchestrating the spectral features of a synth improvisation of the author.  
 
 
-| Première                  | Date             | Tools                               | Playback format   | Duration   |
-|---------------------------|------------------|-------------------------------------|-------------------|------------|
-| Alte Elbtunnel, Hamburg   | 25-26 May 2019   | Audiosculpt, Maxscore, Open music   | analog audio      | 6 min.     |
+| Première                  | Date             | Tools                               | Playback format       | Duration   |
+|---------------------------|------------------|-------------------------------------|-----------------------|------------|
+| Alte Elbtunnel, Hamburg   | 25-26 May 2019   | Audiosculpt, Maxscore, Open music   | stereo                | 6 min.     |
 
 
 
@@ -37,7 +37,7 @@ On the left side a view of one of the tunnel, on the right a musician reading th
 ## Recording
 
 Recording of one of the live performances.
-The piece was recorded from four microphones arranged along the tunnels during the ceremony, therefore is unfortunately quite noisy.
+The piece was recorded from four microphones arranged along the tunnels during the opening ceremony.
 
 
 <iframe src="https://player.vimeo.com/video/690681774" width="640" height="360" frameborder="0" allowfullscreen></iframe>

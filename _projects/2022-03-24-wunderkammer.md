@@ -14,9 +14,9 @@ The installation has been created for the opening of Spazio Materia in Prato a s
 The work has been realised at Spazio Materia in Prato. Spazio Materia is used both as an exhibition venue and as a dance theatre workshop. The artwork has been created as a compendium to the venue's unique architecture, an ancient commercial building of the XV century with a ceiling made
 of pavilion vaults.
 
-| Première                | Date                     | Tools                      | Playback format             | Duration     |
-|-------------------------|--------------------------|----------------------------|-----------------------------|--------------|
-| Spazio Materia, Prato   | from 27 to 30 May 2021   | Live, Faust, Max, Python   | 4.1 audio and neon lights   | 3 days ca.   |
+| Première                | Date                     | Tools                      | Playback format       | Duration     |
+|-------------------------|--------------------------|----------------------------|-----------------------|--------------|
+| Spazio Materia, Prato   | from 27 to 30 May 2021   | Live, Faust, Max, Python   | 4.1 and neon lights   | 3 days ca.   |
 
 
 

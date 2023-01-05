@@ -13,9 +13,9 @@ featured_image: '/images/works/divertimento/cover.jpg'
 This short piece is a commission of the FontanaMix ensemble for the 200th anniversary of the composition of Giacomo Leopardi's Poem "L'Infinito". The piece is written for bass clarinet, electric guitar, piano and cello.
 
 
-| Première                             | Date              | Tools                  | Playback format   | Duration   |
-|--------------------------------------|-------------------|------------------------|-------------------|------------|
-| Torri dell'acqua, Budrio (Bologna)   | 2 December 2019   | Open music, Sibelius   | analog audio      | 2'30"      |
+| Première                             | Date              | Tools                  | Playback format       | Duration   |
+|--------------------------------------|-------------------|------------------------|-----------------------|------------|
+| Torri dell'acqua, Budrio (Bologna)   | 2 December 2019   | Open music, Sibelius   | stereo                | 2'30"      |
 
 
 
@@ -27,7 +27,7 @@ On 16 October 1820, Giacomo Leopardi wrote the sentence that gives the title to 
 
 ## Recording
 
-Two excerpts from Unfamiliar walks 1 and 2 respectively. 
+Recording of the live performance at Le Torri dell'Acqua, Budrio. 
 
 <iframe src="https://player.vimeo.com/video/690713625" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 

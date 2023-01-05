@@ -15,9 +15,9 @@ The piece of each composer is arranged on five different presets that could be f
 My role for this project, in addition to program two sets of pieces, consisted in re-design the engine that hosts the samples, now part of the Maxscore suite, and develope the graphic user interface.
 
 
-| Première       | Date                          | Tools            | Playback format | Duration    |
-|----------------|-------------------------------|------------------|-----------------|-------------|
-| UKE, Hamburg   | running from September 2018   | Maxscore, Live   | 4 channels      | undefined   |
+| Première       | Date                          | Tools            | Playback format       | Duration    |
+|----------------|-------------------------------|------------------|-----------------------|-------------|
+| UKE, Hamburg   | running from September 2018   | Maxscore, Live   | 4.0                   | undefined   |
 
 
 

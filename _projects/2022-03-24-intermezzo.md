@@ -13,9 +13,9 @@ featured_image: '/images/works/intermezzo/cover.jpg'
 Generative and interactive installation presented at Blurred Edges Festival in 2020. The system acts as a sequence of intermezzos that automatically turn on during the pause between a piece and the next one, therefore it is meant to be used in 'classic' concert scenarios. 
 
 
-| Première                      | Date              | Tools       | Playback format                   | Duration    |
-|-------------------------------|-------------------|-------------|-----------------------------------|-------------|
-| Kunsthalle Fraktor, Hamburg   | 22 October 2020   | Live, Max   | 4.1 audio and projection canvas   | undefined   |
+| Première                      | Date              | Tools       | Playback format             | Duration    |
+|-------------------------------|-------------------|-------------|-----------------------------|-------------|
+| Kunsthalle Fraktor, Hamburg   | 22 October 2020   | Live, Max   | 4.1 and projection canvas   | undefined   |
 
 
 
