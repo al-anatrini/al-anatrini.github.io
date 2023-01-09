@@ -1,5 +1,5 @@
 ---
-title: 'Open fields'
+title: 'Open Fields'
 subtitle: 'site specific piece for 144 musicians (2019)'
 date: 2023-01-09 12:16:00
 description: ''
@@ -23,7 +23,7 @@ The piece has been composed by transcribing and orchestrating the spectral featu
 
 On the left side musicians arranged along the tunnel. On the right a detail of a guitar player reading the score from the iPad.[^1]
 
-[^1]: Images credits Janina Luckow.
+[^1]: Images credits KLARA Janina Luckow.
 
 <div class="gallery" data-columns="2">
 	<img src="{{site.baseurl}}/images/works/openfields/snippet-1.jpg">

@@ -1,5 +1,5 @@
 ---
-title: 'Unfamiliar walks'
+title: 'Unfamiliar Walks'
 subtitle: 'site specific interactive installations (2018)'
 date: 2023-01-08 19:08:00
 description: ''
