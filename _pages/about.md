@@ -1,5 +1,5 @@
 ---
-title: about
+title: About
 description: ''
 featured_image: ''
 ---
@@ -49,6 +49,8 @@ __Selected Installations and Music__
 2010: _An.Gold.Bach_ - Reggio Emilia, Teatro Valli
 
 2008: _Suoni d'artificio_ - Firenze, Fondazione Palazzo Strozzi
+
+
 
 
 __Talks, Articles and Lectures__

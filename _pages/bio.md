@@ -1,5 +1,5 @@
 ---
-title: bio
+title: Bio
 description: ''
 featured_image: ''
 ---
