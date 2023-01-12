@@ -1,6 +1,5 @@
 basic_settings:
-  site_title: "[ alessandro anatrini ]\n\n"
-  "sound artist | creative coder"
+  site_title: '[ alessandro anatrini ]'
   favicon_image: /images/favicon_logo.png
 
 header_settings:
