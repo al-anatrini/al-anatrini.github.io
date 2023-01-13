@@ -4,7 +4,6 @@ description: ''
 featured_image: ''
 ---
 
-<p align="justify">
 
 Alessandro Anatrini is a sound artist and creative coder from Florence (Italy). He graduated from University of Bologna - historical musicology, and Conservatorio G.B Martini - composition. He studied music pedagogy at University of Bologna and electronic music at Tempo Reale.
 From 2008 to 2013 He worked as music teacher in several primary schools between Florence and Bologna. In 2013, thanks to a Leonardo fellowship, he relocated to Berlin, and in 2015 he moved to Hamburg where he received an M.A. in multimedia composition from the local Hochschule für Musik und Theater (HfMT). Currently he is a PhD candidate at HfMT and the Hamburg University of Applied Sciences (HAW).
@@ -15,5 +14,3 @@ He collaborated as interaction designer in projects of the Universität der Kün
 
 
 His interests include adaptive and site-specific mixed media systems, deepfakes generation and photogrammetry techniques.
-
-</p>
