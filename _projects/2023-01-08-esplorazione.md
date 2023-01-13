@@ -11,7 +11,7 @@ featured_image: '/images/works/esplorazione/cover.jpg'
 Recording of the live performance at Arsonic, Mons.
 
 
-Esplorazione di una certa quantità d'acqua (exploration of a certain amount of water) was commissioned by Ensemble Musiques Nouvelles in the context of Tactus Young Composer Forum which took place in September 2017 in Mons, Belgium. The piece has been written for flute, bass clarinet, trombone, percussions, piano, electric guitar, violin, viola and cello.
+_Esplorazione di una certa quantità d'acqua_ (Exploration of a certain amount of water) was commissioned by Ensemble Musiques Nouvelles in the context of Tactus Young Composer Forum which took place in September 2017 in Mons, Belgium. The piece has been written for flute, bass clarinet, trombone, percussions, piano, electric guitar, violin, viola and cello.
 All over the piece the sound is sculpted by analysing the resonances genrating from a goblet with a certain amount of water; a constant drift towards distorsion, interference, unbearable density and its contrary.
 
 

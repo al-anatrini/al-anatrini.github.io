@@ -8,19 +8,20 @@ featured_image: '/images/works/wunderkammer/cover.jpg'
 
 
 <iframe src="https://player.vimeo.com/video/690577455" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+A live recording when the system was turned on right before the opening.
+
+<iframe src="https://player.vimeo.com/video/690619186" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 <iframe src="https://player.vimeo.com/video/690624889" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
 <iframe src="https://player.vimeo.com/video/690628207" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-Three live excerpts of the installation to show the evolutionary character of the work. The first excerpt has been recorded whe the system has been turned for the very first time, the second one 3o hours later ca. the last one just before turning off the system after 70 hours ca.
+Three dumps of the systems to show the evolutionary character of the work. The dumps have been recorded 1 hour, 30 and 70 hours after the opening respectively.
 
 
-The installation has been realised for the opening of Spazio Materia in Prato a space devoted to host improvised workshops and concerts.
-The venue is used both as an exhibition and as a dance theatre workshop. The artwork has been created as a compendium to the venue's unique architecture, an ancient commercial building of the XV century with a ceiling made of pavilion vaults.
-Wunderkammer is a site-specific interactive sound and light installation that run from 27.5 to 30.5.2021. It is thought as an "intelligent space" in which unique sound objects manifest as audible traces of the visitor's actions.
-The acoustics of the space, has been analysed and used to develop physical models of the environment, which are then converted into plugins (VST). The sounds produced by the visitors are captured by a microphone that analyses their spectro-morphological characteristics. The resulting data is used to read out the contents of a neural network that carries the values of the sound synthesis parameters, which are thus modified in real time.
-Wunderkammer is designed as a living organism with a life cycle of about 72 hours. At the beginning (excerpt 1), the neural network has excellent adaptive capabilities and the visitor can exert considerable control over the network, resulting in a heterogeneous and unpredictable outcome. Over time, the work becomes less responsive to external stimuli and the interpolation capacity of the neural network is reduced until it is exhausted, leading to a homogeneous result over which the visitor no longer exercises control (excerpt 3).
-The aim of the work, presented in a public space, is to make visitors aware of their role as co-creators of the soundscape in relation to the characteristics of the surrounding space. In this way, a place of participatory interaction is created that promotes the quality of the relationship between environment-visitor-intervention of the artist, being aware that it is not possible to observe without transforming.
+The installation has been realised for the opening of Spazio Materia in Prato a space devoted to host performances and dance theatrer workshops. The work has been thought as a compendium to the venue's unique architecture, an ancient commercial building of the 15th century with a ceiling made of pavilion vaults.
+_Wunderkammer_ is an "intelligent space" in which unique sound objects manifest as audible traces of the visitor's actions.
+The acoustics of the space, has been analysed and used to develop physical models of the environment, which are then converted into software instruments. The sounds produced by the visitors are captured by a microphone that analyses their spectro-morphological characteristics. The resulting data is used to read out the contents of a neural network that carries the values of the sound synthesis parameters, which are thus modified in real time.
+_Wunderkammer_ is designed as a living organism with a life cycle of about 72 hours. At the beginning (excerpt 1 and 2), the neural network exhibits excellent adaptive capabilities and the visitors are able to exert a certain degree of control over the network. Over time, the work becomes less responsive to external stimuli and the interpolation capacity of the neural network is reduced until it is exhausted, leading to a homogeneous result over which the visitor no longer exercises any control (excerpt 3).
 
 
 | Première                | Date                     | Tools                      | Playback format       | Duration     |
@@ -30,7 +31,7 @@ The aim of the work, presented in a public space, is to make visitors aware of t
 
 
 The GUI shown in the pictures below has been used to control the presets and thus the values of the synthesis parameters.
-On the left an overview of the system. Once the knobs have been tweaked in order to get the desired sound effect, a first preset it is created and it is saved. Once the presets are created, a certain amount of information can be extracted from them, such as the euclidean distance, the similarity between the different or the centre of gravity of each preset. The corresponding data are formatted and used to populate a dictionary (right image) and are represented as two-dimensional points via multidimensional scaling, so the system is able to calculate interpolation values between any of its points.
+On the left an overview of the system. Once the knobs have been tweaked in order to get the desired sound effect, a first preset is created and stored. A certain amount of information can be extracted from the presets, such as the euclidean distance, the similarity between different ones or the centre of gravity of each preset. These data are used to populate a dictionary (right image) and represented as two-dimensional points via multidimensional scaling. As a last step a regression-like operation on the the data held by the points allows the system to smoothly interpolate the synthesis's parameters.
 
 
 <div class="gallery" data-columns="2">
