@@ -44,7 +44,9 @@ On the left an overview of the system. Once the knobs have been tweaked in order
 ## Credits ##
 
 Artistic direction & audio programming: Alessandro Anatrini
+
 Light design : Jacopo Buono
+
 Production: Mosè Risaliti, Massimiliano Fortunati
 
 ---
