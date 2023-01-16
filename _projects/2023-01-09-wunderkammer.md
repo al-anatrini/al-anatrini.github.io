@@ -39,4 +39,12 @@ On the left an overview of the system. Once the knobs have been tweaked in order
 	<img src="{{site.baseurl}}/images/works/wunderkammer/snippet-2.jpg">
 </div>
 
+
+
+## Credits ##
+
+Artistic direction & audio programming: Alessandro Anatrini
+Light design : Jacopo Buono
+Production: Mosè Risaliti, Massimiliano Fortunati
+
 ---
