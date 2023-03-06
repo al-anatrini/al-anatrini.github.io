@@ -9,7 +9,7 @@ featured_image: '/images/works/unfamiliar/cover.jpg'
 
 <iframe src="https://player.vimeo.com/video/787516525" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
-<iframe src="https://player.vimeo.com/video/787522706" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/805201804" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 Two excerpts from two different pieces composed for the project. Each piece is conceived as a collection of different presets any of those embedding some pseudo-random processes which makes any preset sound slightly different anytime is selected.
 
 
