@@ -40,7 +40,7 @@ __Selected Installations and Music__
 
 2012: _Eilhe_ - Huddersfield, Huddersfield Contemporary Music Festival
 
-2012: _Qualcosa si apre_ Firenze, Biblioteca Nazionale Centrale
+2012: _Qualcosa si apre_ - Firenze, Biblioteca Nazionale Centrale
 
 2012: _Per aspera ad astra_ - Prato, Contemporanea Festival
 

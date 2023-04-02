@@ -9,10 +9,12 @@ featured_image: '/images/works/openfields/cover.jpg'
 
 <iframe src="https://player.vimeo.com/video/690681774" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 A recording of one of the live performance. The piece was recorded from four microphones arranged along the tunnels during the opening ceremony, the noise from the audience walking in the tunnel is quite present.
+{: style="text-align: justify;"}
 
 
 Site specific piece for 144 amateur musicians arranged in 12 ensembles. The piece has been written for the re-opening of the old Elbtunnel under the river Elbe in Hamburg. The pedestrian passage is made of two twin tunnels of 450 mt. each, that run in parallel 24 mt. under the river. Each musician seated 3 mt. ca. apart from each other along both tunnels. The piece together with other ones has been played non stop during the re-opening ceremony on two days and it represents a proof of work for a web-based parts' parsing and distribution environment developed by Rama Gottfried and Georg Hajdu. 
-The piece has been composed by transcribing and orchestrating the spectral features of a synth improvisation of the author.  
+The piece has been composed by transcribing and orchestrating the spectral features of a synth improvisation of the author.
+{: style="text-align: justify;"}  
 
 
 | Première                  | Date             | Tools                               | Playback format       | Duration   |
@@ -22,6 +24,7 @@ The piece has been composed by transcribing and orchestrating the spectral featu
 
 
 On the left side musicians arranged along the tunnel. On the right a detail of a guitar player reading the score from the iPad.[^1]
+{: style="text-align: justify;"}
 
 [^1]: Images credits KLARA Janina Luckow.
 
