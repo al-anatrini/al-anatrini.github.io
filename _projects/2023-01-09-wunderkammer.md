@@ -9,6 +9,7 @@ featured_image: '/images/works/wunderkammer/cover.jpg'
 
 <iframe src="https://player.vimeo.com/video/690577455" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 A live recording when the system was turned on right before the opening.
+{: style="text-align: justify;"}
 
 <iframe src="https://player.vimeo.com/video/690619186" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
@@ -51,5 +52,6 @@ Artistic direction & audio programming: Alessandro Anatrini
 Light design : Jacopo Buono
 
 Production: Mosè Risaliti, Massimiliano Fortunati
+{: style="text-align: justify;"}
 
 ---
