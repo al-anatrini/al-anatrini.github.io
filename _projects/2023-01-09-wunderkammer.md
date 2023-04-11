@@ -27,7 +27,7 @@ _Wunderkammer_ is designed as a living organism with a life cycle of about 72 ho
 {: style="text-align: justify;"}
 
 
-| Première                | Date                     | Tools                      | Playback format       | Duration     |
+| Première                | Date                     | Tools                      | Playback              | Duration     |
 |-------------------------|--------------------------|----------------------------|-----------------------|--------------|
 | Spazio Materia, Prato   | from 27 to 30 May 2021   | Live, Faust, Max, Python   | 4.1 and neon lights   | 3 days ca.   |
 
