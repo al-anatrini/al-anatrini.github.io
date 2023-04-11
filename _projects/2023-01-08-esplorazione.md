@@ -16,8 +16,8 @@ All over the piece the sound is sculpted by analysing the resonances genrating f
 {: style="text-align: justify;"}
 
 
-| Première        | Date                | Tools                          | Playback format       | Duration   |
-|-----------------|---------------------|--------------------------------|-----------------------|------------|
-| Arsonic, Mons   | 21 September 2017   | DiphoneStudio, Max, Sibelius   | stereo                | 7'30"      |
+| Première        | Date                | Tools                          | Playback   | Duration   |
+|-----------------|---------------------|--------------------------------|------------|------------|
+| Arsonic, Mons   | 21 September 2017   | DiphoneStudio, Max, Sibelius   | stereo     | 7'30"      |
 
 ---

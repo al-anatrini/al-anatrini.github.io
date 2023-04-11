@@ -17,9 +17,9 @@ The piece has been composed by transcribing and orchestrating the spectral featu
 {: style="text-align: justify;"}  
 
 
-| Première                  | Date             | Tools                               | Playback format       | Duration   |
-|---------------------------|------------------|-------------------------------------|-----------------------|------------|
-| Alte Elbtunnel, Hamburg   | 25-26 May 2019   | Audiosculpt, Maxscore, Open music   | stereo                | 6 min.     |
+| Première                  | Date             | Tools                               | Playback   | Duration   |
+|---------------------------|------------------|-------------------------------------|------------|------------|
+| Alte Elbtunnel, Hamburg   | 25-26 May 2019   | Audiosculpt, Maxscore, Open music   | stereo     | 6 min.     |
 
 
 

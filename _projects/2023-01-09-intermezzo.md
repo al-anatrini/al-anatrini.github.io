@@ -16,7 +16,7 @@ Generative and interactive installation presented at Blurred Edges Festival in 2
 {: style="text-align: justify;"}
 
 
-| Première                       | Date              | Tools       | Playback format             | Duration    |
+| Première                       | Date              | Tools       | Playback                    | Duration    |
 |--------------------------------|-------------------|-------------|-----------------------------|-------------|
 | Künstlerhaus Faktor, Hamburg   | 22 October 2020   | Live, Max   | 4.1 and projection canvas   | undefined   |
 

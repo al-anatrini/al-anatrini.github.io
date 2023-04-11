@@ -16,9 +16,9 @@ On 16 October 1820, Giacomo Leopardi wrote the sentence that gives the title to 
 {: style="text-align: justify;"}
 
 
-| Première                             | Date              | Tools                  | Playback format       | Duration   |
-|--------------------------------------|-------------------|------------------------|-----------------------|------------|
-| Torri dell'acqua, Budrio (Bologna)   | 2 December 2019   | Open music, Sibelius   | stereo                | 2'30"      |
+| Première                             | Date              | Tools                  | Playback   | Duration   |
+|--------------------------------------|-------------------|------------------------|------------|------------|
+| Torri dell'acqua, Budrio (Bologna)   | 2 December 2019   | Open music, Sibelius   | stereo     | 2'30"      |
 
 
 The score of the piece.
