@@ -19,9 +19,9 @@ For this project I composed two sets of pieces, and developed the GUI with whom 
 
 
 
-| Première       | Date                          |                       Tools                                           | Playback format       | Duration    |
-|----------------|-------------------------------|-----------------------------------------------------------------------|-----------------------|-------------|
-| UKE, Hamburg   | running from September 2018   | {::nomarkdown}<ul><li>Max</li><li>Maxscore</li><li>Live</li></ul>{:/} | 4.0                   | undefined   |
+| Première       | Date                          | Tools                 | Playback format       | Duration    |
+|----------------|-------------------------------|-----------------------|-----------------------|-------------|
+| UKE, Hamburg   | running from September 2018   | {::nomarkdown}<ul><li>Max</li><li>Maxscore</li><li>Live</li></ul>{:/}   | 4.0                   | undefined   |
 
 
 
