@@ -9,7 +9,7 @@ header_settings:
 menu_settings:
   menu_items:
     - title: 'Works'
-      url: '/'
+      url: '/works'
     - title: 'Bio'
       url: '/bio'
     - title: 'About'
