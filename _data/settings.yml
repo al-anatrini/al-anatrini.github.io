@@ -32,7 +32,7 @@ contact_settings:
   send_button_text: 'Send Message'
 
 social_settings:
-  facebook_url: 'https://www.facebook.com/alessandro.anatrini/'
+  facebook_url: ''
   twitter_url: ''
   instagram_url: ''
   snapchat_url: ''
