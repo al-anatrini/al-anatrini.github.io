@@ -55,6 +55,8 @@ __Selected Installations and Music__
 
 __Talks, Articles and Lectures__
 
+2023: _TroubleCube: a tool for synthesis space exploration_, Presentation - Hamburg, Ligeti-Zentrum 
+
 2022: _The awareness of the tools in the neural media praxis_, Book Chapter - Berlin, Wolke Verlag
 
 2021: _Proceedings of the Sixth International Conference on Technologies for Music Notation and Representation_, Co-Editor - Hamburg, University of Music and Theatre Press
