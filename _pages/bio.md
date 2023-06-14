@@ -14,6 +14,5 @@ His music has been played by the soloists of the Ensemble Intercontemporain, Kla
 He collaborated as interaction designer in projects of the Universität der Künste Berlin (UdK) and the Digital Stage Foundation. From 2022 he is Professor of Music Technology in the italian conservatories.
 {: style="text-align: justify;"}
 
-In the last years his work mainly consists in site specific installations to promote the quality of the relationship between environment-audience-intervetion of the artist, creating a place of partecipatory interaction, being aware that it is not possible to observe without transforming.
-His interests include AI-based adaptive mixed media systems, phisical modeling of environments and photogrammetry techniques.
+In the last year his work mainly consists of adaptive mixed media installations which are conceived as organisms with specific life cycles that are influenced by the human presence. His works combine custom built software for physical modelling and interaction design, spatial sound synthesis and photogrammetry techniques.
 {: style="text-align: justify;"}
