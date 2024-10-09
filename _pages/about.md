@@ -6,21 +6,25 @@ featured_image: ''
 
 __Selected Installations and Music__
 
+2024: _Reloaded_ - Hamburg, Resonanzraum, Non-Piano Toy Piano Weekend
+
+2024: _Die Monsterfabrik_ - Hamburg, Ligeti Zentrum
+
 2022: _Sandy Island_ - Hamburg, Forum Hochschule für Musik und Theater
 
 2021: _Wunderkammer_ - Prato, Spazio Materia
 
-2020: _Here Be Dragons_ - Hamburg, Künstlerhaus Faktor 
+2020: _Here Be Dragons_ - Hamburg, Künstlerhaus Faktor, Blurred Edges Festival
 
 2020: _An Intelligent Room_ - Berlin, Tempelhofer Feld
 
-2020: _Liberati di tutto_ - Hamburg, Forum Hochschule für Musik und Theater
+2020: _Liberati di tutto_ - Hamburg, Forum Hochschule für Musik und Theater, Tag der innovativen Hochschule
 
-2019: _Tap This_ - Hamburg, Resonanzraum
+2019: _Tap This_ - Hamburg, Resonanzraum, Hamburg Dialogues
 
-2019: _Messaggi alla luna_ - Budrio, Le Torri dell'Acqua
+2019: _Messaggi alla luna_ - Budrio, Le Torri dell'Acqua 
 
-2019: _Electral Love_ - Quzhou, Longyou Caves
+2019: _Electral Love_ - Quzhou, Longyou Caves, Longyou Grotto International Music Festival 
 
 2019: _Open Fields_ - Hamburg, Alte Elbtunnel
 
@@ -28,25 +32,25 @@ __Selected Installations and Music__
 
 2018: _Unfamiliar Walks_ - Hamburg, Universitätsklinikum Eppendorf
 
-2017: _Esplorazione di una certa quantità d'acqua_ - Mons, Arsonic
+2017: _Esplorazione di una certa quantità d'acqua_ - Mons, Arsonic, ['tactus] Young Composers Forum
 
 2017: _Fragile Territories_ - Hamburg, Miralles Saal
 
 2016: _Outlines_ - Hamburg, Konfuzius-Institut
 
-2016: _Le nubi le aduna una mano più forte_ - Hamburg, Blurred Edges Festival
+2016: _Le nubi le aduna una mano più forte_ - Hamburg, Tonlabor HAW, Blurred Edges Festival
 
-2015: _Forbite Fantascienze_ - Paris, Centquatre
+2015: _Forbite Fantascienze_ - Paris, Centquatre, ManiFeste Festival
 
 2012: _Eilhe_ - Huddersfield, Huddersfield Contemporary Music Festival
 
-2012: _Qualcosa si apre_ - Firenze, Biblioteca Nazionale Centrale
+2012: _Qualcosa si apre_ - Firenze, Biblioteca Nazionale Centrale, Tempo Reale Festival
 
 2012: _Per aspera ad astra_ - Prato, Contemporanea Festival
 
 2010: _Coi piedi saldamente poggiati sulle nuvole_ - Bologna, Sala Bossi
 
-2010: _An.Gold.Bach_ - Reggio Emilia, Teatro Valli
+2010: _An.Gold.Bach_ - Reggio Emilia, Teatro Valli, Festival Aperto
 
 2008: _Suoni d'artificio_ - Firenze, Fondazione Palazzo Strozzi
 
@@ -54,6 +58,8 @@ __Selected Installations and Music__
 
 
 __Talks, Articles and Lectures__
+
+2024: _WavePilot: Framework Multidimensionale per l'Esplorazione dello Spazio Parametrico di Strumenti Digitali_, Presentation and Article - Università di Torino, XXIV Colloqui di Informatica Musicale CIM2024
 
 2023: _Sandy Island. A new form of parameters' space management_, Presentation and Article - University of Sussex, AI and Music Creativity Conference AIMC 2023
 
