@@ -59,11 +59,11 @@ __Selected Installations and Music__
 
 __Talks, Articles and Lectures__
 
-2024: _Phausto: Embedding the Faust Compiler in the Pharo World_, Article Co-Author - Soundmit Torino, International Faust Conference IFC24
+2024: _Phausto: Embedding the Faust Compiler in the Pharo World_, Article Co-Author - Soundmit Torino, International Faust Conference (IFC24)
 
-2024: _WavePilot: Framework Multidimensionale per l'Esplorazione dello Spazio Parametrico di Strumenti Digitali_, Presentation and Article - Università di Torino, XXIV Colloqui di Informatica Musicale CIM2024
+2024: _WavePilot: Framework Multidimensionale per l'Esplorazione dello Spazio Parametrico di Strumenti Digitali_, Presentation and Article - Università di Torino, XXIV Colloqui di Informatica Musicale (CIM2024)
 
-2023: _Sandy Island. A new form of parameters' space management_, Presentation and Article - University of Sussex, AI and Music Creativity Conference AIMC 2023
+2023: _Sandy Island. A new form of parameters' space management_, Presentation and Article - University of Sussex, AI and Music Creativity Conference (AIMC2023)
 
 2023: _TroubleCube: a tool for synthesis space exploration_, Presentation - Hamburg, Ligeti-Zentrum 
 
@@ -79,8 +79,8 @@ __Talks, Articles and Lectures__
 
 2017: _Max Piccolo: historical background and overview_, Lecture - Karlsruhe, Zentrum für Künst und Medien (ZKM)
 
-2017: _MaxPiccolo: a prototype for an early computer-based music education in schools_, Presentation and Article - Paris, Journées d'informatique musicale JIM2017
+2017: _MaxPiccolo: a prototype for an early computer-based music education in schools_, Presentation and Article - Paris, Journées d'informatique musicale (JIM2017)
 
 2016: _Valutazioni per una didattica della musica elettronica nella scuola dell'obbligo_, Lecture - Budrio, Dialoghi sul comporre
 
-2016: _The state of the art on the educational software tools for electroacoustic composition_, Presentation and Article - Hamburg, Sound and Music Computing Conference SMC2016
+2016: _The state of the art on the educational software tools for electroacoustic composition_, Presentation and Article - Hamburg, Sound and Music Computing Conference (SMC2016)
