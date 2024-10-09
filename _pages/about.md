@@ -59,6 +59,8 @@ __Selected Installations and Music__
 
 __Talks, Articles and Lectures__
 
+2024: _Phausto: Embedding the Faust Compiler in the Pharo World_, Article Co-Author - Soundmit Torino, International Faust Conference IFC24
+
 2024: _WavePilot: Framework Multidimensionale per l'Esplorazione dello Spazio Parametrico di Strumenti Digitali_, Presentation and Article - Università di Torino, XXIV Colloqui di Informatica Musicale CIM2024
 
 2023: _Sandy Island. A new form of parameters' space management_, Presentation and Article - University of Sussex, AI and Music Creativity Conference AIMC 2023
