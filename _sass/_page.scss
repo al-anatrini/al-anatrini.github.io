@@ -249,15 +249,3 @@
     font-size: 1.4em;
   }
 }
-
-.email-address {
-  margin-top: var(--spacing-md);
-  font-family: var(--font-mono);
-  font-size: var(--text-base);
-  color: var(--color-accent-2);
-  letter-spacing: 0.05em;
-
-  @media (max-width: 768px) {
-    font-size: var(--text-sm);
-  }
-}

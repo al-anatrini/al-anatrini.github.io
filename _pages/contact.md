@@ -13,7 +13,6 @@ For collaboration proposals, commission inquiries, technical questions, or gener
     <span class="email-icon">✉</span>
     <span class="email-text">Send Email</span>
   </a>
-  <p class="email-address">alessandro@anatrini.com</p>
 </div>
 
 ---
