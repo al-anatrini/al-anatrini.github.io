@@ -475,6 +475,11 @@
   margin: 0 auto;
   padding: 0 var(--spacing-md) var(--spacing-2xl);
   background: var(--color-bg);
+
+  // MOBILE FIX: Better padding on mobile
+  @media (max-width: 768px) {
+    padding: 0 0 var(--spacing-lg);
+  }
 }
 
 .works-listing-header {
@@ -530,11 +535,16 @@
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(4, 1fr);
+    // Mobile - single column, simple layout
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    grid-auto-flow: row;
+    padding: 0 var(--spacing-sm);
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
   }
 }
 
@@ -687,24 +697,24 @@
   }
 
   @media (max-width: 768px) {
-    // Mobile - 4 column grid
-    &:nth-child(odd) {
-      grid-column: span 4;
-      aspect-ratio: 16 / 9;
-    }
+    // Mobile - simple single column layout
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    min-height: 250px;
 
-    &:nth-child(even) {
-      grid-column: span 4;
-      aspect-ratio: 4 / 3;
+    // Reset all complex nth-child rules
+    &:nth-child(n) {
+      grid-column: 1 / -1 !important;
+      grid-row: auto !important;
     }
-
-    grid-row: span 1 !important;
   }
 
   @media (max-width: 480px) {
-    grid-column: span 1 !important;
-    grid-row: span 1 !important;
-    aspect-ratio: 4 / 3 !important;
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    min-height: 220px;
   }
 
   &:hover {
