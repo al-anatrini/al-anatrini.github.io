@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Anatrini — Portfolio 2025</title>
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600&family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;600&display=swap');
+
+        :root {
+            --dark-bg: #0a0806;
+            --gold: #d4af37;
+            --cream: #f5e6d3;
+            --warm-grey: #3a3532;
+            --subtle-grey: #2a2420;
+        }
+
+        body {
+            font-family: 'Cormorant Garamond', serif;
+            background: var(--dark-bg);
+            color: var(--cream);
+            line-height: 1.6;
+            font-size: 12pt;
+        }
+
+        /* ===== COVER PAGE ===== */
+        .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            page-break-after: always;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--subtle-grey) 100%);
+        }
+
+        .cover h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: var(--cream);
+        }
+
+        .cover .divider {
+            width: 120px;
+            height: 1px;
+            background: var(--gold);
+            margin: 2rem auto;
+        }
+
+        .cover h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .cover .contact {
+            margin-top: 4rem;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+            color: var(--warm-grey);
+        }
+
+        .cover .contact a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        /* ===== BIO SECTION ===== */
+        .bio-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            page-break-after: always;
+        }
+
+        .bio-section h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: var(--gold);
+            letter-spacing: -0.01em;
+        }
+
+        .bio-section p {
+            font-size: 12pt;
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+            color: var(--cream);
+        }
+
+        /* ===== WORKS SECTION ===== */
+        .works-intro {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .works-intro h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--gold);
+            letter-spacing: -0.01em;
+            margin-bottom: 3rem;
+        }
+
+        /* ===== WORK ITEM ===== */
+        .work {
+            max-width: 900px;
+            margin: 0 auto 4rem;
+            padding: 2rem;
+            page-break-inside: avoid;
+            page-break-after: always;
+        }
+
+        .work-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            border: 1px solid var(--warm-grey);
+        }
+
+        .work-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--cream);
+            letter-spacing: -0.02em;
+        }
+
+        .work-title a {
+            color: var(--cream);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .work-title a:hover {
+            color: var(--gold);
+        }
+
+        .work-link {
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .work-year {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .work-subtitle {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--warm-grey);
+            margin-bottom: 1.5rem;
+        }
+
+        .work-description {
+            font-size: 12pt;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            color: var(--cream);
+        }
+
+        .work-specs {
+            border-top: 1px solid var(--warm-grey);
+            padding-top: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .spec-item {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .spec-label {
+            font-weight: 600;
+            color: var(--gold);
+            min-width: 100px;
+        }
+
+        .spec-value {
+            color: var(--cream);
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+            body {
+                background: white;
+                color: #2a2420;
+            }
+
+            .cover {
+                background: white;
+            }
+
+            .cover h1 {
+                color: #2a2420;
+            }
+
+            .work-image {
+                border-color: #ddd;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .work {
+                page-break-inside: avoid;
+                page-break-after: always;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .work-link {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* ===== SCREEN ONLY ===== */
+        @media screen {
+            .work:hover .work-title a {
+                color: var(--gold);
+                transition: color 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- COVER PAGE -->
+    <section class="cover">
+        <h1>Alessandro Anatrini</h1>
+        <div class="divider"></div>
+        <h2>Composer & Computational Artist</h2>
+        <div class="contact">
+            <p><a href="mailto:alessandro@anatrini.com">alessandro@anatrini.com</a> | <a href="https://anatrini.com">anatrini.com</a></p>
+        </div>
+    </section>
+
+    <!-- BIO / STATEMENT -->
+    <section class="bio-section">
+        <h2>Practice</h2>
+        <p>Alessandro Anatrini is a composer, computational artist, and researcher. Through worldbuilding and simulation practices, he develops computational systems in which space, sound, and image evolve adaptively. Reworking forms from the past—Renaissance architectures, ancient cartographies, maps of premodern thought—he shapes immersive environments where image and sound articulate as unstable phenomena, balanced between familiarity and disorientation.</p>
+    </section>
+
+    <!-- SELECTED WORKS -->
+    <section class="works-intro">
+        <h2>Selected Works</h2>
+    </section>
+
+    <!-- 2025 WORKS -->
+
+    <article class="work">
+        <img src="/images/portfolio/faulty-oracle-cover.jpg" alt="Faulty Oracle" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/faulty-oracle/">Faulty Oracle</a></h3>
+        <div class="work-link">anatrini.com/works/faulty-oracle</div>
+        <span class="work-year">2025</span>
+        <p class="work-subtitle">Interactive Generative Installation</p>
+        <p class="work-description">Adaptive audiovisual installation conjuring gloriously unreliable divinatory machine. Visitors pose questions through body language—gestures, movements, postures which the system interprets, misreads, and wilfully transforms, delivering cryptic animated answers flickering between epiphany, nonsense, and hallucination.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Occulture Conference, Malhalla, Berlin — October 23-26, 2025</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Collaboration:</span>
+                <span class="spec-value">Alessandro Aresta</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Tools:</span>
+                <span class="spec-value">TouchDesigner, Ableton Live, Python</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="work">
+        <img src="/images/portfolio/venerdi-sera-cover.jpg" alt="Venerdì sera a letto presto" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/venerdi-sera/">Venerdì sera a letto presto</a></h3>
+        <div class="work-link">anatrini.com/works/venerdi-sera</div>
+        <span class="work-year">2025</span>
+        <p class="work-subtitle">Friday night going to bed early — Audio-Video Fixed Media</p>
+        <p class="work-description">Neural network-assisted domestic audiovisual wandering disrupts the ontological paradigm of "the couch as device of stasis." The camera becomes sentient interface generating a para-medieval bestiary, converting domestic space into diegetic ecology where corridor becomes nave and kitchen transforms into apse.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Notte Europea della Ricerca, Piacenza — September 27, 2025</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">7 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Tools:</span>
+                <span class="spec-value">Wavepilot, TouchDesigner, Ableton Live, Python</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2024 WORKS -->
+
+    <article class="work">
+        <img src="/images/portfolio/reloaded-cover.jpg" alt="[ Reloaded ]" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/reloaded/">[ Reloaded ]</a></h3>
+        <div class="work-link">anatrini.com/works/reloaded</div>
+        <span class="work-year">2024</span>
+        <p class="work-subtitle">Piano, Electronics, Toy Piano and Toy Instruments</p>
+        <p class="work-description">Written for Non-Piano/Toy Piano Weekend Hamburg exploring the question: "How would have sounded a piano piece by Fausto Romitelli?" Taking cues from Romitelli's Amok Koma, conventional and toy instruments blend through live electronics without attempting literal translation.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Resonanzraum, Hamburg — November 23, 2024</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">9'50"</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Performers:</span>
+                <span class="spec-value">Jennifer Hymer, Bernhard Fograscher</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">Non-Piano/Toy Piano Weekend of Hamburg</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="work">
+        <img src="/images/portfolio/monsterfabrik-cover.jpg" alt="Die Monsterfabrik" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/monsterfabrik/">Die Monsterfabrik</a></h3>
+        <div class="work-link">anatrini.com/works/monsterfabrik</div>
+        <span class="work-year">2024</span>
+        <p class="work-subtitle">Audio-Video Fixed Media</p>
+        <p class="work-description">Explores progressive transformation of Vivaldi's string music through iterative AI training. Each cycle produces models generating results increasingly distant from original as the neural network consumes its own output, creating baroque ghosts haunting contemporary computational processes.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Ligeti Zentrum, Harburg — November 12, 2024</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">10 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Playback:</span>
+                <span class="spec-value">28.4 audio channels + video projection</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">Hamburg Open Online University (HOOU)</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2022 WORK -->
+
+    <article class="work">
+        <img src="/images/portfolio/sandy-cover.jpg" alt="Sandy Island" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/sandy/">Sandy Island</a></h3>
+        <div class="work-link">anatrini.com/works/sandy</div>
+        <span class="work-year">2022</span>
+        <p class="work-subtitle">Site-Specific Installation</p>
+        <p class="work-description">Adaptive installation running continuously for 60 hours with 288 speakers arranged via Wavefield Synthesis. Named after the phantom island that appeared on maps for two centuries until proven non-existent in 2012, the work explores fallacious abilities to discern between representation and reality.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Forum, HfMT Hamburg — December 1-3, 2022</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">60 hours continuous operation</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Playback:</span>
+                <span class="spec-value">288.0 channels (Wavefield Synthesis) + LED videowall</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Collaboration:</span>
+                <span class="spec-value">Lucas Xerxes, KLARA Janina Luckow, Alessandro Alessandri</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2021 WORK -->
+
+    <article class="work">
+        <img src="/images/portfolio/wunderkammer-cover.jpg" alt="Wunderkammer" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/wunderkammer/">Wunderkammer</a></h3>
+        <div class="work-link">anatrini.com/works/wunderkammer</div>
+        <span class="work-year">2021</span>
+        <p class="work-subtitle">Interactive Generative Installation</p>
+        <p class="work-description">Renaissance cabinet of curiosities transformed into intelligent sonic organism with finite life cycle of approximately 72 hours. Born with excellent adaptive capabilities, the neural network-based system gradually exhausts capacity for novelty, mirroring biological organisms from birth through senescence.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Spazio Materia, Prato — May 27-30, 2021</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">~72 hours continuous operation</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Playback:</span>
+                <span class="spec-value">4.1 audio channels + neon light installation</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Light Design:</span>
+                <span class="spec-value">Jacopo Buono</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2020 WORK -->
+
+    <article class="work">
+        <img src="/images/portfolio/intermezzo-cover.jpg" alt="Here Be Dragons" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/intermezzo/">Here Be Dragons</a></h3>
+        <div class="work-link">anatrini.com/works/intermezzo</div>
+        <span class="work-year">2020</span>
+        <p class="work-subtitle">Interactive Generative Installation</p>
+        <p class="work-description">Autonomous agent activating during concert intermissions, transforming dead time into living sonic territory. Operating as horror vacui—fear of emptiness—the system responds to ambient sound, producing unpredictable sonic responses that question whether silence exists in contemporary listening contexts.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Künstlerhaus Faktor, Hamburg — October 22, 2020</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">Undefined (continuous/responsive)</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Playback:</span>
+                <span class="spec-value">4.1 audio + projection canvas</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Visual Design:</span>
+                <span class="spec-value">KLARA Janina Luckow</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2019 WORKS -->
+
+    <article class="work">
+        <img src="/images/portfolio/openfields-cover.jpg" alt="Open Fields" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/openfields/">Open Fields</a></h3>
+        <div class="work-link">anatrini.com/works/openfields</div>
+        <span class="work-year">2019</span>
+        <p class="work-subtitle">Site-Specific Piece for 144 Musicians</p>
+        <p class="work-description">144 musicians distributed across 900 meters of subterranean tunnel, 24 meters beneath the Elbe River. Hamburg's Alte Elbtunnel becomes resonance chamber with 72 musicians per tunnel at 3-meter intervals. Commissioned for the tunnel's reopening ceremony, transforming industrial infrastructure into immersive sonic environment.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Alte Elbtunnel, Hamburg — May 25-26, 2019</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">6 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Spatial Config:</span>
+                <span class="spec-value">Two parallel 450m tunnels, 24m underwater, 3m spacing</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Score System:</span>
+                <span class="spec-value">Rama Gottfried, Georg Hajdu (web-based distribution)</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="work">
+        <img src="/images/portfolio/divertimento-cover.jpg" alt="Il suo divertimento era di contare le stelle" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/divertimento/">Il suo divertimento era di contare le stelle</a></h3>
+        <div class="work-link">anatrini.com/works/divertimento</div>
+        <span class="work-year">2019</span>
+        <p class="work-subtitle">For Small Ensemble</p>
+        <p class="work-description">Commissioned for Leopardi's 200th anniversary of "L'Infinito," the title translates as "His amusement was to count the stars." Extended silences punctuated by luminous gestures create sonic star chart where each note functions as point of light, isolated yet geometrically connected through invisible lines of temporal relationship.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Le Torri dell'Acqua, Budrio — December 2, 2019</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">2'30"</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Instrumentation:</span>
+                <span class="spec-value">Bass clarinet, electric guitar, piano, cello</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Ensemble:</span>
+                <span class="spec-value">FontanaMix Ensemble</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="work">
+        <img src="/images/portfolio/tapthis-cover.jpg" alt="Tap This" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/tapthis/">Tap This</a></h3>
+        <div class="work-link">anatrini.com/works/tapthis</div>
+        <span class="work-year">2019</span>
+        <p class="work-subtitle">For Two Electric Guitars</p>
+        <p class="work-description">Explores electric guitar as melodic instrument and percussive interface through two-handed tapping technique. Extended techniques—harmonic tapping, percussive strikes, prepared strings, feedback manipulation—transform guitars into hybrid electroacoustic instruments seeking a third space between rock virtuosity and contemporary abstraction.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Resonanzraum, Hamburg — December 7, 2019</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">6 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Dedicated to:</span>
+                <span class="spec-value">Nicolas Haumann & Martin Donoso Vera</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">Hamburg Dialogues 2019</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2018 WORK -->
+
+    <article class="work">
+        <img src="/images/portfolio/unfamiliar-cover.jpg" alt="Unfamiliar Walks" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/unfamiliar/">Unfamiliar Walks</a></h3>
+        <div class="work-link">anatrini.com/works/unfamiliar</div>
+        <span class="work-year">2018</span>
+        <p class="work-subtitle">Interactive Installation</p>
+        <p class="work-description">Generative sonic environment designed for hospital settings, confronting the paradox of creating engaging content that doesn't demand attention. Permanently installed in UKE Hamburg's waiting and emergency rooms, the autonomous system provides patients agency through touchscreen navigation, mitigating stress in environments characterized by anxiety and uncertainty.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Installation:</span>
+                <span class="spec-value">UKE Hamburg — September 2018–ongoing</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">Continuous/undefined (autonomous generative system)</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Playback:</span>
+                <span class="spec-value">4.0 (quadraphonic)</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Project:</span>
+                <span class="spec-value">Healing Soundscapes (HfMT Hamburg, UKE, MSH)</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2017 WORKS -->
+
+    <article class="work">
+        <img src="/images/portfolio/fragile-cover.jpg" alt="Fragile Territories" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/fragile/">Fragile Territories</a></h3>
+        <div class="work-link">anatrini.com/works/fragile</div>
+        <span class="work-year">2017</span>
+        <p class="work-subtitle">For Big Orchestra and Electronics</p>
+        <p class="work-description">Constructs entire orchestral universe from single acoustic event: the oboe's tuning A at the work's beginning. This pitch—traditionally preparation before real music—becomes generative source, its spectral components analyzed and distributed across full orchestra exploring fragility in multiple dimensions.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Laeiszhalle Miralles-Saal, Hamburg — June 22, 2017</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">15 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Instrumentation:</span>
+                <span class="spec-value">Large orchestra + electronics</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">Hamburger Symphoniker</span>
+            </div>
+        </div>
+    </article>
+
+    <article class="work">
+        <img src="/images/portfolio/esplorazione-cover.jpg" alt="Esplorazione di una certa quantità d'acqua" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/esplorazione/">Esplorazione di una certa quantità d'acqua</a></h3>
+        <div class="work-link">anatrini.com/works/esplorazione</div>
+        <span class="work-year">2017</span>
+        <p class="work-subtitle">For Ensemble</p>
+        <p class="work-description">Transforms acoustic properties of water-filled glass into orchestral material. A goblet containing measured water volume becomes generative source, its resonances analyzed and orchestrated for nine instruments. Formal architecture mirrors physical resonance behavior, tracing trajectory from clarity to saturation.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Arsonic, Mons — September 21, 2017</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">7'30"</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Instrumentation:</span>
+                <span class="spec-value">Flute, bass clarinet, trombone, percussion, piano, electric guitar, violin, viola, cello</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">Ensemble Musiques Nouvelles</span>
+            </div>
+        </div>
+    </article>
+
+    <!-- 2015 WORK -->
+
+    <article class="work">
+        <img src="/images/portfolio/forbite-cover.jpg" alt="Forbite fantascienze" class="work-image">
+        <h3 class="work-title"><a href="https://anatrini.com/works/forbite/">Forbite fantascienze</a></h3>
+        <div class="work-link">anatrini.com/works/forbite</div>
+        <span class="work-year">2015</span>
+        <p class="work-subtitle">For Contrabassoon and Live Electronics</p>
+        <p class="work-description">"Forbidden Science Fictions" explores contrabassoon's timbral extremes through real-time electronic augmentation. The instrument occupies liminal acoustic space—too low for melodic clarity, too present for pure bass function. Electronics function as both mirror and distortion lens distributed across 8.1 spatial configuration.</p>
+        <div class="work-specs">
+            <div class="spec-item">
+                <span class="spec-label">Premiere:</span>
+                <span class="spec-value">Le Centquatre, Paris — June 27, 2015</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Duration:</span>
+                <span class="spec-value">8 minutes</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Dedicated to:</span>
+                <span class="spec-value">Paul Riveaux (Ensemble Intercontemporain)</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">Commission:</span>
+                <span class="spec-value">IRCAM Académie ManiFeste 2015</span>
+            </div>
+        </div>
+    </article>
+
+</body>
+</html>

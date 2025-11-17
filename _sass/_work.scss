@@ -1,0 +1,726 @@
+// =====================================================
+// WORK DETAIL PAGE - Contemporary Baroque
+// =====================================================
+.work-detail {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-2xl);
+  position: relative;
+  background: var(--color-bg);
+}
+
+.work-header {
+  margin-bottom: var(--spacing-2xl);  // More breathing room
+  text-align: center;
+  padding: var(--spacing-2xl) 0;
+  position: relative;
+
+  // Minimal geometric accent
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 1px;
+    background: var(--color-accent);
+    opacity: 0.5;
+  }
+}
+
+.work-header-content {
+  animation: fadeInUp var(--transition-slow);
+  max-width: 1200px;  // Wider for big titles
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);  // Side padding to prevent overflow
+  overflow: hidden;  // Prevent horizontal scroll
+}
+
+.work-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  font-family: var(--font-sans);  // Modern sans
+  font-size: var(--text-xs);       // TINY
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  span {
+    padding: 0.5rem 1.25rem;
+    background: transparent;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: all var(--transition-base);
+
+    &:hover {
+      border-color: var(--color-accent);
+      background: rgba(212, 175, 55, 0.05);
+    }
+  }
+
+  .work-year {
+    color: var(--color-accent);
+  }
+
+  .work-category {
+    color: var(--color-text-muted);
+  }
+}
+
+.work-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 10vw, 8rem);  // Smaller to fit without breaking words
+  font-weight: 300;
+  line-height: 1.1;  // Allow wrapping
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-accent);
+  text-transform: none;
+  hyphens: none;  // NO hyphenation - never break words!
+  overflow-wrap: normal;  // Keep words intact
+  max-width: 100%;
+}
+
+.work-subtitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);  // TINY for contrast: 0.8-0.9rem
+  color: var(--color-text-muted);
+  font-style: italic;
+  max-width: 50ch;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.work-content {
+  animation: fadeInUp var(--transition-slow) 0.2s backwards;
+}
+
+// IRREGULAR BAROQUE GRID - Asymmetric but READABLE
+.work-section {
+  margin: var(--spacing-2xl) 0;
+  padding: var(--spacing-xl) 0;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.section-dark {
+    background: var(--color-surface);
+    padding: var(--spacing-2xl) var(--spacing-md);
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  }
+
+  // Section titles - alternating left/right
+  > .section-title {
+    margin-bottom: var(--spacing-md);
+
+    &:nth-of-type(1) {
+      text-align: left;
+      padding-left: 5%;
+    }
+
+    &:nth-of-type(2) {
+      text-align: right;
+      padding-right: 5%;
+    }
+
+    &:nth-of-type(3) {
+      text-align: left;
+      padding-left: 10%;
+    }
+  }
+
+  // Paragraphs - alternating widths but ALWAYS READABLE
+  > p {
+    max-width: 900px;  // Max width for readability
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--spacing-md);
+
+    &:nth-of-type(2n) {
+      max-width: 1000px;  // Slightly wider
+      padding-left: 10%;
+    }
+
+    &:nth-of-type(3n) {
+      max-width: 850px;  // Slightly narrower
+      padding-right: 10%;
+    }
+  }
+
+  // Full-width containers
+  > .video-grid,
+  > .image-grid,
+  > .tech-specs,
+  > .credits-grid {
+    width: 100%;
+    padding: 0 var(--spacing-md);
+  }
+}
+
+// =====================================================
+// OPTION C: SPATIAL CHOREOGRAPHY - 5 Layout Variants
+// Each page load randomly selects one layout
+// =====================================================
+
+// Layout Variant 1: Left-heavy emphasis - ENHANCED
+.work-detail[data-layout="1"] {
+  .work-section {
+    > .section-title:nth-of-type(1) { text-align: left; padding-left: 0; }
+    > .section-title:nth-of-type(2) { text-align: left; padding-left: 15%; }  // More dramatic
+    > .section-title:nth-of-type(3) { text-align: left; padding-left: 8%; }
+
+    > p:nth-of-type(1) { padding-left: 8%; max-width: 950px; }
+    > p:nth-of-type(2) { padding-left: 20%; max-width: 850px; }  // More offset
+    > p:nth-of-type(3) { padding-left: 12%; max-width: 900px; }
+  }
+}
+
+// Layout Variant 2: Right-heavy emphasis - ENHANCED
+.work-detail[data-layout="2"] {
+  .work-section {
+    > .section-title:nth-of-type(1) { text-align: right; padding-right: 12%; padding-left: 0; }
+    > .section-title:nth-of-type(2) { text-align: right; padding-right: 5%; padding-left: 0; }
+    > .section-title:nth-of-type(3) { text-align: right; padding-right: 18%; padding-left: 0; }  // More dramatic
+
+    > p:nth-of-type(1) { padding-right: 15%; padding-left: 0; max-width: 900px; }
+    > p:nth-of-type(2) { padding-right: 8%; padding-left: 0; max-width: 950px; }
+    > p:nth-of-type(3) { padding-right: 22%; padding-left: 0; max-width: 850px; }  // More offset
+  }
+}
+
+// Layout Variant 3: Alternating zigzag - ENHANCED
+.work-detail[data-layout="3"] {
+  .work-section {
+    > .section-title:nth-of-type(1) { text-align: left; padding-left: 5%; }
+    > .section-title:nth-of-type(2) { text-align: right; padding-right: 15%; padding-left: 0; }  // More dramatic
+    > .section-title:nth-of-type(3) { text-align: left; padding-left: 10%; }
+
+    > p:nth-of-type(1) { padding-left: 12%; max-width: 900px; }
+    > p:nth-of-type(2) { padding-right: 18%; padding-left: 0; max-width: 850px; }  // More offset
+    > p:nth-of-type(3) { padding-left: 8%; max-width: 950px; }
+  }
+}
+
+// Layout Variant 4: Centered with dramatic offsets - ENHANCED
+.work-detail[data-layout="4"] {
+  .work-section {
+    > .section-title:nth-of-type(1) { text-align: center; padding-left: 0; padding-right: 0; }
+    > .section-title:nth-of-type(2) { text-align: center; padding-left: 10%; padding-right: 0; }  // More offset
+    > .section-title:nth-of-type(3) { text-align: center; padding-right: 10%; padding-left: 0; }
+
+    > p:nth-of-type(1) { margin-left: auto; margin-right: auto; max-width: 900px; }
+    > p:nth-of-type(2) { margin-left: 15%; margin-right: auto; max-width: 850px; }  // More offset
+    > p:nth-of-type(3) { margin-left: auto; margin-right: 15%; max-width: 950px; }
+  }
+}
+
+// Layout Variant 5: Extreme asymmetric spacing - ENHANCED
+.work-detail[data-layout="5"] {
+  .work-section {
+    > .section-title:nth-of-type(1) { text-align: left; padding-left: 22%; }  // More dramatic
+    > .section-title:nth-of-type(2) { text-align: left; padding-left: 3%; }
+    > .section-title:nth-of-type(3) { text-align: right; padding-right: 15%; padding-left: 0; }
+
+    > p:nth-of-type(1) { padding-left: 25%; max-width: 800px; }  // More extreme
+    > p:nth-of-type(2) { padding-left: 8%; max-width: 950px; }
+    > p:nth-of-type(3) { padding-right: 18%; padding-left: 0; max-width: 850px; }
+  }
+}
+
+// Credits section styling
+.credits-section {
+  margin: var(--spacing-2xl) 0;
+  padding: var(--spacing-xl) 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);  // Slightly smaller than section-title: 2-3rem
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  max-width: 1000px;
+  margin: 0 auto;
+
+  > div {
+    h3 {
+      font-family: var(--font-sans);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: var(--spacing-xs);
+    }
+
+    p {
+      font-size: var(--text-base);  // BIGGER for readability
+      color: var(--color-text);
+      margin: 0;
+    }
+  }
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);  // DRAMATIC: 4-6rem (CTM-level!)
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-accent);
+  margin-bottom: var(--spacing-md);
+  // NO ornament - structural baroque, not decoration
+}
+
+// Video showcase grid - SIMPLE asymmetric
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: var(--spacing-lg);
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-item {
+  position: relative;
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    transition: border-color var(--transition-base);
+
+    &:hover {
+      border-color: rgba(212, 175, 55, 0.3);
+    }
+  }
+
+  .video-caption {
+    margin-top: var(--spacing-sm);
+    font-family: var(--font-sans);  // Modern sans
+    font-size: var(--text-xs);      // TINY
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+}
+
+// Image showcase grid - IRREGULAR BAROQUE (Documentation sections)
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1400px;
+  margin: var(--spacing-xl) auto;
+  padding: 0 var(--spacing-md);
+
+  // Asymmetric image placement - varies by count
+  .image-item:nth-child(1) {
+    grid-column: 1 / span 7;  // First: left-heavy, wider
+  }
+
+  .image-item:nth-child(2) {
+    grid-column: 9 / span 4;  // Second: right, narrower with gap
+  }
+
+  .image-item:nth-child(3) {
+    grid-column: 2 / span 5;  // Third: offset left, medium
+  }
+
+  .image-item:nth-child(4) {
+    grid-column: 8 / span 5;  // Fourth: right side
+  }
+
+  .image-item:nth-child(5) {
+    grid-column: 1 / span 6;  // Fifth: left, medium
+  }
+
+  .image-item:nth-child(6) {
+    grid-column: 8 / span 5;  // Sixth: right
+  }
+
+  // If only one image, dramatic offset
+  .image-item:only-child {
+    grid-column: 2 / span 8;  // Centered with offset
+  }
+
+  // If two images, balanced asymmetry
+  .image-item:first-child:nth-last-child(2) {
+    grid-column: 1 / span 7;  // First of two: larger left
+  }
+
+  .image-item:last-child:nth-child(2) {
+    grid-column: 8 / span 5;  // Second of two: smaller right
+  }
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+
+    .image-item,
+    .image-item:only-child,
+    .image-item:first-child:nth-last-child(2),
+    .image-item:last-child:nth-child(2) {
+      grid-column: 1 / -1 !important;
+    }
+  }
+}
+
+.image-item {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    transition: all var(--transition-base);
+
+    &:hover {
+      border-color: rgba(212, 175, 55, 0.3);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+    }
+  }
+
+  .image-caption {
+    margin-top: var(--spacing-sm);
+    font-family: var(--font-sans);  // Modern sans
+    font-size: var(--text-xs);      // TINY
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+}
+
+// =====================================================
+// WORKS LISTING PAGE - Asymmetric Baroque Grid
+// =====================================================
+.works-listing {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md) var(--spacing-2xl);
+  background: var(--color-bg);
+}
+
+.works-listing-header {
+  max-width: 900px;  // Match Bio/Contact page width
+  margin: 0 auto var(--spacing-lg);  // Centered like Bio/Contact
+  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);  // Add side padding
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);  // SCULPTURAL: 8-15rem (bigger than Bio/Contact for emphasis)
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    margin-bottom: var(--spacing-xs);
+    // Gradient clip effect - match Bio/Contact pages
+    background: linear-gradient(135deg, var(--color-text), var(--color-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    font-size: var(--text-sm);  // TINY for contrast
+    color: var(--color-text-muted);
+  }
+}
+
+.works-listing-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-sm);  // Reduced gap - was too much
+  grid-auto-flow: dense;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.work-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 2px solid rgba(212, 175, 55, 0.3);  // Bolder gold border
+  border-radius: 8px;  // Slightly rounded
+  min-height: 280px;  // Ensure covers have proper height
+  // SMOOTH transitions - SPECIFIC properties only (not "all" - conflicts with child)
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+
+  // Asymmetric grid with flexible aspect ratios
+
+  // First item: hero size - landscape
+  &:nth-child(1) {
+    grid-column: span 7;
+    grid-row: span 2;
+    aspect-ratio: 16 / 10;
+  }
+
+  // Second item: tall
+  &:nth-child(2) {
+    grid-column: span 5;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
+  }
+
+  // Third: wide landscape
+  &:nth-child(3) {
+    grid-column: span 8;
+    grid-row: span 1;
+    aspect-ratio: 21 / 9;
+  }
+
+  // Fourth: flexible
+  &:nth-child(4) {
+    grid-column: span 4;
+    grid-row: span 1;
+    aspect-ratio: 4 / 3;
+  }
+
+  // Fifth: landscape
+  &:nth-child(5) {
+    grid-column: span 6;
+    grid-row: span 1;
+    aspect-ratio: 16 / 9;
+  }
+
+  // Sixth: portrait
+  &:nth-child(6) {
+    grid-column: span 3;
+    grid-row: span 2;
+    aspect-ratio: 2 / 3;
+  }
+
+  // Seventh: wide landscape
+  &:nth-child(7) {
+    grid-column: span 9;
+    grid-row: span 1;
+    aspect-ratio: 21 / 9;
+  }
+
+  // Eighth: flexible
+  &:nth-child(8) {
+    grid-column: span 5;
+    grid-row: span 1;
+    aspect-ratio: 4 / 3;
+  }
+
+  // Ninth: large square-ish (Wunderkammer - make bigger)
+  &:nth-child(9) {
+    grid-column: span 8;
+    grid-row: span 2;
+    aspect-ratio: 16 / 10;
+  }
+
+  // Tenth: portrait
+  &:nth-child(10) {
+    grid-column: span 4;
+    grid-row: span 1;
+    aspect-ratio: 3 / 4;
+  }
+
+  // Remaining items - flexible default
+  &:nth-child(n+11) {
+    grid-column: span 4;
+    aspect-ratio: 4 / 3;
+  }
+
+  &:nth-child(11n+11) {
+    grid-column: span 8;
+    aspect-ratio: 16 / 9;
+  }
+
+  &:nth-child(11n+13) {
+    grid-column: span 5;
+    grid-row: span 2;
+    aspect-ratio: 3 / 4;
+  }
+
+  @media (max-width: 1200px) {
+    // Tablet breakpoint - simplify
+    &:nth-child(1) {
+      grid-column: span 8;
+      grid-row: span 1;
+      aspect-ratio: 16 / 9;
+    }
+
+    &:nth-child(2) {
+      grid-column: span 4;
+      grid-row: span 1;
+      aspect-ratio: 4 / 3;
+    }
+
+    &:nth-child(3),
+    &:nth-child(7) {
+      grid-column: span 8;
+      aspect-ratio: 21 / 9;
+    }
+
+    &:nth-child(4),
+    &:nth-child(8),
+    &:nth-child(10) {
+      grid-column: span 4;
+      aspect-ratio: 4 / 3;
+    }
+
+    &:nth-child(5),
+    &:nth-child(9) {
+      grid-column: span 5;
+      aspect-ratio: 16 / 9;
+    }
+
+    &:nth-child(6) {
+      grid-column: span 3;
+      grid-row: span 1;
+      aspect-ratio: 3 / 4;
+    }
+
+    &:nth-child(n+11) {
+      grid-column: span 4 !important;
+      grid-row: span 1 !important;
+      aspect-ratio: 4 / 3 !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    // Mobile - 4 column grid
+    &:nth-child(odd) {
+      grid-column: span 4;
+      aspect-ratio: 16 / 9;
+    }
+
+    &:nth-child(even) {
+      grid-column: span 4;
+      aspect-ratio: 4 / 3;
+    }
+
+    grid-row: span 1 !important;
+  }
+
+  @media (max-width: 480px) {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  &:hover {
+    transform: translateY(-8px);  // Simpler, just lift up
+    border-color: rgba(212, 175, 55, 0.8);
+    box-shadow: 0 20px 48px rgba(212, 175, 55, 0.25);
+
+    .work-item-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .work-item-overlay {
+      background: linear-gradient(180deg,
+        transparent 0%,
+        transparent 30%,
+        rgba(10, 10, 15, 0.95) 100%
+      );  // Darker on hover for better text contrast
+    }
+  }
+}
+
+.work-item-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  // Fill cover completely, no borders
+  object-position: center;
+  // NO zoom effect - removed per user request
+}
+
+.work-item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // Darker overlay for better text readability on light images
+  background: linear-gradient(180deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(10, 10, 15, 0.85) 100%
+  );
+  transition: background var(--transition-base);
+}
+
+.work-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-sm);
+  opacity: 0.9;
+  transform: translateY(10px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: clamp(0.85rem, 1.8vw, 1.2rem);  // SMALLER to fit all titles
+    font-weight: 500;
+    line-height: 1.3;  // More line-height for wrapping
+    letter-spacing: -0.01em;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;  // Allow hyphenation for long words
+
+    // Ensure text stays visible in narrow cards
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: visible;  // Show all text, let it wrap
+  }
+
+  p {
+    font-family: var(--font-sans);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin: 0;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}

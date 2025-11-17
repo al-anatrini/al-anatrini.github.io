@@ -2,19 +2,21 @@
 layout: default
 ---
 
-<section class="intro">
+<article class="work-detail">
+    <header class="work-header">
+        <div class="work-header-content">
+            <div class="work-meta">
+                <span class="work-year">{{ page.year }}</span>
+                <span class="work-category">{{ page.category | default: "Multimedia" }}</span>
+            </div>
+            <h1 class="work-title">{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <p class="work-subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+        </div>
+    </header>
 
-	<div class="wrap">
-
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.subtitle }}</p>
-
-	</div>
-
-</section>
-
-<section class="single">
-
-	{{ page.content }}
-
-</section>
+    <div class="work-content">
+        {{ content }}
+    </div>
+</article>

@@ -1,67 +1,45 @@
-site: "alessandro anatrini"
+# Site settings
+title: Alessandro Anatrini
+description: Computational Artist & Multimedia Educator
+url: "https://anatrini.com"
+baseurl: ""
 
-url: https://www.anatrini.com
-baseurl:
+# Build settings
+markdown: kramdown
+permalink: pretty
 
+# Collections
 collections:
+  works:
+    output: true
+    permalink: /work/:title/
   pages:
     output: true
-    permalink: /:name
-  posts:
-    output: true
-    permalink: /blog/:slug
-  projects:
-    output: true
-    permalink: /project/:slug
+    permalink: /:title/
+  news:
+    output: false
+    sort_by: date
 
+# Defaults
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  -
-    scope:
+  - scope:
       path: ""
       type: "works"
     values:
       layout: "work"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
 
-markdown: kramdown
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  
+# Sass
 sass:
   style: compressed
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-paginate: 10
-paginate_path: "/blog/page:num/"
-
-grid_alignments:
-  - top
-  - center
-  - bottom
+  sass_dir: _sass

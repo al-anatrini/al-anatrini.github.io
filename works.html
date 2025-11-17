@@ -1,37 +1,29 @@
 ---
 layout: default
-title: 
-description: 
-featured_image: /images/social.jpg
+title: Works
 ---
 
-<section class="listing">
+<div class="works-listing">
+  <header class="works-listing-header">
+    <h1>Works</h1>
+    <p>A selection of multimedia installations, performances, and creative coding projects</p>
+  </header>
 
-	<div class="content-wrap listing-wrap">
-
-		{% for project in site.projects reversed %}
-
-		<div class="listing-item">
-
-			<a class="listing-item__link" href="{{ project.url | relative_url }}">
-
-				<div class="listing-item__image">
-					<img src="{{ project.featured_image | relative_url }}" alt="{{ project.title }}">
-				</div>
-
-				<div class="listing-item__content listing-item__content--{{ site.data.settings.grid_settings.content_alignment }}">
-					<div class="listing-item__info">
-						<h2 class="listing-item__title">{{ project.title }}</h2>
-						<p class="listing-item__subtitle">{{ project.subtitle }}</p>
-					</div>
-				</div>
-
-			</a>
-
-		</div>
-
-		{% endfor %}
-
-	</div>
-
-</section>
+  <div class="works-listing-grid">
+    {% assign sorted_works = site.works | sort: 'year' | reverse %}
+    {% for work in sorted_works %}
+    <a href="{{ work.url | relative_url }}" class="work-item">
+      {% if work.featured_image %}
+      <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}" class="work-item-bg" loading="lazy">
+      {% else %}
+      <div class="work-item-bg" style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));"></div>
+      {% endif %}
+      <div class="work-item-overlay"></div>
+      <div class="work-item-content">
+        <h3>{{ work.title }}</h3>
+        <p>{{ work.year }} — {{ work.category | default: "Multimedia" }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>

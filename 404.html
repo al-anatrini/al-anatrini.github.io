@@ -1,15 +1,33 @@
 ---
 layout: default
-title: Page Not Found
-description: Sorry – the page your looking for doesn't exist.
-featured_image: /images/social.jpg
+title: "404 - Page Not Found"
+permalink: /404.html
 ---
 
-<section class="single">
+<div class="error-page">
+  <div class="error-content">
+    <div class="error-ornament">◆</div>
 
-	<h1>Page not found.</h1>
-	<p class="hero__text editable">Sorry – the page your looking for doesn't exist.</p>
-	<p class="hero__text editable">Perhaps you typed the URL incorrectly, or it may have moved.</p>
-	<p><a href="/" class="button button--large">Back To Home</a></p>
+    <h1 class="error-title">404</h1>
 
-</section>
+    <p class="error-subtitle">Page Not Found</p>
+
+    <p class="error-message">
+      The page you're looking for has vanished into the ether.<br>
+      Perhaps it never existed, or perhaps it's merely waiting to be discovered.
+    </p>
+
+    <div class="error-actions">
+      <a href="{{ '/' | relative_url }}" class="error-button">
+        <span>Return Home</span>
+        <span class="error-arrow">→</span>
+      </a>
+
+      <a href="{{ '/works' | relative_url }}" class="error-button error-button-secondary">
+        <span>View Works</span>
+      </a>
+    </div>
+
+    <div class="error-ornament error-ornament-bottom">◆</div>
+  </div>
+</div>
