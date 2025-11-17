@@ -3,6 +3,11 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 0 var(--spacing-md) var(--spacing-xl);
+
+  // MOBILE FIX: Better padding on mobile
+  @media (max-width: 768px) {
+    padding: 0 var(--spacing-sm) var(--spacing-lg);
+  }
 }
 
 .page-header {
@@ -21,6 +26,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  // MOBILE FIX: Smaller title on mobile
+  @media (max-width: 768px) {
+    font-size: clamp(2rem, 8vw, 3rem);
+    letter-spacing: -0.01em;
+  }
 }
 
 .page-subtitle {

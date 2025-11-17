@@ -7,6 +7,11 @@
   padding: 0 var(--spacing-md) var(--spacing-2xl);
   position: relative;
   background: var(--color-bg);
+
+  // MOBILE FIX: Better padding on mobile
+  @media (max-width: 768px) {
+    padding: 0 var(--spacing-sm) var(--spacing-lg);
+  }
 }
 
 .work-header {
@@ -14,6 +19,12 @@
   text-align: center;
   padding: var(--spacing-2xl) 0;
   position: relative;
+
+  // MOBILE FIX: Smaller padding on mobile
+  @media (max-width: 768px) {
+    padding: var(--spacing-lg) 0;
+    margin-bottom: var(--spacing-lg);
+  }
 
   // Minimal geometric accent
   &::after {
@@ -49,6 +60,12 @@
   justify-content: center;
   flex-wrap: wrap;
 
+  // MOBILE FIX: Smaller gap and font size on mobile
+  @media (max-width: 768px) {
+    gap: var(--spacing-sm);
+    font-size: 0.7rem;
+  }
+
   span {
     padding: 0.5rem 1.25rem;
     background: transparent;
@@ -82,6 +99,12 @@
   hyphens: none;  // NO hyphenation - never break words!
   overflow-wrap: normal;  // Keep words intact
   max-width: 100%;
+
+  // MOBILE FIX: Much smaller on mobile
+  @media (max-width: 768px) {
+    font-size: clamp(1.8rem, 8vw, 3rem);
+    line-height: 1.2;
+  }
 }
 
 .work-subtitle {
@@ -106,6 +129,12 @@
   margin-left: auto;
   margin-right: auto;
 
+  // MOBILE FIX: Smaller margins on mobile
+  @media (max-width: 768px) {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
+  }
+
   &.section-dark {
     background: var(--color-surface);
     padding: var(--spacing-2xl) var(--spacing-md);
@@ -113,6 +142,11 @@
     margin-right: auto;
     border-top: 1px solid rgba(212, 175, 55, 0.15);
     border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+
+    // MOBILE FIX: Better padding on mobile
+    @media (max-width: 768px) {
+      padding: var(--spacing-lg) var(--spacing-sm);
+    }
   }
 
   // Section titles - alternating left/right
@@ -284,6 +318,12 @@
   color: var(--color-accent);
   margin-bottom: var(--spacing-md);
   // NO ornament - structural baroque, not decoration
+
+  // MOBILE FIX: Smaller section titles on mobile
+  @media (max-width: 768px) {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
 }
 
 // Video showcase grid - SIMPLE asymmetric
@@ -294,8 +334,11 @@
   max-width: 1200px;
   margin: var(--spacing-xl) auto;
 
+  // MOBILE FIX: Single column with smaller gap
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) auto;
   }
 }
 
@@ -439,6 +482,11 @@
   margin: 0 auto var(--spacing-lg);  // Centered like Bio/Contact
   padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);  // Add side padding
 
+  // MOBILE FIX: Better padding on mobile
+  @media (max-width: 768px) {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
   h1 {
     font-family: var(--font-display);
     font-size: var(--text-5xl);  // SCULPTURAL: 8-15rem (bigger than Bio/Contact for emphasis)
@@ -451,11 +499,23 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+    // MOBILE FIX: Smaller title on mobile
+    @media (max-width: 768px) {
+      font-size: clamp(2.5rem, 10vw, 4rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
   }
 
   p {
     font-size: var(--text-sm);  // TINY for contrast
     color: var(--color-text-muted);
+
+    // MOBILE FIX: Slightly bigger on mobile for readability
+    @media (max-width: 768px) {
+      font-size: var(--text-base);
+    }
   }
 }
 
