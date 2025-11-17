@@ -9,3 +9,5 @@ node_modules/
 *.log
 portfolio/
 images/portfolio
+README.md
+start-preview.sh
