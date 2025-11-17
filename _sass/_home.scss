@@ -132,6 +132,13 @@
   color: var(--color-text);
   margin: 0;
 
+  // MOBILE FIX: Smaller size to prevent cutoff
+  @media (max-width: 768px) {
+    font-size: clamp(2.5rem, 10vw, 4rem);  // Much smaller on mobile
+    line-height: 1.1;  // More breathing room
+    letter-spacing: -0.01em;
+  }
+
   .title-line {
     display: block;
     overflow: hidden;

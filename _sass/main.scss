@@ -249,7 +249,21 @@ a {
   gap: var(--spacing-md);
 
   @media (max-width: 768px) {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--color-bg);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    padding: var(--spacing-md);
+    gap: var(--spacing-sm);
     display: none;
+    z-index: 100;
+
+    &.active {
+      display: flex;
+    }
   }
 }
 
@@ -304,11 +318,24 @@ a {
     width: 24px;
     height: 2px;
     background: var(--color-text);
-    transition: transform var(--transition-base);
+    transition: all 0.3s ease;
   }
 
   &:hover span {
     background: var(--color-accent);
+  }
+
+  // Hamburger → X animation when active
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(7px, 7px);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
   }
 }
 
