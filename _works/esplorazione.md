@@ -4,7 +4,7 @@ title: "Esplorazione di una certa quantità d'acqua"
 subtitle: "For Ensemble"
 year: 2017
 category: "Chamber Music"
-featured_image: "/images/works/esplorazione/cover.jpg"
+featured_image: "/assets/images/works/esplorazione/cover.jpg"
 ---
 
 <div class="work-section">

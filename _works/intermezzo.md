@@ -4,7 +4,7 @@ title: "Here Be Dragons"
 subtitle: "Interactive Generative Installation"
 year: 2020
 category: "Interactive Generative Installation"
-featured_image: "/images/works/intermezzo/cover.jpg"
+featured_image: "/assets/images/works/intermezzo/cover.jpg"
 ---
 
 <div class="work-section">

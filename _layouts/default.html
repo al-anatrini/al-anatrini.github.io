@@ -15,13 +15,13 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta property="og:description" content="{{ page.description | default: 'Composer & computational artist developing adaptive multimedia systems' }}">
-    <meta property="og:image" content="{{ page.featured_image | default: '/images/backgrounds/home-bg.jpg' | absolute_url }}">
+    <meta property="og:image" content="{{ page.featured_image | default: '/assets/images/backgrounds/home-bg.jpg' | absolute_url }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}">
     <meta name="twitter:description" content="{{ page.description | default: 'Composer & computational artist' }}">
-    <meta name="twitter:image" content="{{ page.featured_image | default: '/images/backgrounds/home-bg.jpg' | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.featured_image | default: '/assets/images/backgrounds/home-bg.jpg' | absolute_url }}">
 
     <!-- Favicon - Baroque ornament in brand colors -->
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicons/favicon.svg' | relative_url }}">

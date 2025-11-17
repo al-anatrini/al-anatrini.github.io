@@ -4,7 +4,7 @@ title: "Unfamiliar Walks"
 subtitle: "Interactive Installation"
 year: 2018
 category: "Interactive Installation"
-featured_image: "/images/works/unfamiliar/cover.jpg"
+featured_image: "/assets/images/works/unfamiliar/cover.jpg"
 ---
 
 <div class="work-section">
@@ -74,7 +74,7 @@ featured_image: "/images/works/unfamiliar/cover.jpg"
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/unfamiliar/snippet-1.jpg" alt="Unfamiliar Walks - User interface">
+      <img src="/assets/images/works/unfamiliar/snippet-1.jpg" alt="Unfamiliar Walks - User interface">
       <p class="image-caption">Touchscreen GUI showing composer, piece, preset selection, and navigation controls including silence option</p>
     </div>
   </div>

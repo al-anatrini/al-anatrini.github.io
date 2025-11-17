@@ -8,6 +8,6 @@ node_modules/
 .DS_Store
 *.log
 portfolio/
-images/portfolio
+assets/images/portfolio
 README.md
 start-preview.sh

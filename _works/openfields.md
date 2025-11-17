@@ -4,7 +4,7 @@ title: "Open Fields"
 subtitle: "Site-Specific Piece for 144 Musicians"
 year: 2019
 category: "Site-Specific Music"
-featured_image: "/images/works/openfields/cover.jpg"
+featured_image: "/assets/images/works/openfields/cover.jpg"
 description: "Large-scale site-specific work for 144 musicians distributed across 450 meters of the Elbe Tunnel, transforming industrial architecture into resonant chamber"
 ---
 
@@ -74,11 +74,11 @@ description: "Large-scale site-specific work for 144 musicians distributed acros
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/openfields/snippet-1.jpg" alt="Open Fields - Musicians in tunnel">
+      <img src="/assets/images/works/openfields/snippet-1.jpg" alt="Open Fields - Musicians in tunnel">
       <p class="image-caption">Musicians arranged at 3-meter intervals — Photo: KLARA Janina Luckow</p>
     </div>
     <div class="image-item">
-      <img src="/images/works/openfields/snippet-2.jpg" alt="Open Fields - Guitarist reading iPad score">
+      <img src="/assets/images/works/openfields/snippet-2.jpg" alt="Open Fields - Guitarist reading iPad score">
       <p class="image-caption">Web-based score on iPad during performance — Photo: KLARA Janina Luckow</p>
     </div>
   </div>

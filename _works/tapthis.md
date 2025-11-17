@@ -4,7 +4,7 @@ title: "Tap This"
 subtitle: "For Two Electric Guitars"
 year: 2019
 category: "Chamber Music"
-featured_image: "/images/works/tapthis/cover.jpg"
+featured_image: "/assets/images/works/tapthis/cover.jpg"
 description: "Contemporary work for two electric guitars exploring tapping technique as both melodic and percussive interface, challenging conventional guitar performance practices"
 ---
 

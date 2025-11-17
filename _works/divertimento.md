@@ -4,7 +4,7 @@ title: "Il suo divertimento era di contare le stelle"
 subtitle: "For Small Ensemble"
 year: 2019
 category: "Chamber Music"
-featured_image: "/images/works/divertimento/cover.jpg"
+featured_image: "/assets/images/works/divertimento/cover.jpg"
 description: "Chamber work for bass clarinet, electric guitar, piano, and cello commissioned for Leopardi's 200th anniversary, exploring cosmic contemplation through baroque continuo meets electric modernity"
 ---
 
@@ -71,11 +71,11 @@ description: "Chamber work for bass clarinet, electric guitar, piano, and cello 
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/divertimento/snippet-1.jpg" alt="Il suo divertimento - Score page 1">
+      <img src="/assets/images/works/divertimento/snippet-1.jpg" alt="Il suo divertimento - Score page 1">
       <p class="image-caption">First page of the score showing the sparse, constellation-like distribution of events</p>
     </div>
     <div class="image-item">
-      <img src="/images/works/divertimento/snippet-2.jpg" alt="Il suo divertimento - Score page 2">
+      <img src="/assets/images/works/divertimento/snippet-2.jpg" alt="Il suo divertimento - Score page 2">
       <p class="image-caption">Second page revealing the geometric relationships between instrumental gestures</p>
     </div>
   </div>

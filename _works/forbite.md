@@ -4,7 +4,7 @@ title: "Forbite fantascienze"
 subtitle: "For Contrabassoon and Live Electronics"
 year: 2015
 category: "Solo with Electronics"
-featured_image: "/images/works/forbite/cover.jpg"
+featured_image: "/assets/images/works/forbite/cover.jpg"
 description: "IRCAM commission exploring contrabassoon extended techniques and real-time electronics, investigating liminal acoustic spaces and spectral transformation"
 ---
 
@@ -75,11 +75,11 @@ description: "IRCAM commission exploring contrabassoon extended techniques and r
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/forbite/snippet-1.jpg" alt="Forbite fantascienze - Score excerpt">
+      <img src="/assets/images/works/forbite/snippet-1.jpg" alt="Forbite fantascienze - Score excerpt">
       <p class="image-caption">Score excerpt showing extended techniques and electronic cue markers</p>
     </div>
     <div class="image-item">
-      <img src="/images/works/forbite/snippet-2.jpg" alt="Forbite fantascienze - Max patch scripting">
+      <img src="/assets/images/works/forbite/snippet-2.jpg" alt="Forbite fantascienze - Max patch scripting">
       <p class="image-caption">Max patch scripting detail managing cue timing and parameter interpolations</p>
     </div>
   </div>

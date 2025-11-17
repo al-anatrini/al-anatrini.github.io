@@ -4,7 +4,7 @@ title: "Sandy Island"
 subtitle: "Site-Specific Installation"
 year: 2022
 category: "Site-Specific Installation"
-featured_image: "/images/works/sandy/cover.jpg"
+featured_image: "/assets/images/works/sandy/cover.jpg"
 description: "Adaptive multimedia installation exploring phantom islands and cartographic errors through machine learning, worldbuilding, and site-specific sonic environments"
 ---
 
@@ -83,9 +83,9 @@ description: "Adaptive multimedia installation exploring phantom islands and car
   <h2 class="section-title">Documentation</h2>
 
   <div class="image-gallery">
-    <img src="/images/works/sandy/snippet-1.jpg" alt="Audio control patch interface">
-    <img src="/images/works/sandy/snippet-2.jpg" alt="Custom 3D GUI for system control">
-    <img src="/images/works/sandy/snippet-3.jpg" alt="TouchDesigner video generation patch">
+    <img src="/assets/images/works/sandy/snippet-1.jpg" alt="Audio control patch interface">
+    <img src="/assets/images/works/sandy/snippet-2.jpg" alt="Custom 3D GUI for system control">
+    <img src="/assets/images/works/sandy/snippet-3.jpg" alt="TouchDesigner video generation patch">
   </div>
 </div>
 

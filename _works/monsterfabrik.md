@@ -4,7 +4,7 @@ title: "Die Monsterfabrik"
 subtitle: "Audio-Video Fixed Media"
 year: 2024
 category: "Audio-Video Fixed Media"
-featured_image: "/images/works/monsterfabrik/cover.jpg"
+featured_image: "/assets/images/works/monsterfabrik/cover.jpg"
 ---
 
 <div class="work-section">

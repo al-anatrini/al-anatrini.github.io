@@ -4,7 +4,7 @@ title: "Fragile Territories"
 subtitle: "For Big Orchestra and Electronics"
 year: 2017
 category: "Orchestral Music with Electronics"
-featured_image: "/images/works/fragile/cover.jpg"
+featured_image: "/assets/images/works/fragile/cover.jpg"
 ---
 
 <div class="work-section">
@@ -70,11 +70,11 @@ featured_image: "/images/works/fragile/cover.jpg"
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/fragile/snippet-1.jpg" alt="Fragile Territories - SDIF analysis patch">
+      <img src="/assets/images/works/fragile/snippet-1.jpg" alt="Fragile Territories - SDIF analysis patch">
       <p class="image-caption">Max patch analyzing SDIF file containing spectral components of the oboe's A</p>
     </div>
     <div class="image-item">
-      <img src="/images/works/fragile/snippet-2.jpg" alt="Fragile Territories - Distortion morphing patch">
+      <img src="/assets/images/works/fragile/snippet-2.jpg" alt="Fragile Territories - Distortion morphing patch">
       <p class="image-caption">Max patch calculating distortion and morphing processes for spectral transformation</p>
     </div>
   </div>

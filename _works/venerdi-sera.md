@@ -4,7 +4,7 @@ title: "Venerdì sera a letto presto"
 subtitle: "Friday night going to bed early — Audio-Video Fixed Media"
 year: 2025
 category: "Audio-Video Fixed Media"
-featured_image: "/images/works/venerdi-sera/cover.jpg"
+featured_image: "/assets/images/works/venerdi-sera/cover.jpg"
 ---
 
 <div class="work-section">

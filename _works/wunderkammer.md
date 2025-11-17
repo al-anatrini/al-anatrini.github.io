@@ -4,7 +4,7 @@ title: "Wunderkammer"
 subtitle: "Interactive Generative Installation"
 year: 2021
 category: "Interactive Generative Installation"
-featured_image: "/images/works/wunderkammer/cover.jpg"
+featured_image: "/assets/images/works/wunderkammer/cover.jpg"
 description: "Interactive installation using neural networks to generate evolving soundscapes, exploring machine learning entropy and decay over continuous runtime"
 ---
 
@@ -78,11 +78,11 @@ description: "Interactive installation using neural networks to generate evolvin
 
   <div class="image-grid">
     <div class="image-item">
-      <img src="/images/works/wunderkammer/snippet-1.jpg" alt="Wunderkammer control interface">
+      <img src="/assets/images/works/wunderkammer/snippet-1.jpg" alt="Wunderkammer control interface">
       <p class="image-caption">Synthesis parameter manipulation and preset creation</p>
     </div>
     <div class="image-item">
-      <img src="/images/works/wunderkammer/snippet-2.jpg" alt="Wunderkammer neural network visualization">
+      <img src="/assets/images/works/wunderkammer/snippet-2.jpg" alt="Wunderkammer neural network visualization">
       <p class="image-caption">Neural network parameter space with preset distribution</p>
     </div>
   </div>
