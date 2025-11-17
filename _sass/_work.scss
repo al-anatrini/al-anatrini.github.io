@@ -539,12 +539,15 @@
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
     grid-auto-flow: row;
-    padding: 0 var(--spacing-sm);
+    padding: 0;
+    margin: 0 var(--spacing-sm);
   }
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
     gap: var(--spacing-sm);
+    padding: 0;
+    margin: 0 var(--spacing-sm);
   }
 }
 
@@ -560,6 +563,11 @@
               border-color 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               box-shadow 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
 
   // Asymmetric grid with flexible aspect ratios
 
