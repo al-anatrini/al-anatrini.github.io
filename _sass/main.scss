@@ -374,6 +374,11 @@ a {
     font-size: var(--text-xs);
     font-weight: 400;
     letter-spacing: 0.03em;
+
+    // Desktop only: bigger text
+    @media (min-width: 769px) {
+      font-size: var(--text-sm);
+    }
   }
 
   .footer-name {
@@ -385,11 +390,21 @@ a {
     font-family: var(--font-serif);
     font-size: var(--text-xs);
     font-style: italic;
+
+    // Desktop only: bigger text
+    @media (min-width: 769px) {
+      font-size: var(--text-sm);
+    }
   }
 
   .footer-location {
     color: var(--color-text-muted);
     font-size: var(--text-xs);
+
+    // Desktop only: bigger text
+    @media (min-width: 769px) {
+      font-size: var(--text-sm);
+    }
   }
 }
 
@@ -409,6 +424,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--color-text-muted);
   position: relative;
+
+  // Desktop only: bigger text
+  @media (min-width: 769px) {
+    font-size: var(--text-sm);
+  }
 
   &::after {
     content: '';
