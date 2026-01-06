@@ -5,6 +5,8 @@ subtitle: "Interactive Generative Installation"
 year: 2025
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/faulty-oracle/cover.jpg"
+redirect_from:
+  - /work/faulty-oracle/
 ---
 
 <div class="work-section">

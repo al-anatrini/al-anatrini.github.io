@@ -6,6 +6,8 @@ year: 2015
 category: "Solo with Electronics"
 featured_image: "/assets/images/works/forbite/cover.jpg"
 description: "IRCAM commission exploring contrabassoon extended techniques and real-time electronics, investigating liminal acoustic spaces and spectral transformation"
+redirect_from:
+  - /work/forbite/
 ---
 
 <div class="work-section">

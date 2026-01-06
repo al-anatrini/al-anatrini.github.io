@@ -6,6 +6,8 @@ year: 2022
 category: "Site-Specific Installation"
 featured_image: "/assets/images/works/sandy/cover.jpg"
 description: "Adaptive multimedia installation exploring phantom islands and cartographic errors through machine learning, worldbuilding, and site-specific sonic environments"
+redirect_from:
+  - /work/sandy-island/
 ---
 
 <div class="work-section">

@@ -8,11 +8,16 @@ baseurl: ""
 markdown: kramdown
 permalink: pretty
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
 # Collections
 collections:
   works:
     output: true
-    permalink: /work/:title/
+    permalink: /works/:title/
   pages:
     output: true
     permalink: /:title/

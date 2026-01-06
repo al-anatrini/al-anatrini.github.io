@@ -5,6 +5,8 @@ subtitle: "Friday night going to bed early — Audio-Video Fixed Media"
 year: 2025
 category: "Audio-Video Fixed Media"
 featured_image: "/assets/images/works/venerdi-sera/cover.jpg"
+redirect_from:
+  - /work/venerdi-sera/
 ---
 
 <div class="work-section">

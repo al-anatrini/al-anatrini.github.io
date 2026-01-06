@@ -6,6 +6,8 @@ year: 2019
 category: "Site-Specific Music"
 featured_image: "/assets/images/works/openfields/cover.jpg"
 description: "Large-scale site-specific work for 144 musicians distributed across 450 meters of the Elbe Tunnel, transforming industrial architecture into resonant chamber"
+redirect_from:
+  - /work/openfields/
 ---
 
 <div class="work-section">

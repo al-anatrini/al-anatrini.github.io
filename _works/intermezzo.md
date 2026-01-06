@@ -5,6 +5,8 @@ subtitle: "Interactive Generative Installation"
 year: 2020
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/intermezzo/cover.jpg"
+redirect_from:
+  - /work/intermezzo/
 ---
 
 <div class="work-section">

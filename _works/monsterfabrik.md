@@ -5,6 +5,8 @@ subtitle: "Audio-Video Fixed Media"
 year: 2024
 category: "Audio-Video Fixed Media"
 featured_image: "/assets/images/works/monsterfabrik/cover.jpg"
+redirect_from:
+  - /work/monsterfabrik/
 ---
 
 <div class="work-section">

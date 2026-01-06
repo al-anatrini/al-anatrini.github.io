@@ -6,6 +6,8 @@ year: 2021
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/wunderkammer/cover.jpg"
 description: "Interactive installation using neural networks to generate evolving soundscapes, exploring machine learning entropy and decay over continuous runtime"
+redirect_from:
+  - /work/wunderkammer/
 ---
 
 <div class="work-section">

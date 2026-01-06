@@ -5,6 +5,8 @@ subtitle: "For Ensemble"
 year: 2017
 category: "Chamber Music"
 featured_image: "/assets/images/works/esplorazione/cover.jpg"
+redirect_from:
+  - /work/esplorazione/
 ---
 
 <div class="work-section">

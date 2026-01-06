@@ -5,6 +5,8 @@ subtitle: "Interactive Installation"
 year: 2018
 category: "Interactive Installation"
 featured_image: "/assets/images/works/unfamiliar/cover.jpg"
+redirect_from:
+  - /work/unfamiliar/
 ---
 
 <div class="work-section">

@@ -6,6 +6,8 @@ year: 2019
 category: "Chamber Music"
 featured_image: "/assets/images/works/divertimento/cover.jpg"
 description: "Chamber work for bass clarinet, electric guitar, piano, and cello commissioned for Leopardi's 200th anniversary, exploring cosmic contemplation through baroque continuo meets electric modernity"
+redirect_from:
+  - /work/divertimento/
 ---
 
 <div class="work-section">

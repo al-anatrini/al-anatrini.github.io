@@ -5,6 +5,8 @@ subtitle: "For Big Orchestra and Electronics"
 year: 2017
 category: "Orchestral Music with Electronics"
 featured_image: "/assets/images/works/fragile/cover.jpg"
+redirect_from:
+  - /work/fragile/
 ---
 
 <div class="work-section">

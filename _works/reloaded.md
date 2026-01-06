@@ -5,6 +5,8 @@ subtitle: "Piano, Electronics, Toy Piano and Toy Instruments"
 year: 2024
 category: "Chamber Music with Electronics"
 featured_image: "/assets/images/works/reloaded/cover.jpg"
+redirect_from:
+  - /work/reloaded/
 ---
 
 <div class="work-section">
