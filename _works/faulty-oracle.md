@@ -18,7 +18,7 @@ redirect_from:
       <p class="video-caption">Excerpt</p>
     </div>
     <div class="video-item">
-      <iframe src="https://player.vimeo.com/video/1137306976" title="Faulty Oracle - Live Excerpt" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/fWOdMWVQyAc?si=vxjNoCFwQoCPSmzI" title="Faulty Oracle - Live Excerpt" frameborder="0" allowfullscreen></iframe>
       <p class="video-caption">Live excerpt</p>
     </div>
   </div>
@@ -64,12 +64,12 @@ redirect_from:
 
   <div class="credits-grid">
     <div>
-      <h3>Audio & Visual Design</h3>
+      <h3>Audio & Visual Design; Creative Software Development</h3>
       <p>Alessandro Anatrini</p>
     </div>
 
     <div>
-      <h3>Collaboration</h3>
+      <h3>Software Engineering: Custom TouchDesigner Tools for Dynamic Prompt Generation</h3>
       <p>Alessandro Aresta</p>
     </div>
   </div>

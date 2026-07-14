@@ -8,6 +8,11 @@ description: "Publications, conference papers, and talks on computational art, m
 
 ## Selected Publications & Conference Papers
 
+### 2026
+- **Estetiche, angecy e responsabilità nella arti multimediali** (Doctoral seminar for XLI-cycle PhD students) - Piacenza • Conservatorio Statale di Musica G. Nicolini
+- **Physiological and Physical Foundations of Creative Systems** (Panel with Rolf Bader and Jakub Sawicki) - Hamburg • International Computer Music Conference (ICMC2026)
+- **MetaConcert: A Shared VR Audio-Visual Experience Model Reducing User Isolation Through Synchronized 360 Video on HMDs and HOA Playback on a Multichannel Dome** (Conference Paper, co-authored with M. Cantonetti, P. Malpeli & G. Rizzo) - Hamburg • International Computer Music Conference (ICMC2026)
+
 ### 2025
 - **Digital Neomedievalism: Art and Resistance in the Platform Age** (Conference Paper) — ABANA Napoli • P+ARTS Conference on Artistic Research
 - **Ecologie del possibile. Simulazione e Worldbuilding in Sandy Island** (Presentation) — Tempo Reale, Florence • MAGNETICA
@@ -17,7 +22,7 @@ description: "Publications, conference papers, and talks on computational art, m
 - **WavePilot: Framework multidimensionale per l'esplorazione dello spazio parametrico degli strumenti digitali** (Conference Paper) — Università di Torino • XXIV Colloqui di Informatica Musicale
 
 ### 2023
-- **Sandy Island: A New Form of Parameters' Space Management** (Conference Paper) — University of Sussex / Intelligent Instrument Lab Iceland • AI and Music Creativity Conference (AIMC)
+- **Sandy Island: A New Form of Parameters' Space Management** (Conference Paper) — University of Sussex / Intelligent Instrument Lab Iceland • AI and Music Creativity Conference (AIMC2023)
 - **The Awareness of the Tools in the Neural Media Praxis** (Book Chapter) — Wolke Verlag, Berlin • KISS: Kinetics in Sound & Space monograph
 
 ### 2021
@@ -30,11 +35,11 @@ description: "Publications, conference papers, and talks on computational art, m
 - **Alex McLean and Roger T. Dean (Eds.), The Oxford Handbook of Algorithmic Music** (Review) — Sage Publications • Musicæ Scientiæ
 
 ### 2017
-- **MaxPiccolo: A Prototype for an Early Computer-Based Music Education in Schools** (Conference Paper) — Paris • Journées d'informatique musicale (JIM)
+- **MaxPiccolo: A Prototype for an Early Computer-Based Music Education in Schools** (Conference Paper) — Paris • Journées d'informatique musicale (JIM2017)
 - **MaxPiccolo, Historical Background and Overview** (Presentation) — Karlsruhe • ZKM | next_generation 7.0
 
 ### 2016
-- **The State of the Art on the Educational Software Tools for Electroacoustic Composition** (Conference Paper) — Hamburg • Sound and Music Computing Conference (SMC)
+- **The State of the Art on the Educational Software Tools for Electroacoustic Composition** (Conference Paper) — Hamburg • Sound and Music Computing Conference (SMC2016)
 - **Suono, elettronica e musica: valutazioni per una didattica della musica** (Presentation) — Budrio • Dialoghi sul comporre
 
 ---
