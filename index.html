@@ -4,47 +4,63 @@ title: Home
 description: "Alessandro Anatrini - composer and computational artist developing adaptive multimedia systems that blur boundaries between past and present through worldbuilding"
 ---
 
-<div class="hero">
-  <!-- Single geometric accent - minimal baroque essence -->
-  <div class="hero-accent"></div>
+<section class="hero" role="banner">
+  <div class="hero-media" aria-hidden="true"></div>
 
-  <div class="hero-content">
-    <!-- Left column: TINY metadata (extreme contrast) -->
-    <div class="hero-metadata">
-      <p class="hero-subtitle">Composer & Computational Artist</p>
-      <a href="{{ '/works' | relative_url }}" class="hero-cta">
-        Explore Works
-        <span class="arrow">→</span>
-      </a>
-    </div>
-
-    <!-- Right column: MASSIVE title (extreme contrast) -->
-    <div class="hero-title-wrapper">
-      <h1 class="hero-title">
-        <span class="title-line"><span>Alessandro</span></span>
-        <span class="title-line"><span>Anatrini</span></span>
-      </h1>
-    </div>
+  <div class="hero-inner">
+    <h1 class="hero-name">
+      <span class="hero-name-line">Alessandro</span>
+      <span class="hero-name-line">Anatrini</span>
+    </h1>
+    <p class="hero-role">Composer &amp; New Media Artist</p>
   </div>
-</div>
 
-<section class="news-section">
-  <div class="news-container">
-    <h2 class="news-title">Upcoming Events</h2>
-    <div class="news-grid">
-      {% assign upcoming_news = site.news | sort: 'date' | reverse | limit: 3 %}
-      {% for item in upcoming_news %}
-      <article class="news-item">
-        <div class="news-type">{{ item.type }}</div>
-        <h3 class="news-item-title">{{ item.title }}</h3>
-        <div class="news-meta">
-          <span class="news-date">{{ item.date | date: "%B %d, %Y" }}</span>
-          <span class="news-location">{{ item.location }}</span>
-        </div>
+  <a href="#below" class="hero-scroll" aria-label="Scroll to content">
+    <span class="hero-scroll-label">Scroll</span>
+    <span class="hero-scroll-line" aria-hidden="true"></span>
+  </a>
+</section>
+
+<span id="below" class="anchor-offset"></span>
+
+{% assign upcoming = site.news | sort: 'date' | reverse %}
+{% if upcoming.size > 0 %}
+<section class="now-section" aria-label="News and upcoming events">
+  <div class="now-inner">
+    <h2 class="now-title">Now &amp; Upcoming</h2>
+    <div class="now-grid">
+      {% for item in upcoming limit: 3 %}
+      <article class="now-item">
+        {% if item.type %}<span class="now-type">{{ item.type }}</span>{% endif %}
+        <h3 class="now-item-title">{{ item.title }}</h3>
+        <p class="now-meta">
+          <span class="now-date">{{ item.date | date: "%b %-d, %Y" }}</span>
+          {% if item.location %}<span class="now-loc">{{ item.location }}</span>{% endif %}
+        </p>
       </article>
       {% endfor %}
     </div>
   </div>
 </section>
+{% endif %}
 
-<!-- Selected Works section removed per user request -->
+<section class="selected-works" aria-label="Selected works">
+  <div class="selected-inner">
+    <div class="selected-head">
+      <h2 class="selected-title">Selected Works</h2>
+      <a href="{{ '/works' | relative_url }}" class="selected-all">All works <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="work-index">
+      {% assign recent = site.works | sort: 'year' | reverse %}
+      {% for work in recent limit: 5 %}
+      <a href="{{ work.url | relative_url }}" class="work-row">
+        <span class="wr-n">{{ forloop.index }}</span>
+        <span class="wr-title">{{ work.title }}</span>
+        <span class="wr-cat">{{ work.category | default: 'Multimedia' }}</span>
+        <span class="wr-year">{{ work.year }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

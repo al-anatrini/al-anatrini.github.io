@@ -1,28 +1,50 @@
-// Variables - Contemporary Baroque
+// Variables - Pietra (fondo chiaro, riferimento rinascimentale + accento Oltremare)
 :root {
-  // Colors - DARK BACKGROUND (baroque light from darkness)
-  --color-bg: #0a0806;            // Pure black (primary background)
-  --color-surface: #1a1410;       // Deep warm black (secondary surfaces)
-  --color-text: #f5e6d3;          // Warm cream (primary text)
-  --color-text-muted: #b8a589;    // Muted gold (accessibility: 4.7:1 contrast ratio)
-  --color-accent: #d4af37;        // Rich gold (baroque gilding)
-  --color-accent-2: #8b6f3f;      // Darker gold (hover states)
-  --color-light: #fdfaf7;         // Warm white (rare highlights)
-  --color-vermilion: #c4573a;     // Vermilion (rare highlights)
+  // Palette base (estratta dai fermo-immagine di riferimento)
+  --gesso:        #efe8d8;  // Intonaco / marmo - fondo principale
+  --gesso-2:      #f5f0e4;  // Superficie chiara (card, pannelli)
+  --gesso-3:      #e4dac6;  // Superficie media (hover, righe alternate)
+  --gesso-4:      #dbd0ba;  // Pannello indice
+  --inchiostro:   #221c12;  // Testo primario (solo testo/righe, mai fondo)
+  --bruno:        #2e251b;  // Bruno di seppia - micro-accenti scuri
+  --argilla:      #9a8568;  // Terra media - didascalie, bordi
+  --alloro:       #57583a;  // Verde bronzeo - dettagli
+  --ocra:         #c7972f;  // Oro/ocra - accento caldo secondario
+  --oltremare:    #2b4e7c;  // Lapislazzuli - accento freddo PRIMARIO
+  --oltremare-dark:#23406a; // Oltremare hover/attivo
+  --cinabro:      #9b4a34;  // Terracotta - accento tempo/"Now"
 
-  // Typography - Dual system (classical + modern)
+  // Token semantici
+  --color-bg: var(--gesso);            // Fondo chiaro
+  --color-surface: var(--gesso-2);     // Superfici secondarie
+  --color-surface-2: var(--gesso-3);   // Superfici terziarie / hover
+  --color-text: var(--inchiostro);     // Testo (scuro caldo)
+  --color-text-muted: #5f5643;         // Testo attenuato (contrasto AA su gesso)
+  --color-accent: var(--oltremare);    // Accento interazione/struttura (link, focus, nav attiva)
+  --color-accent-2: var(--oltremare-dark); // Hover accento
+  --color-warm: var(--cinabro);        // Accento tempo/attenzione ("Now", live)
+  --color-light: #fffdf8;              // Bianco caldo (rari highlight)
+  --color-vermilion: var(--cinabro);   // Alias retrocompatibile
+
+  // Hairlines e raggi
+  --color-hair: rgba(34, 28, 18, 0.14);
+  --color-hair-soft: rgba(34, 28, 18, 0.08);
+  --radius-sm: 3px;
+  --radius-md: 8px;
+
+  // Typography - tre voci (serif antico + grottesco moderno + monospazio dati)
   --font-serif: 'Cormorant Garamond', 'Crimson Text', Georgia, serif;
-  --font-display: 'Cinzel', 'Playfair Display', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Archivo', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Courier New', monospace;
 
   // Spacing - DRAMATICALLY INCREASED (baroque breathing room)
   --spacing-xs: clamp(0.5rem, 2vw, 1rem);
   --spacing-sm: clamp(1rem, 3vw, 2rem);
   --spacing-md: clamp(2rem, 5vw, 4rem);
   --spacing-lg: clamp(4rem, 8vw, 8rem);
-  --spacing-xl: clamp(6rem, 12vw, 16rem);
-  --spacing-2xl: clamp(8rem, 15vw, 20rem);
+  --spacing-xl: clamp(5rem, 9vw, 10rem);
+  --spacing-2xl: clamp(6rem, 10vw, 12rem);
 
   // Typography Scale - CTM-LEVEL DRAMA (structural baroque, not decoration)
   --text-xs: clamp(0.7rem, 1vw, 0.75rem);          // TINY metadata (CTM-style)
@@ -174,11 +196,16 @@ a {
   width: 100%;
   z-index: 1000;
   padding: var(--spacing-sm) var(--spacing-md);
-  background: rgba(10, 8, 6, 0.95);  // Dark background
+  background: rgba(239, 232, 216, 0.82);  // Gesso translucido
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  // NO border-bottom
   transition: all var(--transition-base);
+
+  // Su scroll: hairline sottile per staccare dal contenuto
+  &.scrolled {
+    background: rgba(239, 232, 216, 0.95);
+    border-bottom: 1px solid var(--color-hair);
+  }
 }
 
 // Main content - add top padding for fixed nav
@@ -212,8 +239,8 @@ a {
     transform: scale(1.1) rotate(45deg);
 
     .geometric-diamond {
-      background: var(--color-vermilion);
-      box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+      background: var(--color-warm);
+      box-shadow: 0 4px 16px rgba(43, 78, 124, 0.28);
     }
   }
 
@@ -236,7 +263,7 @@ a {
   background: var(--color-accent);
   transform: rotate(45deg);
   transition: all var(--transition-base);
-  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 2px 8px rgba(43, 78, 124, 0.2);
 
   @media (max-width: 768px) {
     width: 24px;
@@ -255,7 +282,7 @@ a {
     right: 0;
     flex-direction: column;
     background: var(--color-bg);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid var(--color-hair);
     padding: var(--spacing-md);
     gap: var(--spacing-sm);
     display: none;
@@ -348,7 +375,7 @@ a {
 // Footer - Clean and minimal
 .main-footer {
   padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
-  border-top: 1px solid rgba(212, 175, 55, 0.15);  // Subtle gold line
+  border-top: 1px solid var(--color-hair);  // Hairline neutro
   margin-top: var(--spacing-2xl);  // More breathing room
   background: var(--color-bg);
 }
@@ -482,7 +509,7 @@ a {
   // Center the cursor properly - subtract half width/height
   transform: translate(-50%, -50%);
   transition: opacity var(--transition-fast);
-  box-shadow: 0 0 8px rgba(212, 175, 55, 0.15);  // Lighter shadow
+  box-shadow: 0 0 8px rgba(43, 78, 124, 0.15);  // Lighter shadow
 
   @media (max-width: 1024px) {
     display: none;

@@ -66,10 +66,8 @@ function applyWorkLayoutChoreography() {
 
 // Custom cursor follower
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize generative systems
-  applyGenerativeNoise();
-  applyHeroTypographyVariations();
-  applyWorkLayoutChoreography();
+  // Generative baroque effects disabled: the Pietra palette is controlled/deliberate.
+  // (applyGenerativeNoise / applyHeroTypographyVariations / applyWorkLayoutChoreography)
   const cursor = document.querySelector('.cursor-follower');
   let mouseX = 0;
   let mouseY = 0;
