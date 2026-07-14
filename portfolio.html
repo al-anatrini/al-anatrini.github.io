@@ -1,0 +1,33 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+---
+
+<div class="portfolio">
+  <div class="portfolio-toolbar no-print">
+    <span class="portfolio-toolbar-label">Portfolio</span>
+    <button type="button" class="page-button" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <header class="portfolio-cover">
+    <h1 class="portfolio-name">Alessandro Anatrini</h1>
+    <p class="portfolio-role">Composer &amp; New Media Artist</p>
+  </header>
+
+  {% assign works = site.works | sort: 'year' | reverse %}
+  {% for work in works %}
+  <article class="portfolio-item">
+    {% if work.featured_image %}
+    <div class="portfolio-item-media">
+      <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="portfolio-item-meta">
+      <p class="portfolio-item-line">{{ work.year }} — {{ work.category | default: "Multimedia" }}</p>
+      <h2 class="portfolio-item-title">{{ work.title }}</h2>
+      {% if work.subtitle %}<p class="portfolio-item-sub">{{ work.subtitle }}</p>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

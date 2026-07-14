@@ -15,4 +15,5 @@ He has also worked as an interaction designer and software developer for UdK Ber
 
 <div class="page-actions">
   <a href="{{ '/assets/docs/alessandro-anatrini-cv.pdf' | relative_url }}" class="page-button">Download CV (PDF)</a>
+  <a href="{{ '/portfolio' | relative_url }}" class="page-button">Portfolio (PDF)</a>
 </div>
