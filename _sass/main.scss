@@ -1,10 +1,10 @@
 // Variables - Pietra (fondo chiaro, riferimento rinascimentale + accento Oltremare)
 :root {
   // Palette base (estratta dai fermo-immagine di riferimento)
-  --gesso:        #efe8d8;  // Intonaco / marmo - fondo principale
-  --gesso-2:      #f5f0e4;  // Superficie chiara (card, pannelli)
-  --gesso-3:      #e4dac6;  // Superficie media (hover, righe alternate)
-  --gesso-4:      #dbd0ba;  // Pannello indice
+  --gesso:        #e8dfc9;  // Intonaco "sporco" - fondo principale
+  --gesso-2:      #f0e9d8;  // Superficie chiara (card, pannelli)
+  --gesso-3:      #ded3bb;  // Superficie media (hover, righe alternate)
+  --gesso-4:      #d3c7ac;  // Pannello indice
   --inchiostro:   #221c12;  // Testo primario (solo testo/righe, mai fondo)
   --bruno:        #2e251b;  // Bruno di seppia - micro-accenti scuri
   --argilla:      #9a8568;  // Terra media - didascalie, bordi
@@ -196,14 +196,14 @@ a {
   width: 100%;
   z-index: 1000;
   padding: var(--spacing-sm) var(--spacing-md);
-  background: rgba(239, 232, 216, 0.82);  // Gesso translucido
+  background: rgba(232, 223, 201, 0.8);  // Gesso translucido
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: all var(--transition-base);
 
   // Su scroll: hairline sottile per staccare dal contenuto
   &.scrolled {
-    background: rgba(239, 232, 216, 0.95);
+    background: rgba(232, 223, 201, 0.95);
     border-bottom: 1px solid var(--color-hair);
   }
 }
@@ -215,21 +215,34 @@ a {
 
 .nav-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;   // "+" a sinistra · nome a destra
   align-items: center;
   gap: var(--spacing-md);
   max-width: 1600px;
   margin: 0 auto;
 }
 
-// "+" toggle (serif) — apre l'overlay, ruota in "×"
+// Nome/wordmark a destra (link alla home)
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+  transition: color var(--transition-fast);
+
+  &:hover { color: var(--color-accent); }
+}
+
+// "+" toggle (serif, grande) — apre l'overlay, ruota sul posto in "×"
 .nav-toggle {
   appearance: none;
   background: none;
   border: none;
   cursor: pointer;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
+  margin-left: -0.4rem;   // ottico: allinea il glifo al bordo
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,12 +254,12 @@ a {
 
 .nav-toggle-glyph {
   font-family: var(--font-display);
-  font-size: 2.8rem;
+  font-size: clamp(3.2rem, 5vw, 4rem);
   line-height: 0;
   font-weight: 400;
   display: block;
-  transform-origin: center;
-  transition: transform var(--transition-base), color var(--transition-fast);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), color var(--transition-fast);
 }
 
 .nav-toggle[aria-expanded="true"] .nav-toggle-glyph {

@@ -9,14 +9,13 @@ title: Works
     <p>A selection of multimedia installations, performances, and creative coding projects</p>
   </header>
 
-  <div class="work-index">
+  <div class="reveal-index">
     {% assign sorted_works = site.works | sort: 'year' | reverse %}
     {% for work in sorted_works %}
-    <a href="{{ work.url | relative_url }}" class="work-row">
-      <span class="wr-n">{{ forloop.index }}</span>
-      <span class="wr-title">{{ work.title }}</span>
-      <span class="wr-cat">{{ work.category | default: "Multimedia" }}</span>
-      <span class="wr-year">{{ work.year }}</span>
+    <a href="{{ work.url | relative_url }}" class="reveal-row"{% if work.featured_image %} data-image="{{ work.featured_image | relative_url }}"{% endif %}>
+      <span class="rr-title">{{ work.title }}</span>
+      <span class="rr-cat">{{ work.category | default: "Multimedia" }}</span>
+      <span class="rr-year">{{ work.year }}</span>
     </a>
     {% endfor %}
   </div>

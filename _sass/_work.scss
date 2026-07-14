@@ -33,13 +33,50 @@
 // WORK DETAIL — Pietra / Codex (fondo chiaro)
 // =====================================================
 .work-detail {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--spacing-md) var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-2xl);
+}
+
+// Due colonne: rail sticky a sinistra · corpo a destra
+.work-layout {
+  display: grid;
+  grid-template-columns: minmax(230px, 330px) 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+.work-rail {
+  position: sticky;
+  top: calc(var(--spacing-sm) * 2 + 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+
+  @media (max-width: 860px) {
+    position: static;
+    top: auto;
+  }
+}
+
+.work-back {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-top: var(--spacing-xs);
+
+  &:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .work-header {
-  padding: var(--spacing-lg) 0 var(--spacing-md);
+  padding: 0;
 }
 
 .work-meta {
@@ -58,9 +95,9 @@
 
 .work-title {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 8vw, 6rem);
+  font-size: clamp(2.2rem, 3.4vw, 3.2rem);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: 0.98;
   letter-spacing: -0.02em;
   color: var(--color-text);
   margin: 0;
@@ -76,7 +113,7 @@
 }
 
 .work-cover {
-  margin: var(--spacing-lg) 0 var(--spacing-xl);
+  margin: 0 0 var(--spacing-lg);
 
   img {
     width: 100%;
@@ -86,11 +123,11 @@
   }
 }
 
-// Sezioni del corpo
+// Sezioni del corpo (dentro la colonna destra)
 .work-section {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: var(--spacing-lg) 0;
+  max-width: none;
+  margin: 0;
+  padding: var(--spacing-md) 0;
 
   &.section-dark {
     background: var(--color-surface);
@@ -174,8 +211,8 @@
 
 // Credits
 .credits-section {
-  max-width: 940px;
-  margin: var(--spacing-xl) auto 0;
+  max-width: none;
+  margin: var(--spacing-xl) 0 0;
   padding-top: var(--spacing-lg);
   border-top: 1px solid var(--color-hair);
 

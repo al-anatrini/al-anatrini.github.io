@@ -374,6 +374,50 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Vetrina index — cover preview that follows the cursor (desktop, fine pointer only)
+document.addEventListener('DOMContentLoaded', () => {
+  const preview = document.querySelector('.reveal-preview');
+  const rows = document.querySelectorAll('.reveal-row[data-image]');
+  if (!preview || !rows.length) return;
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null, active = false;
+
+  const loop = () => {
+    cx += (tx - cx) * 0.18;
+    cy += (ty - cy) * 0.18;
+    preview.style.left = cx + 'px';
+    preview.style.top = cy + 'px';
+    if (active || Math.abs(tx - cx) > 0.5 || Math.abs(ty - cy) > 0.5) {
+      raf = requestAnimationFrame(loop);
+    } else {
+      raf = null;
+    }
+  };
+
+  const move = (e) => {
+    tx = e.clientX + 40;
+    ty = e.clientY;
+    if (!raf) raf = requestAnimationFrame(loop);
+  };
+
+  rows.forEach((row) => {
+    row.addEventListener('mouseenter', () => {
+      const img = row.getAttribute('data-image');
+      if (!img) return;
+      preview.style.backgroundImage = 'url("' + img + '")';
+      preview.classList.add('is-visible');
+      active = true;
+    });
+    row.addEventListener('mouseleave', () => {
+      preview.classList.remove('is-visible');
+      active = false;
+    });
+  });
+
+  window.addEventListener('mousemove', move, { passive: true });
+});
+
 // Console easter egg
 console.log('%c✦ Alessandro Anatrini ✦', 'color: #d4af37; font-size: 24px; font-weight: bold; font-family: serif;');
 console.log('%cComposer & Computational Artist', 'color: #9d8b7a; font-size: 14px; font-family: serif; font-style: italic;');

@@ -41,20 +41,12 @@
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <div class="grain-overlay"></div>
 
-    {% unless page.url == '/' %}
-    <!-- Geometric diamond - links back home -->
-    <a href="{{ '/' | relative_url }}" class="home-button" aria-label="Return to home">
-        <span class="baroque-ornament">
-            <div class="geometric-diamond"></div>
-        </span>
-    </a>
-    {% endunless %}
-
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
                 <span class="nav-toggle-glyph" aria-hidden="true">+</span>
             </button>
+            <a href="{{ '/' | relative_url }}" class="nav-brand">Alessandro Anatrini</a>
         </div>
     </nav>
 
@@ -108,6 +100,9 @@
 
     <!-- Back to top button -->
     <button class="back-to-top" aria-label="Back to top"></button>
+
+    <!-- Anteprima cover che segue il cursore (indice Vetrina) -->
+    <div class="reveal-preview" aria-hidden="true"></div>
 
     <div class="cursor-follower"></div>
 

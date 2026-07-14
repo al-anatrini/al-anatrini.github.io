@@ -1,18 +1,19 @@
 ---
 layout: default
 title: Home
-description: "Alessandro Anatrini - composer and computational artist developing adaptive multimedia systems that blur boundaries between past and present through worldbuilding"
+description: "Alessandro Anatrini - composer and new media artist"
 ---
 
 <section class="hero" role="banner">
-  <div class="hero-media" aria-hidden="true"></div>
-
-  <div class="hero-inner">
-    <h1 class="hero-name">
-      <span class="hero-name-line">Alessandro</span>
-      <span class="hero-name-line">Anatrini</span>
-    </h1>
-    <p class="hero-role">Composer &amp; New Media Artist</p>
+  <div class="hero-frame">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-overlay">
+      <h1 class="hero-name">
+        <span class="hero-name-line">Alessandro</span>
+        <span class="hero-name-line">Anatrini</span>
+      </h1>
+      <p class="hero-role">Composer &amp; New Media Artist</p>
+    </div>
   </div>
 
   <a href="#below" class="hero-scroll" aria-label="Scroll to content">
@@ -51,14 +52,13 @@ description: "Alessandro Anatrini - composer and computational artist developing
       <a href="{{ '/works' | relative_url }}" class="selected-all">All works <span aria-hidden="true">→</span></a>
     </div>
 
-    <div class="work-index">
+    <div class="reveal-index">
       {% assign recent = site.works | sort: 'year' | reverse %}
-      {% for work in recent limit: 5 %}
-      <a href="{{ work.url | relative_url }}" class="work-row">
-        <span class="wr-n">{{ forloop.index }}</span>
-        <span class="wr-title">{{ work.title }}</span>
-        <span class="wr-cat">{{ work.category | default: 'Multimedia' }}</span>
-        <span class="wr-year">{{ work.year }}</span>
+      {% for work in recent limit: 6 %}
+      <a href="{{ work.url | relative_url }}" class="reveal-row"{% if work.featured_image %} data-image="{{ work.featured_image | relative_url }}"{% endif %}>
+        <span class="rr-title">{{ work.title }}</span>
+        <span class="rr-cat">{{ work.category | default: "Multimedia" }}</span>
+        <span class="rr-year">{{ work.year }}</span>
       </a>
       {% endfor %}
     </div>
