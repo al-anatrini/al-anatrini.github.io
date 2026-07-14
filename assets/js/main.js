@@ -115,37 +115,36 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Mobile menu toggle with ARIA support
+// "+" menu overlay with ARIA support
 document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
+  const navToggle = document.querySelector('.nav-toggle');
+  const navOverlay = document.querySelector('.nav-overlay');
+  if (!navToggle || !navOverlay) return;
 
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !isExpanded);
-      navLinks.classList.toggle('active');
-      menuToggle.classList.toggle('active');
-    });
+  const setOpen = (open) => {
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    navOverlay.classList.toggle('is-open', open);
+    navOverlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    document.body.classList.toggle('nav-open', open);
+  };
 
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-        menuToggle.setAttribute('aria-expanded', 'false');
-        navLinks.classList.remove('active');
-        menuToggle.classList.remove('active');
-      }
-    });
+  navToggle.addEventListener('click', () => {
+    setOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+  });
 
-    // Close menu on escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        menuToggle.setAttribute('aria-expanded', 'false');
-        navLinks.classList.remove('active');
-        menuToggle.classList.remove('active');
-      }
-    });
-  }
+  // Click on the empty overlay backdrop closes it
+  navOverlay.addEventListener('click', (e) => {
+    if (e.target === navOverlay) setOpen(false);
+  });
+
+  // Escape closes and returns focus to the toggle
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+      setOpen(false);
+      navToggle.focus();
+    }
+  });
 });
 
 // Scroll animations - DISABLED for work-item (causes flickering and conflicts)

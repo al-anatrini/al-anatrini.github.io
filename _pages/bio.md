@@ -12,3 +12,7 @@ He studied historical musicology, composition and electronic music in Italy, bef
 His music has been performed by ensembles and orchestras including Ensemble Intercontemporain, Klangforum Wien, Ensemble Musiques Nouvelles, the Royal Liverpool Philharmonic Orchestra and the Symphoniker Hamburg. His work has been presented at international festivals and conferences including Manifeste, Huddersfield Contemporary Music Festival, Impuls, Blurred Edges, Tactus, ICMC, SMC, TENOR and AIMC.
 
 He has also worked as an interaction designer and software developer for UdK Berlin and the Digital Stage Foundation. Since 2023, he has led the seminar “Artificial Models for Multimodal Creativity” at HfMT Hamburg. In 2024, he was appointed Professor of Multimedia at the Conservatorio of Piacenza, Italy.
+
+<div class="page-actions">
+  <a href="{{ '/assets/docs/alessandro-anatrini-cv.pdf' | relative_url }}" class="page-button">Download CV (PDF)</a>
+</div>

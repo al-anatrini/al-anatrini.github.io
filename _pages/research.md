@@ -1,10 +1,39 @@
 ---
 layout: page
-title: About
-subtitle: Publications & Talks
-permalink: /about/
-description: "Publications, conference papers, and talks on computational art, machine learning for the arts, worldbuilding, and multimedia composition"
+title: Research
+permalink: /research/
+redirect_from:
+  - /about/
 ---
+
+<!--
+  FILONI DI RICERCA — segnaposto da compilare.
+  Sostituisci titolo, descrizione e link (GitHub / paper) con i tuoi contenuti.
+  Duplica un blocco .research-thread per aggiungerne altri.
+-->
+<div class="research-threads" markdown="1">
+
+<div class="research-thread" markdown="1">
+### Research thread — title
+Short description — to be written.
+[GitHub ↗](#) · [Paper ↗](#)
+</div>
+
+<div class="research-thread" markdown="1">
+### Research thread — title
+Short description — to be written.
+[GitHub ↗](#) · [Paper ↗](#)
+</div>
+
+<div class="research-thread" markdown="1">
+### Research thread — title
+Short description — to be written.
+[GitHub ↗](#) · [Paper ↗](#)
+</div>
+
+</div>
+
+## Writing
 
 ## Selected Publications & Conference Papers
 

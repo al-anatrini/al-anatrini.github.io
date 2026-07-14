@@ -42,7 +42,7 @@
     <div class="grain-overlay"></div>
 
     {% unless page.url == '/' %}
-    <!-- Geometric diamond - baroque essence, minimal form -->
+    <!-- Geometric diamond - links back home -->
     <a href="{{ '/' | relative_url }}" class="home-button" aria-label="Return to home">
         <span class="baroque-ornament">
             <div class="geometric-diamond"></div>
@@ -52,20 +52,22 @@
 
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <div class="nav-links">
-                <a href="{{ '/works' | relative_url }}" class="nav-link {% if page.url contains '/work' %}active{% endif %}" data-text="Works">Works</a>
-                <a href="{{ '/bio' | relative_url }}" class="nav-link {% if page.url == '/bio/' %}active{% endif %}" data-text="Bio">Bio</a>
-                <a href="{{ '/about' | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}" data-text="About">About</a>
-                <a href="{{ '/contact' | relative_url }}" class="nav-link {% if page.url == '/contact/' %}active{% endif %}" data-text="Contact">Contact</a>
-            </div>
-
-            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
+                <span class="nav-toggle-glyph" aria-hidden="true">+</span>
             </button>
         </div>
     </nav>
+
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+        <nav class="nav-overlay-nav" aria-label="Sections">
+            <ul class="nav-overlay-links">
+                <li><a href="{{ '/works' | relative_url }}" class="nav-overlay-link {% if page.url contains '/work' %}is-active{% endif %}">Works</a></li>
+                <li><a href="{{ '/bio' | relative_url }}" class="nav-overlay-link {% if page.url == '/bio/' %}is-active{% endif %}">Bio</a></li>
+                <li><a href="{{ '/research' | relative_url }}" class="nav-overlay-link {% if page.url == '/research/' %}is-active{% endif %}">Research</a></li>
+                <li><a href="{{ '/contact' | relative_url }}" class="nav-overlay-link {% if page.url == '/contact/' %}is-active{% endif %}">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main class="main-content" id="main-content">
         {{ content }}
