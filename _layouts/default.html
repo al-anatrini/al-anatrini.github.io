@@ -44,15 +44,19 @@
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
-                <span class="nav-toggle-glyph" aria-hidden="true">+</span>
+                <svg class="nav-plus" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                    <!-- Plus con grazie (terminali serif), centrato in 50,50 -> ruota sul posto -->
+                    <path d="M45.5 8 h9 v27.5 h27.5 v9 h-27.5 v27.5 h-9 v-27.5 h-27.5 v-9 h27.5 z" />
+                    <path d="M36 6.5 h28 v3.4 h-28 z  M36 90.1 h28 v3.4 h-28 z  M6.5 36 v28 h3.4 v-28 z  M90.1 36 v28 h3.4 v-28 z" />
+                </svg>
             </button>
-            <a href="{{ '/' | relative_url }}" class="nav-brand">Alessandro Anatrini</a>
         </div>
     </nav>
 
     <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
         <nav class="nav-overlay-nav" aria-label="Sections">
             <ul class="nav-overlay-links">
+                <li><a href="{{ '/' | relative_url }}" class="nav-overlay-link {% if page.url == '/' %}is-active{% endif %}">Index</a></li>
                 <li><a href="{{ '/works' | relative_url }}" class="nav-overlay-link {% if page.url contains '/work' %}is-active{% endif %}">Works</a></li>
                 <li><a href="{{ '/bio' | relative_url }}" class="nav-overlay-link {% if page.url == '/bio/' %}is-active{% endif %}">Bio</a></li>
                 <li><a href="{{ '/research' | relative_url }}" class="nav-overlay-link {% if page.url == '/research/' %}is-active{% endif %}">Research</a></li>

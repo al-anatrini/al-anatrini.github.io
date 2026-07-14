@@ -215,56 +215,43 @@ a {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;   // "+" a sinistra · nome a destra
+  justify-content: flex-start;   // solo il "+" a sinistra
   align-items: center;
   gap: var(--spacing-md);
   max-width: 1600px;
   margin: 0 auto;
 }
 
-// Nome/wordmark a destra (link alla home)
-.nav-brand {
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--color-text);
-  transition: color var(--transition-fast);
-
-  &:hover { color: var(--color-accent); }
-}
-
-// "+" toggle (serif, grande) — apre l'overlay, ruota sul posto in "×"
+// "+" toggle — SVG serif grande, ruota sul posto in "×"
 .nav-toggle {
   appearance: none;
   background: none;
   border: none;
   cursor: pointer;
-  width: 56px;
-  height: 56px;
-  margin-left: -0.4rem;   // ottico: allinea il glifo al bordo
-  display: flex;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text);
 
-  &:hover { color: var(--color-accent); }
-  &:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 4px; }
+  &:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 6px; }
 }
 
-.nav-toggle-glyph {
-  font-family: var(--font-display);
-  font-size: clamp(3.2rem, 5vw, 4rem);
-  line-height: 0;
-  font-weight: 400;
+.nav-plus {
+  width: clamp(3.6rem, 7vw, 5.6rem);
+  height: clamp(3.6rem, 7vw, 5.6rem);
   display: block;
-  transform-origin: 50% 50%;
-  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), color var(--transition-fast);
+  fill: var(--color-text);
+  transform-origin: 50% 50%;   // centro reale dell'SVG → nessuno spostamento
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1), fill var(--transition-fast);
+  will-change: transform;
 }
 
-.nav-toggle[aria-expanded="true"] .nav-toggle-glyph {
+.nav-toggle:hover .nav-plus { fill: var(--color-accent); }
+
+.nav-toggle[aria-expanded="true"] .nav-plus {
   transform: rotate(135deg);
-  color: var(--color-accent);
+  fill: var(--color-accent);
 }
 
 // Overlay a schermo intero (sotto la nav, così il "×" resta cliccabile)

@@ -33,16 +33,16 @@
 // WORK DETAIL — Pietra / Codex (fondo chiaro)
 // =====================================================
 .work-detail {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: var(--spacing-lg) var(--spacing-md) var(--spacing-2xl);
 }
 
-// Due colonne: rail sticky a sinistra · corpo a destra
+// Due colonne: rail metadati stretto a sinistra · media/testo (focus) a destra
 .work-layout {
   display: grid;
-  grid-template-columns: minmax(230px, 330px) 1fr;
-  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: minmax(190px, 250px) 1fr;
+  gap: clamp(2rem, 5vw, 4.5rem);
   align-items: start;
 
   @media (max-width: 860px) {
@@ -90,7 +90,7 @@
   color: var(--color-text-muted);
   margin: 0 0 var(--spacing-sm);
 
-  .work-year { color: var(--color-text); }
+  .work-year { color: var(--color-warm); }   // Cinàbro
 }
 
 .work-title {
@@ -145,18 +145,18 @@
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-warm);          // Cinàbro
   margin: 0 0 var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-hair);
 }
 
-// Video
+// Video — protagonisti: grandi, a piena larghezza della colonna
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--spacing-md);
-  margin: var(--spacing-md) 0;
-
-  @media (max-width: 640px) { grid-template-columns: 1fr; }
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  margin: var(--spacing-md) 0 var(--spacing-lg);
 }
 
 .video-item {
@@ -169,7 +169,7 @@
   }
 
   .video-caption {
-    margin-top: 0.6rem;
+    margin-top: 0.7rem;
     font-family: var(--font-mono);
     font-size: 0.66rem;
     letter-spacing: 0.1em;
@@ -222,7 +222,7 @@
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-warm);          // Cinàbro
     margin: 0 0 var(--spacing-md);
   }
 }
