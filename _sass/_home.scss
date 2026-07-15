@@ -271,18 +271,6 @@
   &:hover .rr-title,
   &:focus-visible .rr-title { color: var(--color-text); }
 
-  // Freccia sobria all'hover
-  .rr-title::after {
-    content: ' ↗';
-    font-size: 0.42em;
-    color: var(--color-accent);
-    opacity: 0;
-    transition: opacity var(--transition-fast);
-    vertical-align: middle;
-  }
-  &:hover .rr-title::after,
-  &:focus-visible .rr-title::after { opacity: 1; }
-
   @media (max-width: 620px) {
     grid-template-columns: 1fr auto;
     gap: 0.8rem;

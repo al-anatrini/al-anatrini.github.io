@@ -61,18 +61,22 @@
   img { width: 100%; height: 100%; object-fit: cover; display: block; }
 }
 
-.work-back {
+// Metadati in alto a destra sull'immagine (come nel riferimento)
+.work-hero-meta {
   position: absolute;
-  top: clamp(1.1rem, 3vw, 2rem);
-  right: clamp(1.1rem, 3vw, 2.4rem);
-  z-index: 3;
+  top: clamp(1.4rem, 4vw, 2.6rem);
+  right: clamp(1.4rem, 4vw, 3rem);
+  z-index: 2;
+  margin: 0;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(243, 234, 214, 0.9);
+  color: rgba(243, 234, 214, 0.92);
+  text-shadow: 0 1px 10px rgba(20, 15, 8, 0.55);
 
-  &:hover { color: #fff; }
+  .work-year { color: #e39877; }   // Cinàbro schiarito sul fondo scuro
+  .work-sep { opacity: 0.5; margin: 0 0.4em; }
 }
 
 .work-hero-head {
@@ -82,20 +86,6 @@
   z-index: 2;
   padding: clamp(1.4rem, 4vw, 3rem);
   max-width: 1100px;
-}
-
-.work-hero-head .work-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem 1.2rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(243, 234, 214, 0.82);
-  margin: 0 0 var(--spacing-sm);
-
-  .work-year { color: #d98a6a; }   // Cinàbro schiarito per il fondo scuro
 }
 
 .work-hero-head .work-title {
@@ -118,55 +108,70 @@
 }
 
 // --- Corpo editoriale asimmetrico: etichetta a margine + contenuto ---
+// Corpo (Cinematica): Concept a sinistra · Specifiche a lato (destra) · media grande sotto
 .work-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: clamp(2.5rem, 6vw, 6rem);
+  row-gap: clamp(1.8rem, 5vw, 3.2rem);
+  align-items: start;
   max-width: 1200px;
   margin: 0 auto;
   padding: clamp(2.5rem, 6vw, 4.5rem) var(--spacing-md) var(--spacing-2xl);
+
+  @media (max-width: 820px) {
+    grid-template-columns: 1fr;
+    row-gap: clamp(1.6rem, 5vw, 2.6rem);
+  }
 }
 
 .work-content .work-section,
 .work-content .credits-section {
-  display: grid;
-  grid-template-columns: 7rem minmax(0, 1fr);
-  gap: clamp(1.4rem, 4vw, 3.2rem);
-  align-items: start;
-  max-width: none;
-  margin: 0;
-  padding: clamp(1.8rem, 4vw, 3rem) 0;
-  border-top: 1px solid var(--color-hair);
-  background: none;
-  border-radius: 0;
-
-  @media (max-width: 720px) {
-    grid-template-columns: 1fr;
-    gap: 0.9rem;
-  }
-}
-
-.work-content > .work-section:first-child { border-top: none; padding-top: 0; }
-
-// Etichetta di sezione nel margine sinistro (Cinàbro)
-.work-content .section-title,
-.work-content .credits-section h2 {
-  grid-column: 1;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
+  background: none;
+  border-radius: 0;
+  max-width: none;
+}
+
+// Posizionamento indipendente dall'ordine nel markdown
+.work-content .work-section:has(.concept-text) { grid-column: 1; grid-row: 1; }
+.work-content .work-section:has(.tech-specs)   { grid-column: 2; grid-row: 1; }
+.work-content .credits-section                 { grid-column: 2; grid-row: 2; }
+.work-content .work-section:has(.video-grid),
+.work-content .work-section:has(.image-grid)   {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: var(--spacing-sm);
+}
+
+@media (max-width: 820px) {
+  .work-content .work-section,
+  .work-content .credits-section {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
+}
+
+// Etichette di sezione (Cinàbro)
+.work-content .section-title,
+.work-content .credits-section h2 {
+  margin: 0 0 var(--spacing-sm);
+  padding: 0;
+  border: none;
   font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.62rem;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-warm);          // Cinàbro
-  line-height: 1.4;
+  color: var(--color-warm);
 }
 
-// Contenuto nella colonna destra
-.work-content .work-section > *:not(.section-title),
-.work-content .credits-section > *:not(h2) {
-  grid-column: 2;
-  min-width: 0;
-}
+// Nascondi le intestazioni non necessarie (video e "Specifications": i campi hanno già etichette)
+.work-content .work-section:has(.video-grid) .section-title,
+.work-content .work-section:has(.tech-specs) .section-title { display: none; }
 
 // Video — protagonisti, grandi
 .video-grid {

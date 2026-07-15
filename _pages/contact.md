@@ -5,7 +5,7 @@ permalink: /contact/
 description: "Get in touch with Alessandro Anatrini — composer and new media artist."
 ---
 
-<p class="contact-lead">For collaboration proposals, commission inquiries, technical questions, or general correspondence, please reach out via email.</p>
+<p class="contact-lead">For collaboration proposals, commissions, technical enquiries, or general correspondence, please write to me by email.</p>
 
 <a href="mailto:alessandro@anatrini.com" class="contact-email">alessandro@anatrini.com</a>
 

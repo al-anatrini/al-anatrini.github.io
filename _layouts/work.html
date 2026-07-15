@@ -10,13 +10,13 @@ layout: default
         </div>
         {% endif %}
 
-        <a href="{{ '/works' | relative_url }}" class="work-back">← Works</a>
+        <p class="work-hero-meta">
+            <span class="work-year">{{ page.year }}</span>
+            <span class="work-sep">·</span>
+            <span class="work-category">{{ page.category | default: "Multimedia" }}</span>
+        </p>
 
         <div class="work-hero-head">
-            <p class="work-meta">
-                <span class="work-year">{{ page.year }}</span>
-                <span class="work-category">{{ page.category | default: "Multimedia" }}</span>
-            </p>
             <h1 class="work-title">{{ page.title }}</h1>
             {% if page.subtitle %}
             <p class="work-subtitle">{{ page.subtitle }}</p>
