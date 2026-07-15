@@ -374,48 +374,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Vetrina index — cover preview that follows the cursor (desktop, fine pointer only)
+// Work page: group Specifications + Credits into one compact side colophon
 document.addEventListener('DOMContentLoaded', () => {
-  const preview = document.querySelector('.reveal-preview');
-  const rows = document.querySelectorAll('.reveal-row[data-image]');
-  if (!preview || !rows.length) return;
-  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+  const content = document.querySelector('.work-content');
+  if (!content) return;
 
-  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null, active = false;
+  const sections = Array.from(content.querySelectorAll('.work-section'));
+  const specsSection = sections.find((s) => s.querySelector('.tech-specs'));
+  const credits = content.querySelector('.credits-section');
+  if (!specsSection && !credits) return;
 
-  const loop = () => {
-    cx += (tx - cx) * 0.18;
-    cy += (ty - cy) * 0.18;
-    preview.style.left = cx + 'px';
-    preview.style.top = cy + 'px';
-    if (active || Math.abs(tx - cx) > 0.5 || Math.abs(ty - cy) > 0.5) {
-      raf = requestAnimationFrame(loop);
-    } else {
-      raf = null;
-    }
-  };
-
-  const move = (e) => {
-    tx = e.clientX + 40;
-    ty = e.clientY;
-    if (!raf) raf = requestAnimationFrame(loop);
-  };
-
-  rows.forEach((row) => {
-    row.addEventListener('mouseenter', () => {
-      const img = row.getAttribute('data-image');
-      if (!img) return;
-      preview.style.backgroundImage = 'url("' + img + '")';
-      preview.classList.add('is-visible');
-      active = true;
-    });
-    row.addEventListener('mouseleave', () => {
-      preview.classList.remove('is-visible');
-      active = false;
-    });
-  });
-
-  window.addEventListener('mousemove', move, { passive: true });
+  const colophon = document.createElement('aside');
+  colophon.className = 'work-colophon';
+  content.insertBefore(colophon, specsSection || credits);
+  if (specsSection) colophon.appendChild(specsSection);
+  if (credits) colophon.appendChild(credits);
 });
 
 // Console easter egg

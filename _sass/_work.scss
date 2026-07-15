@@ -136,18 +136,27 @@
   max-width: none;
 }
 
-// Posizionamento indipendente dall'ordine nel markdown
+// Posizionamento (indipendente dall'ordine nel markdown)
+.work-content .work-colophon                   { grid-column: 2; grid-row: 1; align-self: start; }
 .work-content .work-section:has(.concept-text) { grid-column: 1; grid-row: 1; }
-.work-content .work-section:has(.tech-specs)   { grid-column: 2; grid-row: 1; }
-.work-content .credits-section                 { grid-column: 2; grid-row: 2; }
 .work-content .work-section:has(.video-grid),
 .work-content .work-section:has(.image-grid)   {
   grid-column: 1 / -1;
-  grid-row: 3;
   margin-top: var(--spacing-sm);
 }
 
+// Colophon laterale: Specifiche + Credits compatti, uno sotto l'altro
+.work-colophon .work-section,
+.work-colophon .credits-section {
+  margin: 0;
+  padding: 0;
+}
+.work-colophon .credits-section {
+  margin-top: var(--spacing-lg);
+}
+
 @media (max-width: 820px) {
+  .work-content .work-colophon,
   .work-content .work-section,
   .work-content .credits-section {
     grid-column: 1 !important;
