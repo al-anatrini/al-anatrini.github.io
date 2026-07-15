@@ -44,11 +44,7 @@
     <nav class="main-nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-overlay">
-                <svg class="nav-plus" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-                    <!-- Plus con grazie (terminali serif), centrato in 50,50 -> ruota sul posto -->
-                    <path d="M45.5 8 h9 v27.5 h27.5 v9 h-27.5 v27.5 h-9 v-27.5 h-27.5 v-9 h27.5 z" />
-                    <path d="M36 6.5 h28 v3.4 h-28 z  M36 90.1 h28 v3.4 h-28 z  M6.5 36 v28 h3.4 v-28 z  M90.1 36 v28 h3.4 v-28 z" />
-                </svg>
+                <span class="nav-toggle-glyph" aria-hidden="true">+</span>
             </button>
         </div>
     </nav>
@@ -111,5 +107,6 @@
     <div class="cursor-follower"></div>
 
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/hero-parallax.js' | relative_url }}"></script>
 </body>
 </html>

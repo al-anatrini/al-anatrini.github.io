@@ -222,36 +222,46 @@ a {
   margin: 0 auto;
 }
 
-// "+" toggle — SVG serif grande, ruota sul posto in "×"
+// "+" toggle — carattere tipografico dentro un riquadro; accento Cinàbro
 .nav-toggle {
   appearance: none;
-  background: none;
-  border: none;
   cursor: pointer;
+  width: clamp(52px, 6vw, 64px);
+  height: clamp(52px, 6vw, 64px);
+  display: grid;
+  place-items: center;
   padding: 0;
-  margin: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--color-warm);      // riquadro Cinàbro
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-base), border-color var(--transition-base);
 
-  &:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 6px; }
+  &:hover { background: var(--color-warm); }
+  &:focus-visible { outline: 2px solid var(--color-warm); outline-offset: 4px; }
 }
 
-.nav-plus {
-  width: clamp(3.6rem, 7vw, 5.6rem);
-  height: clamp(3.6rem, 7vw, 5.6rem);
+.nav-toggle-glyph {
+  font-family: var(--font-sans);            // grottesco: "+" senza grazie
+  font-weight: 300;
+  font-size: clamp(2.2rem, 3vw, 2.7rem);
+  line-height: 1;
+  color: var(--color-warm);                 // "+" in Cinàbro
   display: block;
-  fill: var(--color-text);
-  transform-origin: 50% 50%;   // centro reale dell'SVG → nessuno spostamento
-  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.2, 1), fill var(--transition-fast);
-  will-change: transform;
+  transform-origin: 50% 50%;                // ruota sul posto dentro il riquadro
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), color var(--transition-base);
 }
 
-.nav-toggle:hover .nav-plus { fill: var(--color-accent); }
+// Hover: riquadro pieno, glifo chiaro
+.nav-toggle:hover .nav-toggle-glyph { color: var(--color-light); }
 
-.nav-toggle[aria-expanded="true"] .nav-plus {
-  transform: rotate(135deg);
-  fill: var(--color-accent);
+// Aperto: "+" → "×"
+.nav-toggle[aria-expanded="true"] {
+  background: var(--color-warm);
+  border-color: var(--color-warm);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle-glyph {
+  transform: rotate(45deg);
+  color: var(--color-light);
 }
 
 // Overlay a schermo intero (sotto la nav, così il "×" resta cliccabile)
