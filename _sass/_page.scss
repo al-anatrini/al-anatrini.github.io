@@ -190,11 +190,89 @@
   margin: var(--spacing-lg) 0;
 }
 
-// Contact
-.contact-cta {
-  margin: var(--spacing-lg) 0;
+// -----------------------------------------------------
+// Contact — email grande come fulcro + affiliazioni + link
+// -----------------------------------------------------
+.page-content .contact-lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
+  line-height: 1.4;
+  color: var(--color-text);
+  max-width: 42ch;
+  margin: 0 0 var(--spacing-md);
+}
 
-  .email-text { text-transform: none; letter-spacing: 0.04em; }
+.page-content a.contact-email {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 6vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  text-decoration: none;
+  margin: var(--spacing-sm) 0 var(--spacing-xl);
+  padding-bottom: 0.15em;
+  border-bottom: 2px solid var(--color-warm);   // Cinàbro
+  transition: color var(--transition-fast);
+
+  &:hover { color: var(--color-warm); }
+}
+
+.contact-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+  border-top: 1px solid var(--color-hair);
+  padding-top: var(--spacing-lg);
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
+
+.page-content .contact-block h2 {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-warm);          // Cinàbro
+  margin: 0 0 var(--spacing-sm);
+}
+
+.page-content .contact-block p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links li {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--color-hair-soft);
+
+  &:first-child { border-top: 1px solid var(--color-hair-soft); }
+}
+
+.page-content .contact-links a {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--color-text);
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  transition: color var(--transition-fast);
+
+  &::after { content: '↗'; font-size: 0.7em; color: var(--color-accent); }
+  &:hover { color: var(--color-accent); }
 }
 
 // -----------------------------------------------------

@@ -1,32 +1,28 @@
 ---
 layout: page
 title: Contact
-subtitle: Get in touch for collaborations, commissions, or inquiries
 permalink: /contact/
-description: "Contact Alessandro Anatrini for collaboration proposals, commission inquiries, or technical questions about computational art and multimedia composition"
+description: "Get in touch with Alessandro Anatrini — composer and new media artist."
 ---
 
-For collaboration proposals, commission inquiries, technical questions, or general correspondence, please reach out via email.
+<p class="contact-lead">For collaboration proposals, commission inquiries, technical questions, or general correspondence, please reach out via email.</p>
 
-<div class="contact-cta">
-  <a href="mailto:alessandro@anatrini.com" class="email-button">
-    <span class="email-icon">✉</span>
-    <span class="email-text">Send Email</span>
-  </a>
+<a href="mailto:alessandro@anatrini.com" class="contact-email">alessandro@anatrini.com</a>
+
+<div class="contact-cols">
+  <section class="contact-block">
+    <h2>Affiliations</h2>
+    <p><strong>Conservatorio Statale di Musica G. Nicolini</strong><br>Piacenza, Italy — Professor of Multimedia</p>
+    <p><strong>Hochschule für Musik und Theater Hamburg</strong><br>Germany — Lecturer in Multimodal Machine Learning for the Arts</p>
+  </section>
+
+  <section class="contact-block">
+    <h2>Elsewhere</h2>
+    <ul class="contact-links">
+      <li><a href="https://github.com/anatrini" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alessandro-anatrini/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://vimeo.com/user147203365" target="_blank" rel="noopener noreferrer">Vimeo</a></li>
+      <li><a href="https://instagram.com/anatrini_" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    </ul>
+  </section>
 </div>
-
----
-
-## Direct Contact
-
-**Email:** alessandro [at] anatrini [dot] com
-
----
-
-## Affiliations
-
-**Conservatorio Statale di Musica G. Nicolini, Piacenza, Italy**
-Professor of Multimedia
-
-**Hochschule für Musik und Theater Hamburg, Germany**
-Lecturer in Multimodal Machine Learning for the Arts
