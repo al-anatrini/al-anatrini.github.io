@@ -33,10 +33,10 @@
   }
 }
 
-// Concept / statement
+// Concept / statement — plain, allineato a sinistra (asimmetria editoriale)
 .concept-text {
-  max-width: 65ch;
-  margin: 0 auto;
+  max-width: 60ch;
+  margin: 0;
   font-family: var(--font-serif);
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   line-height: 1.65;
@@ -46,15 +46,15 @@
   p:last-child { margin-bottom: 0; }
 }
 
-// Pull-quote (ex highlight-box) — sobria, senza simboli
+// Ex "highlight-box" — reso testo normale (niente corsivo nel mezzo)
 .highlight-box {
-  margin: var(--spacing-lg) 0;
-  padding: 0.2rem 0 0.2rem var(--spacing-md);
-  border-left: 2px solid var(--color-accent);
+  margin: var(--spacing-md) 0;
+  padding: 0;
+  border: none;
   font-family: var(--font-serif);
-  font-style: italic;
-  font-size: clamp(1.3rem, 2.6vw, 1.8rem);
-  line-height: 1.35;
+  font-style: normal;
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  line-height: 1.65;
   color: var(--color-text);
 }
 

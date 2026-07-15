@@ -3,29 +3,28 @@ layout: default
 ---
 
 <article class="work-detail">
-    <div class="work-layout">
-        <aside class="work-rail">
-            <header class="work-header">
-                <p class="work-meta">
-                    <span class="work-year">{{ page.year }}</span>
-                    <span class="work-category">{{ page.category | default: "Multimedia" }}</span>
-                </p>
-                <h1 class="work-title">{{ page.title }}</h1>
-                {% if page.subtitle %}
-                <p class="work-subtitle">{{ page.subtitle }}</p>
-                {% endif %}
-            </header>
-            <a href="{{ '/works' | relative_url }}" class="work-back">← Works</a>
-        </aside>
-
-        <div class="work-body">
-            {% if page.featured_image %}
-            <div class="work-cover">
-                <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}" loading="lazy">
-            </div>
-            {% endif %}
-
-            {{ content }}
+    <header class="work-hero">
+        {% if page.featured_image %}
+        <div class="work-hero-media">
+            <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
         </div>
+        {% endif %}
+
+        <a href="{{ '/works' | relative_url }}" class="work-back">← Works</a>
+
+        <div class="work-hero-head">
+            <p class="work-meta">
+                <span class="work-year">{{ page.year }}</span>
+                <span class="work-category">{{ page.category | default: "Multimedia" }}</span>
+            </p>
+            <h1 class="work-title">{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <p class="work-subtitle">{{ page.subtitle }}</p>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="work-content">
+        {{ content }}
     </div>
 </article>
