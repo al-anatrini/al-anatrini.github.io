@@ -1,45 +1,15 @@
 ---
 layout: page
-title: Research
-permalink: /research/
-redirect_from:
-  - /about/
+title: About
+subtitle: Publications & Talks
+permalink: /about/
+description: "Publications, conference papers, and talks on computational art, machine learning for the arts, worldbuilding, and multimedia composition"
 ---
-
-{% comment %}
-FILONI DI RICERCA — nascosti finché non sono pronti.
-Per riattivarli: togli le righe {% raw %}{% comment %}{% endraw %} e {% raw %}{% endcomment %}{% endraw %}
-e compila titolo / descrizione / link (GitHub · Paper) di ogni blocco.
-
-<div class="research-threads" markdown="1">
-
-<div class="research-thread" markdown="1">
-### Research thread — title
-Short description — to be written.
-[GitHub ↗](#) · [Paper ↗](#)
-</div>
-
-<div class="research-thread" markdown="1">
-### Research thread — title
-Short description — to be written.
-[GitHub ↗](#) · [Paper ↗](#)
-</div>
-
-<div class="research-thread" markdown="1">
-### Research thread — title
-Short description — to be written.
-[GitHub ↗](#) · [Paper ↗](#)
-</div>
-
-</div>
-{% endcomment %}
-
-## Writing
 
 ## Selected Publications & Conference Papers
 
 ### 2026
-- **Estetiche, angecy e responsabilità nella arti multimediali** (Doctoral seminar for XLI-cycle PhD students) - Piacenza • Conservatorio Statale di Musica G. Nicolini
+- **Estetiche, agency e responsabilità nella arti multimediali** (Doctoral seminar for XLI-cycle PhD students) - Piacenza • Conservatorio Statale di Musica G. Nicolini
 - **Physiological and Physical Foundations of Creative Systems** (Panel with Rolf Bader and Jakub Sawicki) - Hamburg • International Computer Music Conference (ICMC2026)
 - **MetaConcert: A Shared VR Audio-Visual Experience Model Reducing User Isolation Through Synchronized 360 Video on HMDs and HOA Playback on a Multichannel Dome** (Conference Paper, co-authored with M. Cantonetti, P. Malpeli & G. Rizzo) - Hamburg • International Computer Music Conference (ICMC2026)
 
