@@ -24,13 +24,9 @@ redirect_from:
   <h2 class="section-title">Concept</h2>
 
   <div class="concept-text">
-    <p>The artist disrupts the ontological paradigm of "the couch as device of stasis" through neural network-assisted domestic audiovisual wandering. The camera, traditionally deputized to record reality, is reconfigured as sentient interface generating a para-medieval bestiary capable of suspending distinction between quotidian and hieratic.</p>
+    <p>The artist throws into crisis the ontological paradigm of "the sofa as apparatus of stasis" through an audiovisual practice of domestic wandering assisted by neural networks. The camera, appointed to the registration of the real, is reconfigured as a sentient interface generating a para-medieval bestiary capable of suspending the distinction between the quotidian and the hieratic.</p>
 
-    <div class="highlight-box">
-      The work produces domestication of the sublime: corridor becomes nave, kitchen an apse, bedsheets a palimpsest.
-    </div>
-
-    <p>The author's precariously choreographic body activates processes of intra-action, converting the house into diegetic ecology etc... etc...</p>
+    <p>The ordinary Friday evening, traditionally consecrated to extroverted sociality, is here ritualised in interiore domo, where the very act of "going to bed early" assumes the valence of phenomenological liminality. The work thus enacts a domestication of the sublime: the corridor becomes a nave, the kitchen an apse, the bed linen a palimpsest; the author's body, precariously choreographic, activates processes of intra-action, converting the home into a diegetic ecology, and so on, and so forth…</p>
   </div>
 </div>
 

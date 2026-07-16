@@ -14,12 +14,12 @@ redirect_from:
 
   <div class="video-grid">
     <div class="video-item">
-      <iframe src="https://player.vimeo.com/video/1137309666" title="Faulty Oracle - Excerpt" frameborder="0" allowfullscreen></iframe>
-      <p class="video-caption">Excerpt</p>
+      <iframe src="https://www.youtube.com/embed/fWOdMWVQyAc?si=vxjNoCFwQoCPSmzI" title="Faulty Oracle - Live Excerpt (ICMC)" frameborder="0" allowfullscreen></iframe>
+      <p class="video-caption">Live excerpt</p>
     </div>
     <div class="video-item">
-      <iframe src="https://www.youtube.com/embed/fWOdMWVQyAc?si=vxjNoCFwQoCPSmzI" title="Faulty Oracle - Live Excerpt" frameborder="0" allowfullscreen></iframe>
-      <p class="video-caption">Live excerpt</p>
+      <iframe src="https://player.vimeo.com/video/1137309666" title="Faulty Oracle - Excerpt" frameborder="0" allowfullscreen></iframe>
+      <p class="video-caption">Excerpt</p>
     </div>
   </div>
 </div>

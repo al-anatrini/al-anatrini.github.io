@@ -13,11 +13,11 @@ redirect_from:
 
   <div class="video-grid">
     <div class="video-item">
-      <iframe src="https://vimeo.com/1209825980" title="Bròlo - Live Excerpt" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/1209825980" title="Bròlo - Excerpt" frameborder="0" allowfullscreen></iframe>
       <p class="video-caption">Excerpt</p>
     </div>
     <div class="video-item">
-      <iframe src="https://vimeo.com/1209829296" title="Bròlo - Live Excerpt" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://player.vimeo.com/video/1209829296" title="Bròlo - Live Excerpt" frameborder="0" allowfullscreen></iframe>
       <p class="video-caption">Live excerpt</p>
     </div>
   </div>
