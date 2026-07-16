@@ -5,6 +5,8 @@ subtitle: "Friday night going to bed early — Audio-Video Fixed Media"
 year: 2025
 category: "Audio-Video Fixed Media"
 featured_image: "/assets/images/works/venerdi-sera/cover.jpg"
+video_url: "https://vimeo.com/1137280731"
+blurb: "The artist throws into crisis the ontological paradigm of \"the sofa as apparatus of stasis\" through neural-network-assisted domestic wandering."
 redirect_from:
   - /work/venerdi-sera/
 ---

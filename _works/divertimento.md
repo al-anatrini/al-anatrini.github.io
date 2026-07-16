@@ -5,6 +5,8 @@ subtitle: "For Small Ensemble"
 year: 2019
 category: "Chamber Music"
 featured_image: "/assets/images/works/divertimento/cover.jpg"
+video_url: "https://vimeo.com/787572985"
+blurb: "Commissioned for Leopardi's 200th anniversary of \"L'Infinito,\" this chamber work takes its title from the poet's diary: \"His amusement was to count the stars.\""
 description: "Chamber work for bass clarinet, electric guitar, piano, and cello commissioned for Leopardi's 200th anniversary, exploring cosmic contemplation through baroque continuo meets electric modernity"
 redirect_from:
   - /work/divertimento/

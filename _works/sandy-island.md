@@ -5,6 +5,8 @@ subtitle: "Site-Specific Installation"
 year: 2022
 category: "Site-Specific Installation"
 featured_image: "/assets/images/works/sandy/cover.jpg"
+video_url: "https://youtu.be/nzZBNiAqRdA"
+blurb: "Adaptive site-specific installation running continuously for 60 hours, with 288 speakers (Wavefield Synthesis) forming a fully immersive environment."
 description: "Adaptive multimedia installation exploring phantom islands and cartographic errors through machine learning, worldbuilding, and site-specific sonic environments"
 redirect_from:
   - /work/sandy-island/

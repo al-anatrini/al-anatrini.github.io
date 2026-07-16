@@ -5,6 +5,8 @@ subtitle: "Piano, Electronics, Toy Piano and Toy Instruments"
 year: 2024
 category: "Chamber Music with Electronics"
 featured_image: "/assets/images/works/reloaded/cover.jpg"
+video_url: "https://vimeo.com/1137278512"
+blurb: "Written for the Non-Piano/Toy Piano Weekend of Hamburg, taking cues from Romitelli's Amok Koma; conventional and toy instruments blend through live electronics."
 redirect_from:
   - /work/reloaded/
 ---

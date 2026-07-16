@@ -4,6 +4,8 @@ title: "Bròlo"
 year: 2026
 category: "Audio-Video Live Media"
 featured_image: "/assets/images/works/brolo/cover.jpg"
+video_url: "https://vimeo.com/1209825980"
+blurb: "A cultivated place appears where it should not, and perhaps for that very reason, for a moment, it seems necessary."
 redirect_from:
   - /work/brolo/
 ---

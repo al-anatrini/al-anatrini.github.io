@@ -5,6 +5,8 @@ subtitle: "Interactive Installation"
 year: 2018
 category: "Interactive Installation"
 featured_image: "/assets/images/works/unfamiliar/cover.jpg"
+video_url: "https://vimeo.com/787516525"
+blurb: "Unfamiliar Walks emerged from Healing Soundscapes, research investigating how generative sonic environments influence patient well-being in hospital settings."
 redirect_from:
   - /work/unfamiliar/
 ---

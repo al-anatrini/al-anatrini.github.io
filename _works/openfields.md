@@ -5,6 +5,8 @@ subtitle: "Site-Specific Piece for 144 Musicians"
 year: 2019
 category: "Site-Specific Music"
 featured_image: "/assets/images/works/openfields/cover.jpg"
+video_url: "https://vimeo.com/690681774"
+blurb: "144 musicians distributed across 900 metres of subterranean tunnel, 24 metres beneath the Elbe River. The tunnel becomes instrument."
 description: "Large-scale site-specific work for 144 musicians distributed across 450 meters of the Elbe Tunnel, transforming industrial architecture into resonant chamber"
 redirect_from:
   - /work/openfields/

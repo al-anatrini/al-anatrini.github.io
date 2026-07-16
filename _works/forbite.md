@@ -5,6 +5,8 @@ subtitle: "For Contrabassoon and Live Electronics"
 year: 2015
 category: "Solo with Electronics"
 featured_image: "/assets/images/works/forbite/cover.jpg"
+video_url: "https://vimeo.com/690710850"
+blurb: "Commissioned by IRCAM's Académie ManiFeste 2015 and dedicated to Paul Riveaux, Forbite fantascienze—\"Forbidden Science Fictions\"—explores the contrabassoon's timbral extremes through real-time electronic augmentation."
 description: "IRCAM commission exploring contrabassoon extended techniques and real-time electronics, investigating liminal acoustic spaces and spectral transformation"
 redirect_from:
   - /work/forbite/

@@ -5,6 +5,8 @@ subtitle: "For Ensemble"
 year: 2017
 category: "Chamber Music"
 featured_image: "/assets/images/works/esplorazione/cover.jpg"
+video_url: "https://vimeo.com/690661111"
+blurb: "Commissioned by Ensemble Musiques Nouvelles for the Tactus Young Composer Forum, Esplorazione di una certa quantità d'acqua transforms acoustic properties of water-filled glass into orchestral material."
 redirect_from:
   - /work/esplorazione/
 ---

@@ -5,6 +5,8 @@ subtitle: "Interactive Generative Installation"
 year: 2021
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/wunderkammer/cover.jpg"
+video_url: "https://vimeo.com/690577455"
+blurb: "A Renaissance cabinet of curiosities transformed into an intelligent sonic organism, with a finite ~72-hour life cycle mirroring biological organisms."
 description: "Interactive installation using neural networks to generate evolving soundscapes, exploring machine learning entropy and decay over continuous runtime"
 redirect_from:
   - /work/wunderkammer/

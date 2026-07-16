@@ -5,6 +5,8 @@ subtitle: "For Big Orchestra and Electronics"
 year: 2017
 category: "Orchestral Music with Electronics"
 featured_image: "/assets/images/works/fragile/cover.jpg"
+video_url: "https://vimeo.com/690581834"
+blurb: "Commissioned by Hamburger Symphoniker, Fragile Territories constructs an entire orchestral universe from a single acoustic event: the oboe's tuning A at the work's beginning."
 redirect_from:
   - /work/fragile/
 ---

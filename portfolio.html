@@ -20,13 +20,16 @@ permalink: /portfolio/
   <article class="portfolio-item">
     {% if work.featured_image %}
     <div class="portfolio-item-media">
-      <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}" loading="lazy">
+      <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}">
     </div>
     {% endif %}
     <div class="portfolio-item-meta">
       <p class="portfolio-item-line">{{ work.year }} — {{ work.category | default: "Multimedia" }}</p>
       <h2 class="portfolio-item-title">{{ work.title }}</h2>
-      {% if work.subtitle %}<p class="portfolio-item-sub">{{ work.subtitle }}</p>{% endif %}
+      {% if work.blurb %}<p class="portfolio-item-blurb">{{ work.blurb }}</p>{% endif %}
+      {% if work.video_url %}
+      <p class="portfolio-item-link"><a href="{{ work.video_url }}" target="_blank" rel="noopener noreferrer">Watch ↗</a></p>
+      {% endif %}
     </div>
   </article>
   {% endfor %}

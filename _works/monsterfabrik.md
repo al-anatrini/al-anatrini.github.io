@@ -5,6 +5,8 @@ subtitle: "Audio-Video Fixed Media"
 year: 2024
 category: "Audio-Video Fixed Media"
 featured_image: "/assets/images/works/monsterfabrik/cover.jpg"
+video_url: "https://vimeo.com/1137285486"
+blurb: "Die Monsterfabrik explores the progressive transformation of Vivaldi's string music through iterative artificial intelligence training."
 redirect_from:
   - /work/monsterfabrik/
 ---

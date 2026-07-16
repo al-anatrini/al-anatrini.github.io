@@ -5,6 +5,8 @@ subtitle: "For Two Electric Guitars"
 year: 2019
 category: "Chamber Music"
 featured_image: "/assets/images/works/tapthis/cover.jpg"
+video_url: "https://vimeo.com/690592124"
+blurb: "Commissioned for Hamburg Dialogues 2019 and dedicated to Nicolas Haumann and Martin Donoso Vera, Tap This explores the electric guitar as a melodic instrument and percussive interface."
 description: "Contemporary work for two electric guitars exploring tapping technique as both melodic and percussive interface, challenging conventional guitar performance practices"
 redirect_from:
   - /work/tapthis/

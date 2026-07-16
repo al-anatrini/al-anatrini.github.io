@@ -5,6 +5,8 @@ subtitle: "Interactive Generative Installation"
 year: 2020
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/intermezzo/cover.jpg"
+video_url: "https://vimeo.com/787614841"
+blurb: "A generative installation inhabiting the threshold medieval cartographers marked \"Here be dragons\": the unexplored temporal space between concert pieces."
 redirect_from:
   - /work/intermezzo/
 ---

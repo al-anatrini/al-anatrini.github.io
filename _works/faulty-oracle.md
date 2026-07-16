@@ -5,6 +5,8 @@ subtitle: "Interactive Generative Installation"
 year: 2025
 category: "Interactive Generative Installation"
 featured_image: "/assets/images/works/faulty-oracle/cover.jpg"
+video_url: "https://youtu.be/fWOdMWVQyAc"
+blurb: "Faulty Oracle is an adaptive audiovisual installation conjuring a gloriously unreliable divinatory machine."
 redirect_from:
   - /work/faulty-oracle/
 ---
