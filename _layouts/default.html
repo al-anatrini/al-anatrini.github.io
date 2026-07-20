@@ -52,11 +52,11 @@
     <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
         <nav class="nav-overlay-nav" aria-label="Sections">
             <ul class="nav-overlay-links">
-                <li><a href="{{ '/' | relative_url }}" class="nav-overlay-link {% if page.url == '/' %}is-active{% endif %}">Index</a></li>
-                <li><a href="{{ '/works' | relative_url }}" class="nav-overlay-link {% if page.url contains '/work' %}is-active{% endif %}">Works</a></li>
-                <li><a href="{{ '/bio' | relative_url }}" class="nav-overlay-link {% if page.url == '/bio/' %}is-active{% endif %}">Bio</a></li>
-                <li><a href="{{ '/research' | relative_url }}" class="nav-overlay-link {% if page.url == '/research/' %}is-active{% endif %}">Research</a></li>
-                <li><a href="{{ '/contact' | relative_url }}" class="nav-overlay-link {% if page.url == '/contact/' %}is-active{% endif %}">Contact</a></li>
+                <li><a href="{{ '/' | relative_url }}" class="nav-overlay-link {% if page.url == '/' %}is-active{% endif %}" data-text="Index">Index</a></li>
+                <li><a href="{{ '/works' | relative_url }}" class="nav-overlay-link {% if page.url contains '/work' %}is-active{% endif %}" data-text="Works">Works</a></li>
+                <li><a href="{{ '/bio' | relative_url }}" class="nav-overlay-link {% if page.url == '/bio/' %}is-active{% endif %}" data-text="Bio">Bio</a></li>
+                <li><a href="{{ '/research' | relative_url }}" class="nav-overlay-link {% if page.url == '/research/' %}is-active{% endif %}" data-text="Research">Research</a></li>
+                <li><a href="{{ '/contact' | relative_url }}" class="nav-overlay-link {% if page.url == '/contact/' %}is-active{% endif %}" data-text="Contact">Contact</a></li>
             </ul>
         </nav>
     </div>
