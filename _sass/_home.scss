@@ -23,14 +23,14 @@
   border-radius: var(--radius-md);
   overflow: hidden;
 
-  // Feather: i bordi dell'immagine sfumano nel gesso (integrazione col fondo)
+  // Feather leggero: i bordi si fondono col gesso senza slavare l'immagine
   &::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: 2;
     pointer-events: none;
-    box-shadow: inset 0 0 clamp(50px, 10vw, 150px) clamp(18px, 4vw, 55px) var(--color-bg);
+    box-shadow: inset 0 0 clamp(18px, 3vw, 44px) 0 var(--color-bg);
   }
 
   // Velatura per la leggibilità del testo (in basso a sinistra), sopra il feather
