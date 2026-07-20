@@ -7,11 +7,9 @@ redirect_from:
 description: "Research by Alessandro Anatrini: navigating complexity through latent-space maps, instrument design, machine learning for music, adaptive environments, and a critique of platform technologies."
 ---
 
-Alessandro Anatrini's work moves between composition, computational art and research, held together by one concern: how to navigate complexity rather than simply control it.
+Much of my work takes the shape of maps. Using machine learning, I fold high-dimensional material into compact spaces where proximity means similarity, so that navigating complexity becomes a matter of moving through it rather than mastering it. I think of this as *latent-space curation*: choosing what a reduced space should hold, how it is shaped, and how one moves across it.
 
-Much of it takes the shape of maps. A digital instrument can carry hundreds of parameters; a sample library can hold thousands of sounds. Instead of turning every knob or scrolling endless lists, he uses machine learning to fold that high-dimensional material into a compact, navigable space, where distance means difference and proximity means similarity. He approaches this as *latent-space curation*: deciding what a reduced space should hold, how it should be shaped, and how a performer moves through it. *Wavepilot* builds such a space from an instrument's parameters (with a variational autoencoder); *audiostellar2* builds one from the timbral fingerprint of a sound collection (with UMAP, t-SNE, MDS or PCA). Two problems, one idea: making complex systems playable by giving them a form you can inhabit.
-
-This grows out of instrument design, which sits at the centre of his practice. He builds the instruments themselves, from granular engines (*ec2~*) to emulations of historic hardware (the *PPG Wave*), treating the interface and its latent space as compositional material rather than a layer added afterwards. From there the work extends outward: adaptive, self-evolving environments that respond to their surroundings and their public (*Sandy Island*); the acoustics of real physical spaces (*AcousticFEM*); and a critical enquiry into the ecological and political costs of these technologies, and what artistic research can do about them (*Digital Neomedievalism*). Several of these strands converge in his doctoral thesis, *Hybrid Ecosystems: interaction, simulation and artistic practice in the age of AI* (forthcoming).
+This grows out of instrument design, at the centre of my practice: I build the instruments themselves and treat the interface and its latent space as compositional material. From there the work opens onto adaptive environments, the acoustics of physical space, and a critique of the technologies it relies on.
 
 The full record of papers and talks is in [Writing](#writing) below.
 
@@ -22,7 +20,7 @@ The full record of papers and talks is in [Writing](#writing) below.
 <div class="research-thread" markdown="1">
 <p class="rt-year">2026 · Alpha testing</p>
 ### audiostellar2: a constellation of sounds
-A macOS build in the AudioStellar 2 line (a fork of AudioStellar, GPL-3) that lays a sound collection out as a constellation of samples on a 2-D map generated from audio similarity, then lets you play it: explorers, sequencers, particle emitters, trajectories, morphing and AudioGuide-style concatenative matching, with OSC and MIDI. His build computes the map entirely in native C++ (UMAP, t-SNE, MDS or PCA, no Python) and shares a single descriptor space between the map and the concatenative matcher, so that nearness on the map genuinely tracks sonic similarity. Currently in alpha testing and available on request, ahead of a public release.
+A macOS build in the AudioStellar 2 line (a fork of AudioStellar, GPL-3) that lays a sound collection out as a constellation of samples on a 2-D map generated from audio similarity, then lets you play it: explorers, sequencers, particle emitters, trajectories, morphing and AudioGuide-style concatenative matching, with OSC and MIDI. My build computes the map entirely in native C++ (UMAP, t-SNE, MDS or PCA, no Python) and shares a single descriptor space between the map and the concatenative matcher, so that nearness on the map genuinely tracks sonic similarity. Currently in alpha testing and available on request, ahead of a public release.
 </div>
 
 <div class="research-thread" markdown="1">
@@ -35,21 +33,21 @@ A multichannel granular-synthesis external for Max, porting the EmissionControl2
 <div class="research-thread" markdown="1">
 <p class="rt-year">2025 · P+ARTS</p>
 ### Digital Neomedievalism: art and resistance in the platform age
-A theoretical paper proposing "digital neomedievalism" as a lens on the hidden power structures and ecological costs of contemporary digital systems. It argues that platforms such as generative AI and cloud computing reproduce feudal dynamics of asymmetric dependency, data extraction and precarious labour, which he reads as "recursive hybrid ontologies": self-reinforcing systems that bind historical injustices to computational futures. Working through his own installation practice, the paper frames artistic research as a form of *epistemic activism*, and points to open-source and craft practices as present-day echoes of the medieval guild.
+A theoretical paper proposing "digital neomedievalism" as a lens on the hidden power structures and ecological costs of contemporary digital systems. It argues that platforms such as generative AI and cloud computing reproduce feudal dynamics of asymmetric dependency, data extraction and precarious labour, which I read as "recursive hybrid ontologies": self-reinforcing systems that bind historical injustices to computational futures. Working through my own installation practice, the paper frames artistic research as a form of *epistemic activism*, and points to open-source and craft practices as present-day echoes of the medieval guild.
 [About the conference ↗](https://partsproject.eu/activity/parts-conference-on-artistic-research/)
 </div>
 
 <div class="research-thread" markdown="1">
 <p class="rt-year">2021-2024 · CIM</p>
 ### Wavepilot: a map of an instrument's controls
-An open-source framework (command-line tool and Python module) for exploring and reshaping the parameters of digital multimedia instruments. A variational autoencoder compresses an instrument's high-dimensional parameter space into a low-dimensional map you can navigate; moving through it changes many parameters at once, while radial-basis-function interpolation fills in smooth transitions between saved states. Because it works on the parameter values themselves rather than on audio analysis, it stays agnostic to the medium, whether audio, video or effects, and the resulting meta-GUI works as a kind of score. It grew out of his own compositional practice (used in Wunderkammer and Sandy Island) and belongs to his thesis, *Hybrid Ecosystems*.
+An open-source framework (command-line tool and Python module) for exploring and reshaping the parameters of digital multimedia instruments. A variational autoencoder compresses an instrument's high-dimensional parameter space into a low-dimensional map you can navigate; moving through it changes many parameters at once, while radial-basis-function interpolation fills in smooth transitions between saved states. Because it works on the parameter values themselves rather than on audio analysis, it stays agnostic to the medium, whether audio, video or effects, and the resulting meta-GUI works as a kind of score. It grew out of my own compositional practice (used in Wunderkammer and Sandy Island) and belongs to my thesis, *Hybrid Ecosystems*.
 [Read the paper ↗](https://www.aimi-musica.org/wp-content/uploads/2024/09/programma_XXIV_CIM.pdf)
 </div>
 
 <div class="research-thread" markdown="1">
 <p class="rt-year">2022-2023 · AIMC</p>
 ### Sandy Island: parameters as a place
-A site-specific audio-visual installation (2022) built on a new way of framing synthesis-space exploration: the parameters of aggregate instruments are treated, agnostically, as points in a three-dimensional virtual space. From that space the system can morph between settings and self-generate new instrument configurations with the characteristics he is after. The paper concentrates on this underlying technology, its flexibility and its capacity for self-generation, and places the work within a wider, data-driven line of research into self-evolving multimedia environments that adapt to the conditions around them. Part of his doctoral thesis, *Hybrid Ecosystems*.
+A site-specific audio-visual installation (2022) built on a new way of framing synthesis-space exploration: the parameters of aggregate instruments are treated, agnostically, as points in a three-dimensional virtual space. From that space the system can morph between settings and self-generate new instrument configurations with the characteristics I am after. The paper concentrates on this underlying technology, its flexibility and its capacity for self-generation, and places the work within a wider, data-driven line of research into self-evolving multimedia environments that adapt to the conditions around them. Part of my doctoral thesis, *Hybrid Ecosystems*.
 [Read the paper ↗](https://aimc2023.pubpub.org/pub/a3ofjcxd/release/1)
 </div>
 
@@ -72,7 +70,7 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 ## Writing
 
 ### 2026
-- **Estetiche, angecy e responsabilità nella arti multimediali** (Doctoral seminar for XLI-cycle PhD students) · Piacenza • Conservatorio Statale di Musica G. Nicolini
+- **Estetiche, agency e responsabilità nelle arti multimediali** (Doctoral seminar for XLI-cycle PhD students) · Piacenza • Conservatorio Statale di Musica G. Nicolini
 - **Physiological and Physical Foundations of Creative Systems** (Panel with Rolf Bader and Jakub Sawicki) · Hamburg • International Computer Music Conference (ICMC2026)
 - **MetaConcert: A Shared VR Audio-Visual Experience Model Reducing User Isolation Through Synchronized 360 Video on HMDs and HOA Playback on a Multichannel Dome** (Conference Paper, co-authored with M. Cantonetti, P. Malpeli & G. Rizzo) · Hamburg • International Computer Music Conference (ICMC2026)
 
@@ -107,8 +105,8 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 
 ## Workshops & Educational Activities
 
-Online tutorial series developed for Hamburg Open Online University (HOOU):
+I have developed online tutorial series for Hamburg Open Online University (HOOU):
 - **Interactivity in Classrooms: Introduction to Pure Data and TouchOSC** (2019-2020) · 10-part series for music educators
 - **Chiptune Music with Sunvox** (2018-2019) · 10-part series for music educators
 
-He regularly serves as peer reviewer for international conferences including AIMC, ICMC, NIME, TENOR, and SMC.
+I regularly serve as peer reviewer for international conferences including AIMC, ICMC, NIME, TENOR, and SMC.
