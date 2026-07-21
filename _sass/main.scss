@@ -498,9 +498,9 @@ body.nav-open { overflow: hidden; }
 
 // Footer - Clean and minimal
 .main-footer {
-  padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+  padding: clamp(2.5rem, 6vw, 4.5rem) var(--spacing-md) clamp(2rem, 4vw, 3rem);
   border-top: 1px solid var(--color-hair);  // Hairline neutro
-  margin-top: var(--spacing-2xl);  // More breathing room
+  margin-top: var(--spacing-lg);
   background: var(--color-bg);
 }
 
@@ -561,10 +561,12 @@ body.nav-open { overflow: hidden; }
 
 .footer-links {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-md);
 
   @media (max-width: 768px) {
     gap: var(--spacing-sm);
+    justify-content: center;
   }
 }
 
@@ -620,24 +622,32 @@ body.nav-open { overflow: hidden; }
   margin: 0;
 }
 
-// Custom cursor - MINIMAL geometric accent
-.cursor-follower {
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--color-accent);  // Thinner line
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 10000;
-  opacity: 0;
-  // Center the cursor properly - subtract half width/height
-  transform: translate(-50%, -50%);
-  transition: opacity var(--transition-fast);
-  box-shadow: 0 0 8px rgba(43, 78, 124, 0.15);  // Lighter shadow
-
-  @media (max-width: 1024px) {
-    display: none;
+// Reveal allo scroll (sobrio, appena percettibile)
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-init {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+    will-change: opacity, transform;
   }
+  .reveal-init.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// In stampa non nascondere mai nulla
+@media print {
+  .reveal-init { opacity: 1 !important; transform: none !important; }
+}
+
+// Focus visibile per navigazione da tastiera (accessibilità)
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 // Page transitions

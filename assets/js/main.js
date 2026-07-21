@@ -64,55 +64,27 @@ function applyWorkLayoutChoreography() {
   console.log(`📐 Spatial choreography: Layout ${layoutVariant}/5`);
 }
 
-// Custom cursor follower
+// Subtle scroll reveal (fade-up on enter). Respects reduced-motion; skips print/portfolio.
 document.addEventListener('DOMContentLoaded', () => {
-  // Generative baroque effects disabled: the Pietra palette is controlled/deliberate.
-  // (applyGenerativeNoise / applyHeroTypographyVariations / applyWorkLayoutChoreography)
-  const cursor = document.querySelector('.cursor-follower');
-  let mouseX = 0;
-  let mouseY = 0;
-  let cursorX = 0;
-  let cursorY = 0;
-  const speed = 0.15;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
 
-  if (cursor && window.innerWidth > 1024) {
-    document.addEventListener('mousemove', (e) => {
-      // Use clientX/clientY for fixed positioning (viewport coordinates)
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursor.style.opacity = '1';
+  const selector = '.reveal-row, .research-thread, .pub-group, .now-item, .work-content .work-section, .work-content .credits-section';
+  const items = Array.from(document.querySelectorAll(selector));
+  if (!items.length) return;
+
+  items.forEach((el) => el.classList.add('reveal-init'));
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        obs.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
 
-    document.addEventListener('mouseleave', () => {
-      cursor.style.opacity = '0';
-    });
-
-    function animateCursor() {
-      const distX = mouseX - cursorX;
-      const distY = mouseY - cursorY;
-
-      cursorX += distX * speed;
-      cursorY += distY * speed;
-
-      cursor.style.left = `${cursorX}px`;
-      cursor.style.top = `${cursorY}px`;
-
-      requestAnimationFrame(animateCursor);
-    }
-
-    animateCursor();
-
-    // Enlarge cursor on hover over interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .work-card, .work-item');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-      });
-    });
-  }
+  items.forEach((el) => io.observe(el));
 });
 
 // "+" menu overlay with ARIA support
