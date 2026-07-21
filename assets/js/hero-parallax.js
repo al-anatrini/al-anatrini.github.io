@@ -46,7 +46,12 @@
       base.y = 1.0 - base.y;
       float d = texture2D(u_depth, base).r;
       vec2 uv = base + u_mouse * u_strength * (d - 0.45);
-      gl_FragColor = texture2D(u_img, uv);
+      // Duotone: mappa la luminanza sulla rampa Oltremare (ombre) -> Gesso (alte luci)
+      vec3 c = texture2D(u_img, uv).rgb;
+      float l = dot(c, vec3(0.299, 0.587, 0.114));
+      vec3 shadow = vec3(0.106, 0.169, 0.271);  // Oltremare scuro
+      vec3 highlight = vec3(0.909, 0.874, 0.788); // Gesso
+      gl_FragColor = vec4(mix(shadow, highlight, l), 1.0);
     }`;
 
   function compile(type, src) {

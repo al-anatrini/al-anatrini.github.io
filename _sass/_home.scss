@@ -44,7 +44,8 @@
   }
 }
 
-// Fallback statico (mobile / reduced-motion / no-WebGL)
+// Fallback statico (mobile / reduced-motion / no-WebGL) — duotone via filtro SVG
+// (il canvas WebGL applica lo stesso duotone nello shader)
 .hero-media {
   position: absolute;
   inset: 0;
@@ -52,6 +53,7 @@
   background-image: url('/assets/images/backgrounds/bg-img-01.jpg');
   background-size: cover;
   background-position: center;
+  filter: url('#duotone-oltre');
 }
 
 // Canvas WebGL — parallasse 2.5D con depth map
