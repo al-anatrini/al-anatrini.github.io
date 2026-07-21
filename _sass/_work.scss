@@ -8,7 +8,7 @@
 }
 
 .works-index-header {
-  padding: var(--spacing-xl) 0 var(--spacing-md);
+  padding: clamp(1.4rem, 4vw, 3rem) 0 var(--spacing-md);
 
   h1 {
     font-family: var(--font-display);
@@ -27,6 +27,7 @@
     color: var(--color-text);
     max-width: 60ch;
     margin: 0 0 var(--spacing-sm);
+    overflow-wrap: break-word;
 
     &:last-child { margin-bottom: 0; }
   }
@@ -71,6 +72,9 @@
   right: clamp(1.4rem, 4vw, 3rem);
   z-index: 2;
   margin: 0;
+  max-width: 62vw;
+  text-align: right;
+  line-height: 1.5;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
@@ -114,7 +118,7 @@
 // Corpo (Cinematica): Concept a sinistra · Specifiche a lato (destra) · media grande sotto
 .work-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   column-gap: clamp(2.5rem, 6vw, 6rem);
   row-gap: clamp(1.8rem, 5vw, 3.2rem);
   align-items: start;
