@@ -70,39 +70,79 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 ## Publications, Talks & Presentations
 {: #writing}
 
-### 2026
+<div class="pub-index" markdown="1">
+
+<div class="pub-group" markdown="1">
+<div class="pub-year">2026</div>
+<div class="pub-list" markdown="1">
 - **Estetiche, agency e responsabilità nelle arti multimediali** (Doctoral seminar for XLI-cycle PhD students) · Piacenza • Conservatorio Statale di Musica G. Nicolini
 - **Physiological and Physical Foundations of Creative Systems** (Panel with Rolf Bader and Jakub Sawicki) · Hamburg • International Computer Music Conference (ICMC2026)
 - **MetaConcert: A Shared VR Audio-Visual Experience Model Reducing User Isolation Through Synchronized 360 Video on HMDs and HOA Playback on a Multichannel Dome** (Conference Paper, co-authored with M. Cantonetti, P. Malpeli & G. Rizzo) · Hamburg • International Computer Music Conference (ICMC2026)
+</div>
+</div>
 
-### 2025
+<div class="pub-group" markdown="1">
+<div class="pub-year">2025</div>
+<div class="pub-list" markdown="1">
 - **Digital Neomedievalism: Art and Resistance in the Platform Age** (Conference Paper) · ABANA Napoli • P+ARTS Conference on Artistic Research
 - **Ecologie del possibile. Simulazione e Worldbuilding in Sandy Island** (Presentation) · Tempo Reale, Florence • MAGNETICA
+</div>
+</div>
 
-### 2024
+<div class="pub-group" markdown="1">
+<div class="pub-year">2024</div>
+<div class="pub-list" markdown="1">
 - **Phausto: Embedding the Faust Compiler in the Pharo World** (Conference Paper, co-authored with D. Cipriani & S.J. Montaño) · SoundMiT Torino • International Faust Conference (IFC-24)
 - **WavePilot: Framework multidimensionale per l'esplorazione dello spazio parametrico degli strumenti digitali** (Conference Paper) · Università di Torino • XXIV Colloqui di Informatica Musicale
+</div>
+</div>
 
-### 2023
+<div class="pub-group" markdown="1">
+<div class="pub-year">2023</div>
+<div class="pub-list" markdown="1">
 - **Sandy Island: A New Form of Parameters' Space Management** (Conference Paper) · University of Sussex / Intelligent Instrument Lab Iceland • AI and Music Creativity Conference (AIMC2023)
 - **The Awareness of the Tools in the Neural Media Praxis** (Book Chapter) · Wolke Verlag, Berlin • KISS: Kinetics in Sound & Space monograph
+</div>
+</div>
 
-### 2021
+<div class="pub-group" markdown="1">
+<div class="pub-year">2021</div>
+<div class="pub-list" markdown="1">
 - **Proceedings of the Sixth International Conference on Technologies for Music Notation and Representation** (Co-Editor) · Hamburg • TENOR 2020/21
+</div>
+</div>
 
-### 2020
+<div class="pub-group" markdown="1">
+<div class="pub-year">2020</div>
+<div class="pub-list" markdown="1">
 - **Panoramica della libreria MaxScore** (Workshop) · Reggio Emilia • Dialoghi sul comporre
+</div>
+</div>
 
-### 2019
+<div class="pub-group" markdown="1">
+<div class="pub-year">2019</div>
+<div class="pub-list" markdown="1">
 - **Alex McLean and Roger T. Dean (Eds.), The Oxford Handbook of Algorithmic Music** (Review) · Sage Publications • Musicæ Scientiæ
+</div>
+</div>
 
-### 2017
+<div class="pub-group" markdown="1">
+<div class="pub-year">2017</div>
+<div class="pub-list" markdown="1">
 - **MaxPiccolo: A Prototype for an Early Computer-Based Music Education in Schools** (Conference Paper) · Paris • Journées d'informatique musicale (JIM2017)
 - **MaxPiccolo, Historical Background and Overview** (Presentation) · Karlsruhe • ZKM | next_generation 7.0
+</div>
+</div>
 
-### 2016
+<div class="pub-group" markdown="1">
+<div class="pub-year">2016</div>
+<div class="pub-list" markdown="1">
 - **The State of the Art on the Educational Software Tools for Electroacoustic Composition** (Conference Paper) · Hamburg • Sound and Music Computing Conference (SMC2016)
 - **Suono, elettronica e musica: valutazioni per una didattica della musica** (Presentation) · Budrio • Dialoghi sul comporre
+</div>
+</div>
+
+</div>
 
 ## Workshops & Educational Activities
 
