@@ -33,11 +33,14 @@ redirect_from:
 <div class="work-section">
   <h2 class="section-title">Concept</h2>
 
+  <div class="concept-text">
+
   <p>144 musicians distributed across 900 meters of subterranean tunnel, 24 meters beneath the Elbe River. Hamburg's Alte Elbtunnel becomes a resonance chamber: twin pedestrian tunnels, 450 meters each, 72 musicians per tunnel at 3-meter intervals. Sound propagates through cylindrical architecture. The tunnel becomes instrument.</p>
 
   <p>Commissioned for the tunnel's reopening ceremony. The work transforms industrial infrastructure into immersive sonic environment. Spatial arrangement creates living score—each musician serves as performer and acoustic node. Spectral transcription of synthesizer improvisation, orchestrated for distributed acoustic ensemble.</p>
 
   <p>Score distribution via web-based system (Rama Gottfried, Georg Hajdu). 144 individual parts synchronized across vast spatial distances via iPads and wireless network. The challenge: conducting a dispersed ensemble with limited visual contact.</p>
+  </div>
 </div>
 
 <div class="work-section">

@@ -41,11 +41,14 @@ redirect_from:
 <div class="work-section">
   <h2 class="section-title">Concept</h2>
 
+  <div class="concept-text">
+
   <p>Renaissance cabinet of curiosities transformed into intelligent sonic organism. Commissioned for Spazio Materia, Prato—a 15th-century pavilion-vaulted building. The installation responds to visitor movements and sounds through neural network-based sound generation. Each acoustic event modifies the network's interpolation space, creating unique sound objects as audible traces of human presence.</p>
 
   <p>Finite life cycle: approximately 72 hours, mirroring biological organisms. Born with excellent adaptive capabilities, matures through visitor interaction, gradually exhausts capacity for novelty. At the beginning, visitors exert tangible control. As hours progress, the system becomes less reactive, settling into homogeneous patterns. By 70 hours, the work achieves senescence—visitors witness an autonomous system playing out its final algorithmic gestures.</p>
 
   <p>Questions the nature of AI systems, agency, and the relationship between human action and machine response. Unlike traditional interactive installations promising infinite responsiveness, Wunderkammer acknowledges entropy, limitation, and temporal boundaries of computational processes.</p>
+  </div>
 </div>
 
 <div class="work-section">

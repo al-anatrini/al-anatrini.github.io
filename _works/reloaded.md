@@ -25,9 +25,12 @@ redirect_from:
 <div class="work-section">
   <h2 class="section-title">Concept</h2>
 
+  <div class="concept-text">
+
   <p>Written for Non-Piano/Toy Piano Weekend of Hamburg. The festival theme—"How would have sounded a piano piece by Fausto Romitelli?"—offered a loose starting point. The piece takes cues from Romitelli's Amok Koma without attempting literal translation. Conventional and toy instruments blend through live electronics.</p>
 
   <p>No programme note was provided at the premiere.</p>
+  </div>
 </div>
 
 <div class="work-section">
