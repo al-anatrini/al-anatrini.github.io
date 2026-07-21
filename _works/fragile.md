@@ -88,24 +88,24 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Commission</div>
-      <div class="credit-name">Hamburger Symphoniker</div>
+    <div>
+      <h3>Commission</h3>
+      <p>Hamburger Symphoniker</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Premiere Performance</div>
-      <div class="credit-name">Hamburger Symphoniker</div>
+    <div>
+      <h3>Premiere Performance</h3>
+      <p>Hamburger Symphoniker</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Laeiszhalle Miralles-Saal, Hamburg</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Laeiszhalle Miralles-Saal, Hamburg</p>
     </div>
   </div>
 </div>

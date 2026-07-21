@@ -93,24 +93,24 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition & Electronics</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition & Electronics</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Dedicated to & Premiere Performance</div>
-      <div class="credit-name">Paul Riveaux (Ensemble Intercontemporain)</div>
+    <div>
+      <h3>Dedicated to & Premiere Performance</h3>
+      <p>Paul Riveaux (Ensemble Intercontemporain)</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Commission</div>
-      <div class="credit-name">IRCAM Académie ManiFeste 2015</div>
+    <div>
+      <h3>Commission</h3>
+      <p>IRCAM Académie ManiFeste 2015</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Le Centquatre, Paris</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Le Centquatre, Paris</p>
     </div>
   </div>
 </div>

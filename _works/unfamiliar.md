@@ -88,29 +88,29 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition & System Development</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition & System Development</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">GUI & Sample Engine</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>GUI & Sample Engine</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Project Partners</div>
-      <div class="credit-name">HfMT Hamburg, UKE Hamburg, MSH Hamburg</div>
+    <div>
+      <h3>Project Partners</h3>
+      <p>HfMT Hamburg, UKE Hamburg, MSH Hamburg</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Installation Site</div>
-      <div class="credit-name">Universitätsklinikum Eppendorf (UKE)</div>
+    <div>
+      <h3>Installation Site</h3>
+      <p>Universitätsklinikum Eppendorf (UKE)</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Project</div>
-      <div class="credit-name">Healing Soundscapes</div>
+    <div>
+      <h3>Project</h3>
+      <p>Healing Soundscapes</p>
     </div>
   </div>
 </div>

@@ -74,29 +74,29 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Dedicated to</div>
-      <div class="credit-name">Nicolas Haumann & Martin Donoso Vera</div>
+    <div>
+      <h3>Dedicated to</h3>
+      <p>Nicolas Haumann & Martin Donoso Vera</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Premiere Performance</div>
-      <div class="credit-name">Nicolas Haumann & Martin Donoso Vera</div>
+    <div>
+      <h3>Premiere Performance</h3>
+      <p>Nicolas Haumann & Martin Donoso Vera</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Resonanzraum, Hamburg</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Resonanzraum, Hamburg</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Commission</div>
-      <div class="credit-name">Hamburg Dialogues 2019</div>
+    <div>
+      <h3>Commission</h3>
+      <p>Hamburg Dialogues 2019</p>
     </div>
   </div>
 </div>

@@ -73,29 +73,29 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Commission</div>
-      <div class="credit-name">Ensemble Musiques Nouvelles</div>
+    <div>
+      <h3>Commission</h3>
+      <p>Ensemble Musiques Nouvelles</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Premiere Performance</div>
-      <div class="credit-name">Ensemble Musiques Nouvelles</div>
+    <div>
+      <h3>Premiere Performance</h3>
+      <p>Ensemble Musiques Nouvelles</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Arsonic, Mons</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Arsonic, Mons</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Event</div>
-      <div class="credit-name">Tactus Young Composer Forum</div>
+    <div>
+      <h3>Event</h3>
+      <p>Tactus Young Composer Forum</p>
     </div>
   </div>
 </div>

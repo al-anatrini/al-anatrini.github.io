@@ -95,24 +95,24 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition & Orchestration</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition & Orchestration</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Score Distribution System</div>
-      <div class="credit-name">Rama Gottfried, Georg Hajdu</div>
+    <div>
+      <h3>Score Distribution System</h3>
+      <p>Rama Gottfried, Georg Hajdu</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Performance</div>
-      <div class="credit-name">144 amateur musicians (12 ensembles)</div>
+    <div>
+      <h3>Performance</h3>
+      <p>144 amateur musicians (12 ensembles)</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Photography</div>
-      <div class="credit-name">KLARA Janina Luckow</div>
+    <div>
+      <h3>Photography</h3>
+      <p>KLARA Janina Luckow</p>
     </div>
   </div>
 </div>

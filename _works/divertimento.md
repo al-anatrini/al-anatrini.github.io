@@ -89,29 +89,29 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Composition</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Composition</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Commission</div>
-      <div class="credit-name">FontanaMix Ensemble</div>
+    <div>
+      <h3>Commission</h3>
+      <p>FontanaMix Ensemble</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Performance</div>
-      <div class="credit-name">FontanaMix Ensemble</div>
+    <div>
+      <h3>Performance</h3>
+      <p>FontanaMix Ensemble</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Le Torri dell'Acqua, Budrio</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Le Torri dell'Acqua, Budrio</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Occasion</div>
-      <div class="credit-name">200th Anniversary of Leopardi's "L'Infinito"</div>
+    <div>
+      <h3>Occasion</h3>
+      <p>200th Anniversary of Leopardi's "L'Infinito"</p>
     </div>
   </div>
 </div>

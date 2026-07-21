@@ -73,24 +73,24 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Concept & Audio System</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Concept & Audio System</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Reactive Visual Design</div>
-      <div class="credit-name">KLARA Janina Luckow</div>
+    <div>
+      <h3>Reactive Visual Design</h3>
+      <p>KLARA Janina Luckow</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Venue</div>
-      <div class="credit-name">Künstlerhaus Faktor, Hamburg</div>
+    <div>
+      <h3>Venue</h3>
+      <p>Künstlerhaus Faktor, Hamburg</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Festival</div>
-      <div class="credit-name">Blurred Edges 2020</div>
+    <div>
+      <h3>Festival</h3>
+      <p>Blurred Edges 2020</p>
     </div>
   </div>
 </div>

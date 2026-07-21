@@ -101,19 +101,19 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Artistic Direction & Audio Programming</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Artistic Direction & Audio Programming</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Light Design</div>
-      <div class="credit-name">Jacopo Buono</div>
+    <div>
+      <h3>Light Design</h3>
+      <p>Jacopo Buono</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Production</div>
-      <div class="credit-name">Mosè Risaliti, Massimiliano Fortunati</div>
+    <div>
+      <h3>Production</h3>
+      <p>Mosè Risaliti, Massimiliano Fortunati</p>
     </div>
   </div>
 </div>

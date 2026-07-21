@@ -97,44 +97,44 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Artistic Direction & Composition</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Artistic Direction & Composition</h3>
+      <p>Alessandro Anatrini</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Sound Diffusion</div>
-      <div class="credit-name">Lucas Xerxes</div>
+    <div>
+      <h3>Sound Diffusion</h3>
+      <p>Lucas Xerxes</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Video Consultant & Floor Projection</div>
-      <div class="credit-name">KLARA Janina Luckow</div>
+    <div>
+      <h3>Video Consultant & Floor Projection</h3>
+      <p>KLARA Janina Luckow</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">3D Modelling</div>
-      <div class="credit-name">Alessandro Alessandri</div>
+    <div>
+      <h3>3D Modelling</h3>
+      <p>Alessandro Alessandri</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Production Manager</div>
-      <div class="credit-name">Benjamin Helmer</div>
+    <div>
+      <h3>Production Manager</h3>
+      <p>Benjamin Helmer</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Technical Director</div>
-      <div class="credit-name">Oliver Kirschner & HfMT Forum Team</div>
+    <div>
+      <h3>Technical Director</h3>
+      <p>Oliver Kirschner & HfMT Forum Team</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Documentation</div>
-      <div class="credit-name">Christian Frank, Peter Wolff</div>
+    <div>
+      <h3>Documentation</h3>
+      <p>Christian Frank, Peter Wolff</p>
     </div>
 
-    <div class="credit-item">
-      <div class="credit-role">Production</div>
-      <div class="credit-name">KISS — Kinetics in Sound and Space, Stage 2.0, HfMT Hamburg</div>
+    <div>
+      <h3>Production</h3>
+      <p>KISS — Kinetics in Sound and Space, Stage 2.0, HfMT Hamburg</p>
     </div>
   </div>
 </div>

@@ -61,9 +61,9 @@ redirect_from:
   <h2>Credits</h2>
 
   <div class="credits-grid">
-    <div class="credit-item">
-      <div class="credit-role">Audio / Video / Programming / Gin&Tonic</div>
-      <div class="credit-name">Alessandro Anatrini</div>
+    <div>
+      <h3>Audio / Video / Programming / Gin&Tonic</h3>
+      <p>Alessandro Anatrini</p>
     </div>
   </div>
 </div>
