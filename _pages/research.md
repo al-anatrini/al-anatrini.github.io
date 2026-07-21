@@ -11,7 +11,7 @@ Much of my work takes the shape of maps. Using machine learning, I fold high-dim
 
 This grows out of instrument design, at the centre of my practice: I build the instruments themselves and treat the interface and its latent space as compositional material. From there the work opens onto adaptive environments, the acoustics of physical space, and a critique of the technologies it relies on.
 
-The full record of papers and talks is in [Writing](#writing) below.
+The full record of publications, talks and presentations is [below](#writing).
 
 ## Selected research
 
@@ -67,7 +67,8 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 
 </div>
 
-## Writing
+## Publications, Talks & Presentations
+{: #writing}
 
 ### 2026
 - **Estetiche, agency e responsabilità nelle arti multimediali** (Doctoral seminar for XLI-cycle PhD students) · Piacenza • Conservatorio Statale di Musica G. Nicolini
