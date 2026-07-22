@@ -7,9 +7,9 @@ redirect_from:
 description: "Research by Alessandro Anatrini: navigating complexity through latent-space maps, instrument design, machine learning for music, adaptive environments, and a critique of platform technologies."
 ---
 
-Much of my work takes the shape of maps. Using machine learning, I fold high-dimensional material into compact spaces where proximity means similarity, so that navigating complexity becomes a matter of moving through it rather than mastering it. I think of this as *latent-space curation*: choosing what a reduced space should hold, how it is shaped, and how one moves across it.
+Much of my work takes the shape of maps. Using machine learning, I fold high-dimensional material into compact spaces, so that navigating complexity becomes a matter of moving through it rather than mastering it. I think of this as latent-space curation: choosing what a reduced space should hold, how it is shaped, and how one moves across it.
 
-This grows out of instrument design, at the centre of my practice: I build the instruments themselves and treat the interface and its latent space as compositional material. From there the work opens onto adaptive environments, the acoustics of physical space, and a critique of the technologies it relies on.
+This grows out of instrument design, at the centre of my practice: I build the instruments themselves and treat the interface as creative material. From there the work opens onto adaptive environments, the acoustics of physical space, and a critical perspective of the technologies it relies on.
 
 The full record of publications, talks and presentations is [below](#writing).
 
@@ -130,7 +130,7 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 <div class="pub-year">2017</div>
 <div class="pub-list" markdown="1">
 - **MaxPiccolo: A Prototype for an Early Computer-Based Music Education in Schools** (Conference Paper) · Paris • Journées d'informatique musicale (JIM2017)
-- **MaxPiccolo, Historical Background and Overview** (Presentation) · Karlsruhe • ZKM | next_generation 7.0
+- **MaxPiccolo, Historical Background and Overview** (Presentation) · Karlsruhe • ZKM, next_generation 7.0
 </div>
 </div>
 
@@ -146,8 +146,12 @@ A software synthesiser (AU/VST3, macOS) loosely modelled on the core engine of t
 
 ## Workshops & Educational Activities
 
+<div class="edu-notes" markdown="1">
+
 I have developed online tutorial series for Hamburg Open Online University (HOOU):
 - **Interactivity in Classrooms: Introduction to Pure Data and TouchOSC** (2019-2020) · 10-part series for music educators
 - **Chiptune Music with Sunvox** (2018-2019) · 10-part series for music educators
 
 I regularly serve as peer reviewer for international conferences including AIMC, ICMC, NIME, TENOR, and SMC.
+
+</div>

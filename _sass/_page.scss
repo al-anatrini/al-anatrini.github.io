@@ -377,3 +377,24 @@
     font-weight: 600;
   }
 }
+
+// Workshops & Educational Activities — stessa scala tipografica della
+// bibliografia, per coerenza con il resto della pagina
+.page-content .edu-notes {
+  p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+
+  p { max-width: 68ch; }
+
+  ul { max-width: 68ch; }
+
+  li {
+    margin-bottom: 0.4rem;
+    &::marker { color: var(--color-warm); }  // Cinàbro, come gli anni
+  }
+
+  strong { color: var(--color-text); font-weight: 600; }
+}
