@@ -13,3 +13,9 @@ README.md
 start-preview.sh
 FIX_DOCUMENTATION.md
 palette_reference/
+
+# Background images: track only the current hero still (-01) + its depth map.
+# All other backgrounds (old stills, alternates, their depth maps) stay local.
+assets/images/backgrounds/*
+!assets/images/backgrounds/bg-img-01.jpg
+!assets/images/backgrounds/bg-depth-01.png

@@ -51,7 +51,11 @@
       float l = dot(c, vec3(0.299, 0.587, 0.114));
       vec3 shadow = vec3(0.106, 0.169, 0.271);  // Oltremare scuro
       vec3 highlight = vec3(0.909, 0.874, 0.788); // Gesso
-      gl_FragColor = vec4(mix(shadow, highlight, l), 1.0);
+      vec3 duo = mix(shadow, highlight, l);
+      // Preserva i toni caldi: la maschera (rosso - blu) fa riemergere rossi/ocra,
+      // mentre grigi e azzurri restano nel duotone Oltremare. Indipendente dall'immagine.
+      float warm = clamp((c.r - c.b) * 3.0, 0.0, 1.0);
+      gl_FragColor = vec4(mix(duo, c, warm * 0.85), 1.0);
     }`;
 
   function compile(type, src) {

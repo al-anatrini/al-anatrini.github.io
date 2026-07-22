@@ -6,12 +6,23 @@ description: "Alessandro Anatrini - composer and new media artist"
 
 <svg class="duo-defs" width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
   <filter id="duotone-oltre" color-interpolation-filters="sRGB">
-    <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0"/>
-    <feComponentTransfer>
+    <!-- Duotone Oltremare (ombre) -> Gesso (alte luci) -->
+    <feColorMatrix in="SourceGraphic" type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0" result="gray"/>
+    <feComponentTransfer in="gray" result="duo">
       <feFuncR type="table" tableValues="0.106 0.909"/>
       <feFuncG type="table" tableValues="0.169 0.874"/>
       <feFuncB type="table" tableValues="0.271 0.788"/>
     </feComponentTransfer>
+    <!-- Maschera dei toni caldi: alpha = 3*(rosso - blu), colore originale invariato -->
+    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  3 0 -3 0 0" result="warm"/>
+    <feComponentTransfer in="warm" result="warmOrig">
+      <feFuncA type="linear" slope="0.85" intercept="0"/>
+    </feComponentTransfer>
+    <!-- Originale (solo dove caldo) sopra il duotone -->
+    <feMerge>
+      <feMergeNode in="duo"/>
+      <feMergeNode in="warmOrig"/>
+    </feMerge>
   </filter>
 </svg>
 
