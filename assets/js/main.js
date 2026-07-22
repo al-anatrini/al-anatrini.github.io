@@ -105,6 +105,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setOpen(navToggle.getAttribute('aria-expanded') !== 'true');
   });
 
+  // Choosing a destination always closes the overlay first, so the open state
+  // never survives a same-URL click or a slow navigation.
+  navOverlay.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setOpen(false));
+  });
+
   // Click on the empty overlay backdrop closes it
   navOverlay.addEventListener('click', (e) => {
     if (e.target === navOverlay) setOpen(false);
@@ -117,6 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.focus();
     }
   });
+
+  // Always land on a closed, unlocked menu — including bfcache restores
+  // (Back/Forward), which otherwise leave the overlay open and body scroll
+  // locked, freezing the page until a manual reload.
+  window.addEventListener('pageshow', () => setOpen(false));
 });
 
 // Scroll animations - DISABLED for work-item (causes flickering and conflicts)

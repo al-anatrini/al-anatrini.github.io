@@ -292,15 +292,15 @@ a {
   align-items: center;
   gap: clamp(0.6rem, 2vw, 1.4rem);
 
+  // Solo fade-in a cascata: niente translate, così una voce non scivola
+  // sotto un cursore fermo (era una causa del flicker/hover che si impianta)
   li {
     opacity: 0;
-    transform: translateY(14px);
-    transition: opacity var(--transition-base), transform var(--transition-base);
+    transition: opacity var(--transition-base);
   }
 
   .nav-overlay.is-open & li {
     opacity: 1;
-    transform: translateY(0);
   }
 
   @for $i from 1 through 6 {
@@ -320,16 +320,20 @@ a {
   color: var(--color-text);
   transition: color var(--transition-fast);
 
-  // Riserva la larghezza del corsivo: il box non cambia mai dimensione,
-  // così il puntatore non "esce" dalla voce quando passa a corsivo (niente loop hover)
+  // Riserva SIA la larghezza tonda SIA quella corsiva. In flex-column la
+  // larghezza del box = la maggiore dei tre figli, quindi resta costante in
+  // ogni stato: passando a corsivo la voce non si restringe e il puntatore
+  // non "esce" mai dal box (era questo a innescare il loop mouseenter/leave).
+  &::before,
   &::after {
     content: attr(data-text);
     height: 0;
     overflow: hidden;
     visibility: hidden;
     pointer-events: none;
-    font-style: italic;
   }
+  &::before { font-style: normal; }  // riserva la larghezza tonda
+  &::after  { font-style: italic; }  // riserva la larghezza corsiva
 
   &:hover,
   &:focus-visible,
