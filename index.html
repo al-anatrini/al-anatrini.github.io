@@ -13,11 +13,9 @@ description: "Alessandro Anatrini - composer and new media artist"
       <feFuncG type="table" tableValues="0.169 0.874"/>
       <feFuncB type="table" tableValues="0.271 0.788"/>
     </feComponentTransfer>
-    <!-- Maschera dei toni caldi: alpha = 3*(rosso - blu), colore originale invariato -->
-    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  3 0 -3 0 0" result="warm"/>
-    <feComponentTransfer in="warm" result="warmOrig">
-      <feFuncA type="linear" slope="0.85" intercept="0"/>
-    </feComponentTransfer>
+    <!-- Toni caldi esaltati: prima satura, poi alpha = 5*(rosso - blu) -->
+    <feColorMatrix in="SourceGraphic" type="saturate" values="2.4" result="sat"/>
+    <feColorMatrix in="sat" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  5 0 -5 0 0" result="warmOrig"/>
     <!-- Originale (solo dove caldo) sopra il duotone -->
     <feMerge>
       <feMergeNode in="duo"/>

@@ -52,10 +52,12 @@
       vec3 shadow = vec3(0.106, 0.169, 0.271);  // Oltremare scuro
       vec3 highlight = vec3(0.909, 0.874, 0.788); // Gesso
       vec3 duo = mix(shadow, highlight, l);
-      // Preserva i toni caldi: la maschera (rosso - blu) fa riemergere rossi/ocra,
-      // mentre grigi e azzurri restano nel duotone Oltremare. Indipendente dall'immagine.
-      float warm = clamp((c.r - c.b) * 3.0, 0.0, 1.0);
-      gl_FragColor = vec4(mix(duo, c, warm * 0.85), 1.0);
+      // Toni caldi ESALTATI: maschera (rosso - blu) piu' sensibile, e sui pixel
+      // caldi si usa il colore originale con saturazione spinta, cosi rossi/ocra
+      // "esplodono" mentre grigi e azzurri restano nel duotone Oltremare.
+      float warm = clamp((c.r - c.b) * 5.0, 0.0, 1.0);
+      vec3 warmColor = clamp(l + (c - vec3(l)) * 2.4, 0.0, 1.0);  // ~2.4x saturazione
+      gl_FragColor = vec4(mix(duo, warmColor, warm), 1.0);
     }`;
 
   function compile(type, src) {
