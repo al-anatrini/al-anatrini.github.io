@@ -13,7 +13,7 @@ description: "Get in touch with Alessandro Anatrini — composer and new media a
   <section class="contact-block">
     <h2>Affiliations</h2>
     <p><strong>Conservatorio Statale di Musica G. Nicolini</strong><br>Piacenza, Italy — Professor of Multimedia</p>
-    <p><strong>Hochschule für Musik und Theater Hamburg</strong><br>Germany — Lecturer in Multimodal Machine Learning for the Arts</p>
+    <p><strong>Hochschule für Musik und Theater</strong><br>Hamburg, Germany — Lecturer, Multimedia Department</p>
   </section>
 
   <section class="contact-block">
