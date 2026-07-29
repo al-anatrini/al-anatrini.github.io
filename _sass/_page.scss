@@ -12,7 +12,9 @@
 }
 
 .page-header {
-  padding: clamp(1.4rem, 4vw, 3rem) 0 clamp(1.4rem, 3.5vw, 2.4rem);
+  // Nessun padding-top: il titolo parte all'inizio del contenuto (come il
+  // work-hero), così la distanza dal "+" e' identica su tutte le pagine
+  padding: 0 0 clamp(1.4rem, 3.5vw, 2.4rem);
   margin-bottom: clamp(1.4rem, 4vw, 2.5rem);
   border-bottom: 1px solid var(--color-hair);
 }
@@ -39,7 +41,7 @@
   font-family: var(--font-serif);
 
   p {
-    font-size: clamp(1.1rem, 1.9vw, 1.3rem);
+    font-size: clamp(1.18rem, 2vw, 1.38rem);
     line-height: 1.75;
     margin-bottom: var(--spacing-md);
     max-width: 65ch;
@@ -310,7 +312,7 @@
   p {
     margin: 0 0 0.7rem;
     color: var(--color-text);
-    font-size: 1.05rem;
+    font-size: 1.13rem;
     line-height: 1.55;
     max-width: 68ch;
   }
