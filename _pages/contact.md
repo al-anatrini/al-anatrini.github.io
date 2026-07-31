@@ -12,8 +12,8 @@ description: "Get in touch with Alessandro Anatrini — composer and new media a
 <div class="contact-cols">
   <section class="contact-block">
     <h2>Affiliations</h2>
-    <p><strong>Conservatorio Statale di Musica G. Nicolini</strong><br>Piacenza, Italy — Professor of Multimedia</p>
-    <p><strong>Hochschule für Musik und Theater</strong><br>Hamburg, Germany — Lecturer, Multimedia Department</p>
+    <p><strong>Conservatorio Statale di Musica G. Nicolini</strong><br>Professor of Multimedia - Via Santa Franca 35, 29121 Piacenza, Italy</p>
+    <p><strong>Hochschule für Musik und Theater</strong><br>Lecturer, Multimedia Department - Harvestehuder Weg 12, 20148 Hamburg, Germany</p>
   </section>
 
   <section class="contact-block">
