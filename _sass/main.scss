@@ -1,25 +1,25 @@
 // Variables - Pietra (fondo chiaro, riferimento rinascimentale + accento Oltremare)
 :root {
   // Palette base (estratta dai fermo-immagine di riferimento)
-  --gesso:        #e8dfc9;  // Intonaco "sporco" - fondo principale
-  --gesso-2:      #f0e9d8;  // Superficie chiara (card, pannelli)
-  --gesso-3:      #ded3bb;  // Superficie media (hover, righe alternate)
-  --gesso-4:      #d3c7ac;  // Pannello indice
-  --inchiostro:   #221c12;  // Testo primario (solo testo/righe, mai fondo)
-  --bruno:        #2e251b;  // Bruno di seppia - micro-accenti scuri
-  --argilla:      #9a8568;  // Terra media - didascalie, bordi
-  --alloro:       #57583a;  // Verde bronzeo - dettagli
-  --ocra:         #c7972f;  // Oro/ocra - accento caldo secondario
-  --oltremare:    #2b4e7c;  // Lapislazzuli - accento freddo PRIMARIO
-  --oltremare-dark:#23406a; // Oltremare hover/attivo
-  --cinabro:      #9b4a34;  // Terracotta - accento tempo/"Now"
+  --gesso:        #eee7d4;  // Intonaco chiaro - fondo principale (verso il bianco, ancora caldo)
+  --gesso-2:      #f5f0e2;  // Superficie chiara (card, pannelli)
+  --gesso-3:      #e5dcc7;  // Superficie media (hover, righe alternate)
+  --gesso-4:      #dccfb6;  // Pannello indice
+  --inchiostro:   #181109;  // Testo primario (piu' nero, contrasto 14.1:1 su gesso)
+  --bruno:        #261e12;  // Bruno di seppia - micro-accenti scuri
+  --argilla:      #8f7a56;  // Terra media - didascalie, bordi (piu' saturo)
+  --alloro:       #4d5030;  // Verde bronzeo - dettagli (piu' vivido)
+  --ocra:         #c0901a;  // Oro/ocra - accento caldo secondario (piu' vivido)
+  --oltremare:    #1f4b8a;  // Lapislazzuli - accento freddo PRIMARIO (piu' vivido, 6.5:1)
+  --oltremare-dark:#173a6f; // Oltremare hover/attivo (8.5:1)
+  --cinabro:      #9e3820;  // Terracotta - accento tempo/"Now" (piu' vivido, 5.2:1)
 
   // Token semantici
   --color-bg: var(--gesso);            // Fondo chiaro
   --color-surface: var(--gesso-2);     // Superfici secondarie
   --color-surface-2: var(--gesso-3);   // Superfici terziarie / hover
   --color-text: var(--inchiostro);     // Testo (scuro caldo)
-  --color-text-muted: #4d4534;         // Testo attenuato (contrasto AAA 7.1:1 su gesso)
+  --color-text-muted: #443c2c;         // Testo attenuato (contrasto AAA 8.2:1 su gesso)
   --color-accent: var(--oltremare);    // Accento interazione/struttura (link, focus, nav attiva)
   --color-accent-2: var(--oltremare-dark); // Hover accento
   --color-warm: var(--cinabro);        // Accento tempo/attenzione ("Now", live)
@@ -27,8 +27,8 @@
   --color-vermilion: var(--cinabro);   // Alias retrocompatibile
 
   // Hairlines e raggi
-  --color-hair: rgba(34, 28, 18, 0.14);
-  --color-hair-soft: rgba(34, 28, 18, 0.08);
+  --color-hair: rgba(24, 17, 9, 0.17);
+  --color-hair-soft: rgba(24, 17, 9, 0.10);
   --radius-sm: 3px;
   --radius-md: 8px;
 
@@ -196,14 +196,14 @@ a {
   width: 100%;
   z-index: 1000;
   padding: var(--spacing-sm) var(--spacing-md);
-  background: rgba(232, 223, 201, 0.8);  // Gesso translucido
+  background: rgba(238, 231, 212, 0.8);  // Gesso translucido
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: all var(--transition-base);
 
   // Su scroll: hairline sottile per staccare dal contenuto
   &.scrolled {
-    background: rgba(232, 223, 201, 0.95);
+    background: rgba(238, 231, 212, 0.95);
     border-bottom: 1px solid var(--color-hair);
   }
 }

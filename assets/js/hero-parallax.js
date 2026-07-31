@@ -50,7 +50,7 @@
       vec3 c = texture2D(u_img, uv).rgb;
       float l = dot(c, vec3(0.299, 0.587, 0.114));
       vec3 shadow = vec3(0.106, 0.169, 0.271);  // Oltremare scuro
-      vec3 highlight = vec3(0.909, 0.874, 0.788); // Gesso
+      vec3 highlight = vec3(0.933, 0.906, 0.831); // Gesso (fondo chiaro)
       vec3 duo = mix(shadow, highlight, l);
       // Toni caldi ESALTATI: maschera (rosso - blu) piu' sensibile, e sui pixel
       // caldi si usa il colore originale con saturazione spinta, cosi rossi/ocra
