@@ -11,34 +11,33 @@ permalink: /portfolio/
   </div>
 
   <header class="portfolio-cover">
+    <p class="portfolio-eyebrow">Portfolio — Selected Works</p>
     <h1 class="portfolio-name">Alessandro Anatrini</h1>
     <p class="portfolio-role">Composer &amp; New Media Artist</p>
 
     <div class="portfolio-statement">
-      <p>My practice unfolds at the intersection of sound, image, and code, through generative systems that respond, transform, and adapt to the point of collapse.</p>
+      <p>My work unfolds at the intersection of sound, image, and code, through generative systems that respond, transform, and adapt to the point of collapse.</p>
       <p>I rework forms from the past (ancient cartographies, premodern systems of thought, speculative architectures) to build immersive environments rooted in an imaginary past. Each piece functions as a living system in flux, suspended between abstraction and hyperreality, familiarity and enigma.</p>
     </div>
 
-    <p class="portfolio-contact">alessandro@anatrini.com &nbsp;·&nbsp; al-anatrini.github.io</p>
+    <p class="portfolio-contact"><span>alessandro@anatrini.com</span><span>al-anatrini.github.io</span></p>
   </header>
 
-  <div class="portfolio-list">
+  <div class="portfolio-grid">
     {% assign works = site.works | sort: 'year' | reverse %}
     {% for work in works %}
-    <article class="portfolio-item">
+    <article class="portfolio-card">
       {% if work.featured_image %}
-      <div class="portfolio-item-media">
+      <div class="portfolio-card-media">
         <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}">
       </div>
       {% endif %}
-      <div class="portfolio-item-meta">
-        <p class="portfolio-item-line">{{ work.year }} &nbsp;—&nbsp; {{ work.category | default: "Multimedia" }}</p>
-        <h2 class="portfolio-item-title">{{ work.title }}</h2>
-        {% if work.blurb %}<p class="portfolio-item-blurb">{{ work.blurb }}</p>{% endif %}
-        {% if work.video_url %}
-        <p class="portfolio-item-link"><a href="{{ work.video_url }}" target="_blank" rel="noopener noreferrer">Watch ↗</a></p>
-        {% endif %}
-      </div>
+      <p class="portfolio-card-line">{{ work.year }} &nbsp;·&nbsp; {{ work.category | default: "Multimedia" }}</p>
+      <h2 class="portfolio-card-title">{{ work.title }}</h2>
+      {% if work.blurb %}<p class="portfolio-card-blurb">{{ work.blurb }}</p>{% endif %}
+      {% if work.video_url %}
+      <p class="portfolio-card-link"><a href="{{ work.video_url }}" target="_blank" rel="noopener noreferrer">Watch ↗</a></p>
+      {% endif %}
     </article>
     {% endfor %}
   </div>

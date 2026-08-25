@@ -1,10 +1,11 @@
 // =====================================================
 // PORTFOLIO — documento stampabile / "Salva come PDF"
-// Compatto ed editoriale: max 5 pagine A4. Palette coerente col sito.
-// Si nutre della collezione dei lavori (blurb = estratto curato).
+// Griglia editoriale contemporanea, max 5 pagine A4.
+// Fondo crema a pagina piena (nessuna cornice bianca).
+// Descrizioni = blurb curato dei lavori.
 // =====================================================
 .portfolio {
-  max-width: 900px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 var(--spacing-md) var(--spacing-2xl);
 }
@@ -16,7 +17,7 @@
   gap: var(--spacing-sm);
   padding: var(--spacing-lg) 0 var(--spacing-md);
   border-bottom: 1px solid var(--color-hair);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
 }
 
 .portfolio-toolbar-label {
@@ -29,91 +30,109 @@
 
 // ---- Copertina ----
 .portfolio-cover {
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-md);
-  border-bottom: 1px solid var(--color-hair);
+  margin-bottom: var(--spacing-xl);
+
+  .portfolio-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-warm);            // Cinàbro
+    margin: 0 0 var(--spacing-md);
+  }
 
   .portfolio-name {
     font-family: var(--font-display);
-    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-size: clamp(3rem, 9vw, 6rem);
     font-weight: 400;
-    line-height: 0.95;
-    letter-spacing: -0.02em;
+    line-height: 0.9;
+    letter-spacing: -0.03em;
     color: var(--color-text);
     margin: 0;
   }
 
   .portfolio-role {
     font-family: var(--font-mono);
-    font-size: clamp(0.7rem, 1.2vw, 0.82rem);
-    letter-spacing: 0.18em;
+    font-size: clamp(0.72rem, 1.2vw, 0.85rem);
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--color-warm);            // Cinàbro
-    margin: 0.7rem 0 0;
+    color: var(--color-text);
+    margin: var(--spacing-sm) 0 0;
   }
 }
 
 .portfolio-statement {
-  margin: var(--spacing-md) 0 0;
-  max-width: 62ch;
+  margin: var(--spacing-lg) 0 0;
+  max-width: 70ch;
+  column-count: 2;
+  column-gap: var(--spacing-lg);
 
   p {
     font-family: var(--font-serif);
     font-size: 1.08rem;
     line-height: 1.55;
     color: var(--color-text);
-    margin: 0 0 0.6rem;
+    margin: 0 0 0.7rem;
+    break-inside: avoid;
 
     &:last-child { margin-bottom: 0; }
   }
 }
 
 .portfolio-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   color: var(--color-text-muted);
-  margin: var(--spacing-md) 0 0;
+  margin: var(--spacing-lg) 0 0;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-hair);
 }
 
-// ---- Lista lavori (riga: thumbnail + testo) ----
-.portfolio-item {
+// ---- Griglia lavori (contemporanea, 2 colonne, senza filetti) ----
+.portfolio-grid {
   display: grid;
-  grid-template-columns: 150px minmax(0, 1fr);
-  gap: var(--spacing-md);
-  align-items: start;
-  padding: var(--spacing-md) 0;
-  border-top: 1px solid var(--color-hair-soft);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-lg) var(--spacing-md);
 
-  &:first-child { border-top: none; }
-
-  @media (max-width: 560px) {
+  @media (max-width: 620px) {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
+    gap: var(--spacing-md);
+  }
+}
+
+.portfolio-card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+
+  .portfolio-card-media {
+    margin: 0 0 0.9rem;
+    overflow: hidden;
+    border-radius: 2px;
+
+    img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
   }
 
-  .portfolio-item-media img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
-    display: block;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--color-hair);
-  }
-
-  .portfolio-item-line {
+  .portfolio-card-line {
     font-family: var(--font-mono);
     font-size: 0.66rem;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--color-warm);            // Cinàbro
     margin: 0 0 0.35rem;
   }
 
-  .portfolio-item-title {
+  .portfolio-card-title {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
     font-weight: 400;
     line-height: 1.02;
     letter-spacing: -0.02em;
@@ -121,17 +140,16 @@
     margin: 0;
   }
 
-  .portfolio-item-blurb {
+  .portfolio-card-blurb {
     font-family: var(--font-serif);
     font-size: 1rem;
     line-height: 1.45;
     color: var(--color-text);
-    margin: 0.5rem 0 0;
-    max-width: 60ch;
+    margin: 0.45rem 0 0;
   }
 
-  .portfolio-item-link {
-    margin: 0.55rem 0 0;
+  .portfolio-card-link {
+    margin: 0.7rem 0 0;
 
     a {
       font-family: var(--font-mono);
@@ -146,12 +164,12 @@
 }
 
 // -----------------------------------------------------
-// Stampa → PDF (A4, max 5 pagine, palette del sito preservata)
+// Stampa → PDF (A4, fondo crema a pagina piena)
 // -----------------------------------------------------
 @media print {
   @page {
     size: A4;
-    margin: 14mm 15mm;
+    margin: 13mm;
   }
 
   .main-nav,
@@ -164,52 +182,49 @@
     display: none !important;
   }
 
-  // Preserva fondo crema e accenti nel PDF
-  html, body {
+  // Il fondo dell'elemento root si propaga all'intera pagina PDF,
+  // margini inclusi: niente cornice bianca attorno al crema.
+  html {
     background: var(--gesso) !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+  body { background: transparent !important; }
 
   .main-content { padding-top: 0 !important; }
-
   .portfolio { max-width: none; margin: 0; padding: 0; }
 
-  // Copertina: resta in cima alla prima pagina, senza forzare interruzioni
+  // Copertina: pagina a sé
   .portfolio-cover {
-    margin-bottom: 8mm;
-    padding-bottom: 6mm;
+    break-after: page;
+    margin-bottom: 0;
 
-    .portfolio-name { font-size: 32pt; }
-    .portfolio-role { font-size: 8pt; margin-top: 4mm; }
+    .portfolio-eyebrow { font-size: 8pt; margin-bottom: 8mm; }
+    .portfolio-name { font-size: 44pt; }
+    .portfolio-role { font-size: 9pt; margin-top: 5mm; }
   }
-
   .portfolio-statement {
-    margin-top: 6mm;
-    p { font-size: 10.5pt; line-height: 1.5; margin-bottom: 3mm; }
+    margin-top: 14mm;
+    p { font-size: 11pt; line-height: 1.55; }
+  }
+  .portfolio-contact { margin-top: 14mm; padding-top: 6mm; font-size: 8.5pt; }
+
+  // Griglia lavori
+  .portfolio-grid {
+    gap: 11mm 10mm;
   }
 
-  .portfolio-contact { font-size: 8pt; margin-top: 6mm; }
-
-  // Righe compatte, mai spezzate tra due pagine
-  .portfolio-item {
-    grid-template-columns: 42mm minmax(0, 1fr);
-    gap: 8mm;
-    padding: 5mm 0;
-    border-top: 1px solid var(--color-hair);
-    page-break-inside: avoid;
-    break-inside: avoid;
-
-    .portfolio-item-media img { border: 1px solid var(--color-hair); }
-    .portfolio-item-line { font-size: 7.5pt; color: var(--color-warm) !important; }
-    .portfolio-item-title { font-size: 17pt; }
-    .portfolio-item-blurb { font-size: 9.5pt; line-height: 1.4; margin-top: 2mm; }
-    .portfolio-item-link { margin-top: 2.5mm; }
-    .portfolio-item-link a { font-size: 7.5pt; color: var(--color-accent) !important; }
+  .portfolio-card {
+    .portfolio-card-media { margin-bottom: 4mm; }
+    .portfolio-card-line { font-size: 7.5pt; color: var(--color-warm) !important; }
+    .portfolio-card-title { font-size: 17pt; }
+    .portfolio-card-blurb { font-size: 9.5pt; line-height: 1.42; margin-top: 2.5mm; }
+    .portfolio-card-link { margin-top: 3mm; }
+    .portfolio-card-link a { font-size: 7.5pt; color: var(--color-accent) !important; }
   }
 
   // Mostra l'URL del video accanto al link nel PDF
-  .portfolio-item-link a[href]::after {
+  .portfolio-card-link a[href]::after {
     content: "  " attr(href);
     font-family: var(--font-mono);
     font-size: 7pt;
