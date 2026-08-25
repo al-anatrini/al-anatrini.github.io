@@ -27,11 +27,6 @@ redirect_from:
     </div>
 
     <div class="video-item">
-      <iframe src="https://player.vimeo.com/video/787965537" frameborder="0" allowfullscreen></iframe>
-      <p class="video-caption">System output mockup I</p>
-    </div>
-
-    <div class="video-item">
       <iframe src="https://player.vimeo.com/video/787973035" frameborder="0" allowfullscreen></iframe>
       <p class="video-caption">System output mockup II</p>
     </div>

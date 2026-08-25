@@ -1,9 +1,10 @@
 // =====================================================
-// PORTFOLIO — pagina stampabile (Salva come PDF dal browser)
-// Si nutre della collezione dei lavori del sito.
+// PORTFOLIO — documento stampabile / "Salva come PDF"
+// Compatto ed editoriale: max 5 pagine A4. Palette coerente col sito.
+// Si nutre della collezione dei lavori (blurb = estratto curato).
 // =====================================================
 .portfolio {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 var(--spacing-md) var(--spacing-2xl);
 }
@@ -15,7 +16,7 @@
   gap: var(--spacing-sm);
   padding: var(--spacing-lg) 0 var(--spacing-md);
   border-bottom: 1px solid var(--color-hair);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
 }
 
 .portfolio-toolbar-label {
@@ -26,12 +27,15 @@
   color: var(--color-text-muted);
 }
 
+// ---- Copertina ----
 .portfolio-cover {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-hair);
 
   .portfolio-name {
     font-family: var(--font-display);
-    font-size: clamp(2.8rem, 8vw, 5.5rem);
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
     font-weight: 400;
     line-height: 0.95;
     letter-spacing: -0.02em;
@@ -41,30 +45,58 @@
 
   .portfolio-role {
     font-family: var(--font-mono);
-    font-size: clamp(0.72rem, 1.3vw, 0.9rem);
+    font-size: clamp(0.7rem, 1.2vw, 0.82rem);
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--color-text-muted);
-    margin: var(--spacing-sm) 0 0;
+    color: var(--color-warm);            // Cinàbro
+    margin: 0.7rem 0 0;
   }
 }
 
+.portfolio-statement {
+  margin: var(--spacing-md) 0 0;
+  max-width: 62ch;
+
+  p {
+    font-family: var(--font-serif);
+    font-size: 1.08rem;
+    line-height: 1.55;
+    color: var(--color-text);
+    margin: 0 0 0.6rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.portfolio-contact {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin: var(--spacing-md) 0 0;
+}
+
+// ---- Lista lavori (riga: thumbnail + testo) ----
 .portfolio-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
-  align-items: center;
-  padding: var(--spacing-lg) 0;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: var(--spacing-md);
+  align-items: start;
+  padding: var(--spacing-md) 0;
   border-top: 1px solid var(--color-hair-soft);
 
-  @media (max-width: 680px) {
+  &:first-child { border-top: none; }
+
+  @media (max-width: 560px) {
     grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
+    gap: 0.8rem;
   }
 
   .portfolio-item-media img {
     width: 100%;
     height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
     display: block;
     border-radius: var(--radius-sm);
     border: 1px solid var(--color-hair);
@@ -72,49 +104,41 @@
 
   .portfolio-item-line {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.66rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--color-warm);          // Cinàbro
-    margin: 0 0 0.4rem;
+    color: var(--color-warm);            // Cinàbro
+    margin: 0 0 0.35rem;
   }
 
   .portfolio-item-title {
     font-family: var(--font-display);
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
     font-weight: 400;
-    line-height: 1;
+    line-height: 1.02;
     letter-spacing: -0.02em;
     color: var(--color-text);
     margin: 0;
   }
 
-  .portfolio-item-sub {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.05rem;
-    color: var(--color-text-muted);
-    margin: 0.6rem 0 0;
-  }
-
   .portfolio-item-blurb {
     font-family: var(--font-serif);
-    font-size: 1.05rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.45;
     color: var(--color-text);
-    margin: 0.7rem 0 0;
-    max-width: 48ch;
+    margin: 0.5rem 0 0;
+    max-width: 60ch;
   }
 
   .portfolio-item-link {
-    margin: 0.9rem 0 0;
+    margin: 0.55rem 0 0;
 
     a {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--color-accent);
+      color: var(--color-accent);        // Oltremare
 
       &:hover { text-decoration: underline; text-underline-offset: 3px; }
     }
@@ -122,47 +146,74 @@
 }
 
 // -----------------------------------------------------
-// Stampa → PDF
+// Stampa → PDF (A4, max 5 pagine, palette del sito preservata)
 // -----------------------------------------------------
 @media print {
+  @page {
+    size: A4;
+    margin: 14mm 15mm;
+  }
+
   .main-nav,
   .nav-overlay,
   .main-footer,
   .home-button,
   .grain-overlay,
-  .cursor-follower,
   .back-to-top,
   .no-print {
     display: none !important;
   }
 
+  // Preserva fondo crema e accenti nel PDF
   html, body {
-    background: #fff !important;
-    color: #000 !important;
+    background: var(--gesso) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .main-content { padding-top: 0 !important; }
 
-  .portfolio { max-width: none; padding: 0; }
+  .portfolio { max-width: none; margin: 0; padding: 0; }
 
-  .portfolio-cover { margin-bottom: 2rem; }
+  // Copertina: resta in cima alla prima pagina, senza forzare interruzioni
+  .portfolio-cover {
+    margin-bottom: 8mm;
+    padding-bottom: 6mm;
 
-  .portfolio-item {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    border-top: 1px solid #ccc;
+    .portfolio-name { font-size: 32pt; }
+    .portfolio-role { font-size: 8pt; margin-top: 4mm; }
   }
 
-  .portfolio-item-media img { border: 1px solid #ddd; }
+  .portfolio-statement {
+    margin-top: 6mm;
+    p { font-size: 10.5pt; line-height: 1.5; margin-bottom: 3mm; }
+  }
 
-  a { color: #000 !important; text-decoration: none !important; }
+  .portfolio-contact { font-size: 8pt; margin-top: 6mm; }
 
-  // In stampa mostra l'URL del video accanto al link
+  // Righe compatte, mai spezzate tra due pagine
+  .portfolio-item {
+    grid-template-columns: 42mm minmax(0, 1fr);
+    gap: 8mm;
+    padding: 5mm 0;
+    border-top: 1px solid var(--color-hair);
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    .portfolio-item-media img { border: 1px solid var(--color-hair); }
+    .portfolio-item-line { font-size: 7.5pt; color: var(--color-warm) !important; }
+    .portfolio-item-title { font-size: 17pt; }
+    .portfolio-item-blurb { font-size: 9.5pt; line-height: 1.4; margin-top: 2mm; }
+    .portfolio-item-link { margin-top: 2.5mm; }
+    .portfolio-item-link a { font-size: 7.5pt; color: var(--color-accent) !important; }
+  }
+
+  // Mostra l'URL del video accanto al link nel PDF
   .portfolio-item-link a[href]::after {
     content: "  " attr(href);
     font-family: var(--font-mono);
-    font-size: 0.62rem;
-    color: #555;
+    font-size: 7pt;
+    color: var(--color-text-muted);
     text-transform: none;
     letter-spacing: 0;
   }
