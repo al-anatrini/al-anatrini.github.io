@@ -1,44 +1,44 @@
 ---
-layout: default
+layout: portfolio
 title: Portfolio
 permalink: /portfolio/
+sitemap: false
 ---
 
-<div class="portfolio">
-  <div class="portfolio-toolbar no-print">
-    <span class="portfolio-toolbar-label">Portfolio</span>
-    <button type="button" class="page-button" onclick="window.print()">Print / Save as PDF</button>
+<section class="pf-page pf-cover">
+  <div class="pf-cover-top">
+    <p class="pf-eyebrow">Selected Works · 2015—2026</p>
+    <h1 class="pf-name">Alessandro<br>Anatrini</h1>
+    <p class="pf-role">Composer &amp; New Media Artist</p>
   </div>
 
-  <header class="portfolio-cover">
-    <p class="portfolio-eyebrow">Portfolio — Selected Works</p>
-    <h1 class="portfolio-name">Alessandro Anatrini</h1>
-    <p class="portfolio-role">Composer &amp; New Media Artist</p>
+  <div class="pf-cover-statement">
+    <p>My work unfolds at the intersection of sound, image, and code, through generative systems that respond, transform, and adapt to the point of collapse.</p>
+    <p>I rework forms from the past (ancient cartographies, premodern systems of thought, speculative architectures) to build immersive environments rooted in an imaginary past. Each piece functions as a living system in flux, suspended between abstraction and hyperreality, familiarity and enigma.</p>
+  </div>
 
-    <div class="portfolio-statement">
-      <p>My work unfolds at the intersection of sound, image, and code, through generative systems that respond, transform, and adapt to the point of collapse.</p>
-      <p>I rework forms from the past (ancient cartographies, premodern systems of thought, speculative architectures) to build immersive environments rooted in an imaginary past. Each piece functions as a living system in flux, suspended between abstraction and hyperreality, familiarity and enigma.</p>
-    </div>
+  <div class="pf-cover-foot">
+    <span class="pf-count">Fifteen works</span>
+    <span class="pf-contact">alessandro@anatrini.com &nbsp; / &nbsp; al-anatrini.github.io</span>
+  </div>
+</section>
 
-    <p class="portfolio-contact"><span>alessandro@anatrini.com</span><span>al-anatrini.github.io</span></p>
-  </header>
-
-  <div class="portfolio-grid">
-    {% assign works = site.works | sort: 'year' | reverse %}
-    {% for work in works %}
-    <article class="portfolio-card">
+{% assign works = site.works | sort: 'year' | reverse %}
+{% for work in works %}
+  {% assign m = forloop.index0 | modulo: 4 %}
+  {% if m == 0 %}<section class="pf-page pf-works-page"><div class="pf-grid">{% endif %}
+    <article class="pf-card">
       {% if work.featured_image %}
-      <div class="portfolio-card-media">
+      <div class="pf-card-media">
         <img src="{{ work.featured_image | relative_url }}" alt="{{ work.title }}">
       </div>
       {% endif %}
-      <p class="portfolio-card-line">{{ work.year }} &nbsp;·&nbsp; {{ work.category | default: "Multimedia" }}</p>
-      <h2 class="portfolio-card-title">{{ work.title }}</h2>
-      {% if work.blurb %}<p class="portfolio-card-blurb">{{ work.blurb }}</p>{% endif %}
-      {% if work.video_url %}
-      <p class="portfolio-card-link"><a href="{{ work.video_url }}" target="_blank" rel="noopener noreferrer">Watch ↗</a></p>
-      {% endif %}
+      <div class="pf-card-body">
+        <p class="pf-card-line"><span class="pf-card-year">{{ work.year }}</span> &nbsp;·&nbsp; {{ work.category | default: "Multimedia" }}</p>
+        <h2 class="pf-card-title">{{ work.title }}</h2>
+        {% if work.blurb %}<p class="pf-card-blurb">{{ work.blurb }}</p>{% endif %}
+        {% if work.video_url %}<p class="pf-card-link"><a href="{{ work.video_url }}">Watch ↗</a></p>{% endif %}
+      </div>
     </article>
-    {% endfor %}
-  </div>
-</div>
+  {% if m == 3 or forloop.last %}</div></section>{% endif %}
+{% endfor %}

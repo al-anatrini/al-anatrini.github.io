@@ -15,5 +15,5 @@ I have also worked as an interaction designer and software developer on projects
 
 <div class="page-actions">
   <a href="{{ '/assets/docs/alessandro-anatrini-cv.pdf' | relative_url }}" class="page-button">Download CV (PDF)</a>
-  <a href="{{ '/portfolio' | relative_url }}" class="page-button">Portfolio (PDF)</a>
+  <a href="{{ '/assets/docs/alessandro-anatrini-portfolio.pdf' | relative_url }}" class="page-button">Portfolio (PDF)</a>
 </div>

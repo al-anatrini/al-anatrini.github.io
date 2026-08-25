@@ -1,115 +1,138 @@
 // =====================================================
-// PORTFOLIO — documento stampabile / "Salva come PDF"
-// Griglia editoriale contemporanea, max 5 pagine A4.
-// Fondo crema a pagina piena (nessuna cornice bianca).
-// Descrizioni = blurb curato dei lavori.
+// PORTFOLIO — documento PDF autonomo (generato, non anteprima web)
+// Palette del sito, invertita: fondo Oltremare profondo, testo Gesso,
+// accento Ocra. Ogni pagina e' un blocco A4 pieno di colore: nessun
+// bordo bianco. Max 5 pagine.
 // =====================================================
-.portfolio {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md) var(--spacing-2xl);
+.portfolio-doc {
+  // Solo colori del colorscheme del sito (nessuno inventato)
+  --pf-bg:    var(--oltremare-dark);          // #173a6f - fondo
+  --pf-ink:   var(--gesso);                   // #eee7d4 - testo
+  --pf-muted: rgba(238, 231, 212, 0.66);      // Gesso attenuato
+  --pf-gold:  var(--ocra);                     // #c0901a - accento (Oro/Ocra)
+
+  background: var(--pf-bg);
+  color: var(--pf-ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  margin: 0;
+  padding: 0;
 }
 
-.portfolio-toolbar {
+// Il fondo del root riempie l'intero foglio (ogni residuo di margine)
+html:has(.portfolio-doc) {
+  background: var(--oltremare-dark);   // #173a6f
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+// -----------------------------------------------------
+// PAGINA — blocco A4 pieno di colore, margini interni uniformi
+// -----------------------------------------------------
+.pf-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: clamp(2.4rem, 6vw, 4.2rem);
+  background: var(--pf-bg);
+}
+
+// -----------------------------------------------------
+// COPERTINA — composizione distribuita su tutta la pagina
+// -----------------------------------------------------
+.pf-cover {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-lg) 0 var(--spacing-md);
-  border-bottom: 1px solid var(--color-hair);
-  margin-bottom: var(--spacing-xl);
+  flex-direction: column;
 }
 
-.portfolio-toolbar-label {
+.pf-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
+  color: var(--pf-gold);
+  margin: 0 0 clamp(2rem, 6vw, 4rem);
 }
 
-// ---- Copertina ----
-.portfolio-cover {
-  margin-bottom: var(--spacing-xl);
-
-  .portfolio-eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--color-warm);            // Cinàbro
-    margin: 0 0 var(--spacing-md);
-  }
-
-  .portfolio-name {
-    font-family: var(--font-display);
-    font-size: clamp(3rem, 9vw, 6rem);
-    font-weight: 400;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-    color: var(--color-text);
-    margin: 0;
-  }
-
-  .portfolio-role {
-    font-family: var(--font-mono);
-    font-size: clamp(0.72rem, 1.2vw, 0.85rem);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--color-text);
-    margin: var(--spacing-sm) 0 0;
-  }
+.pf-name {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(4rem, 12vw, 8.5rem);
+  line-height: 0.86;
+  letter-spacing: -0.03em;
+  color: var(--pf-ink);
+  margin: 0;
 }
 
-.portfolio-statement {
-  margin: var(--spacing-lg) 0 0;
-  max-width: 70ch;
-  column-count: 2;
-  column-gap: var(--spacing-lg);
+.pf-role {
+  font-family: var(--font-mono);
+  font-size: clamp(0.8rem, 1.4vw, 1rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pf-gold);
+  margin: clamp(1.2rem, 3vw, 2rem) 0 0;
+}
+
+.pf-cover-statement {
+  margin-top: auto;
+  padding-top: clamp(2.5rem, 7vw, 5rem);
+  max-width: 42ch;
 
   p {
     font-family: var(--font-serif);
-    font-size: 1.08rem;
-    line-height: 1.55;
-    color: var(--color-text);
-    margin: 0 0 0.7rem;
-    break-inside: avoid;
+    font-size: clamp(1.15rem, 1.7vw, 1.45rem);
+    line-height: 1.5;
+    color: var(--pf-ink);
+    margin: 0 0 0.9rem;
 
-    &:last-child { margin-bottom: 0; }
+    &:last-child { margin-bottom: 0; color: var(--pf-muted); }
   }
 }
 
-.portfolio-contact {
+.pf-cover-foot {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  gap: 0.4rem 2rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  color: var(--color-text-muted);
-  margin: var(--spacing-lg) 0 0;
-  padding-top: var(--spacing-md);
-  border-top: 1px solid var(--color-hair);
+  margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(192, 144, 26, 0.45);   // hairline Ocra
+
+  .pf-count {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--pf-gold);
+  }
+
+  .pf-contact {
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    color: var(--pf-muted);
+  }
 }
 
-// ---- Griglia lavori (contemporanea, 2 colonne, senza filetti) ----
-.portfolio-grid {
+// -----------------------------------------------------
+// LAVORI — 4 per pagina, griglia 2x2 sul fondo scuro
+// -----------------------------------------------------
+.pf-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--spacing-lg) var(--spacing-md);
+  gap: clamp(2rem, 5vw, 3.4rem) clamp(1.8rem, 4vw, 2.8rem);
 
   @media (max-width: 620px) {
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
   }
 }
 
-.portfolio-card {
+.pf-card {
   break-inside: avoid;
-  page-break-inside: avoid;
 
-  .portfolio-card-media {
-    margin: 0 0 0.9rem;
+  .pf-card-media {
+    margin: 0 0 1rem;
     overflow: hidden;
     border-radius: 2px;
 
@@ -121,114 +144,92 @@
     }
   }
 
-  .portfolio-card-line {
+  .pf-card-line {
     font-family: var(--font-mono);
-    font-size: 0.66rem;
+    font-size: 0.68rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--color-warm);            // Cinàbro
-    margin: 0 0 0.35rem;
+    color: var(--pf-muted);
+    margin: 0 0 0.4rem;
+
+    .pf-card-year { color: var(--pf-gold); }
   }
 
-  .portfolio-card-title {
+  .pf-card-title {
     font-family: var(--font-display);
-    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
     font-weight: 400;
-    line-height: 1.02;
+    line-height: 1.0;
     letter-spacing: -0.02em;
-    color: var(--color-text);
+    color: var(--pf-ink);
     margin: 0;
   }
 
-  .portfolio-card-blurb {
+  .pf-card-blurb {
     font-family: var(--font-serif);
-    font-size: 1rem;
+    font-size: 1.02rem;
     line-height: 1.45;
-    color: var(--color-text);
-    margin: 0.45rem 0 0;
+    color: var(--pf-muted);
+    margin: 0.5rem 0 0;
   }
 
-  .portfolio-card-link {
-    margin: 0.7rem 0 0;
+  .pf-card-link {
+    margin: 0.8rem 0 0;
 
     a {
       font-family: var(--font-mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.1em;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--color-accent);        // Oltremare
-
-      &:hover { text-decoration: underline; text-underline-offset: 3px; }
+      color: var(--pf-gold);
+      text-decoration: none;
     }
   }
 }
 
 // -----------------------------------------------------
-// Stampa → PDF (A4, fondo crema a pagina piena)
+// Stampa → PDF (A4). Margini di pagina a zero: il colore riempie
+// tutto il foglio; i margini interni li da .pf-page (uniformi).
 // -----------------------------------------------------
 @media print {
   @page {
     size: A4;
-    margin: 13mm;
+    margin: 0;
   }
 
-  .main-nav,
-  .nav-overlay,
-  .main-footer,
-  .home-button,
-  .grain-overlay,
-  .back-to-top,
-  .no-print {
-    display: none !important;
-  }
-
-  // Il fondo dell'elemento root si propaga all'intera pagina PDF,
-  // margini inclusi: niente cornice bianca attorno al crema.
-  html {
-    background: var(--gesso) !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  body { background: transparent !important; }
-
-  .main-content { padding-top: 0 !important; }
-  .portfolio { max-width: none; margin: 0; padding: 0; }
-
-  // Copertina: pagina a sé
-  .portfolio-cover {
+  .pf-page {
+    min-height: auto;
+    height: 297mm;
+    padding: 15mm;
     break-after: page;
-    margin-bottom: 0;
-
-    .portfolio-eyebrow { font-size: 8pt; margin-bottom: 8mm; }
-    .portfolio-name { font-size: 44pt; }
-    .portfolio-role { font-size: 9pt; margin-top: 5mm; }
+    overflow: hidden;
   }
-  .portfolio-statement {
-    margin-top: 14mm;
-    p { font-size: 11pt; line-height: 1.55; }
-  }
-  .portfolio-contact { margin-top: 14mm; padding-top: 6mm; font-size: 8.5pt; }
+  .pf-page:last-child { break-after: auto; }
 
-  // Griglia lavori
-  .portfolio-grid {
-    gap: 11mm 10mm;
+  .pf-cover {
+    .pf-eyebrow { font-size: 9pt; margin-bottom: 20mm; }
+    .pf-name { font-size: 56pt; }
+    .pf-role { font-size: 10pt; margin-top: 7mm; }
   }
+  .pf-cover-statement { padding-top: 18mm; p { font-size: 12.5pt; } }
+  .pf-cover-foot { margin-top: 20mm; }
 
-  .portfolio-card {
-    .portfolio-card-media { margin-bottom: 4mm; }
-    .portfolio-card-line { font-size: 7.5pt; color: var(--color-warm) !important; }
-    .portfolio-card-title { font-size: 17pt; }
-    .portfolio-card-blurb { font-size: 9.5pt; line-height: 1.42; margin-top: 2.5mm; }
-    .portfolio-card-link { margin-top: 3mm; }
-    .portfolio-card-link a { font-size: 7.5pt; color: var(--color-accent) !important; }
+  .pf-grid { gap: 12mm 10mm; }
+
+  .pf-card {
+    .pf-card-media { margin-bottom: 4.5mm; }
+    .pf-card-line { font-size: 7.5pt; }
+    .pf-card-title { font-size: 18pt; }
+    .pf-card-blurb { font-size: 9.5pt; line-height: 1.42; margin-top: 2.5mm; }
+    .pf-card-link { margin-top: 3mm; }
+    .pf-card-link a { font-size: 7.5pt; }
   }
 
-  // Mostra l'URL del video accanto al link nel PDF
-  .portfolio-card-link a[href]::after {
+  .pf-card-link a[href]::after {
     content: "  " attr(href);
     font-family: var(--font-mono);
     font-size: 7pt;
-    color: var(--color-text-muted);
+    color: var(--pf-muted);
     text-transform: none;
     letter-spacing: 0;
   }
